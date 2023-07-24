@@ -1,0 +1,2123 @@
+{
+  "scene": "TheHouse Demo",
+  "levelName": "TheHouse Demo",
+  "levelNameKey": null,
+  "dateTime": "2023-07-23 23:11:23",
+  "playerData": {
+    "playerPosition": {
+      "x": 25.8710232,
+      "y": 1.08000016,
+      "z": 191.8446,
+      "normalized": {
+        "x": 0.133642241,
+        "y": 0.00557896961,
+        "z": 0.991013944,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 193.584167,
+      "sqrMagnitude": 37474.83
+    },
+    "cameraRotation": {
+      "x": -2.36461544,
+      "y": -6.4744,
+      "normalized": {
+        "x": -0.34306103,
+        "y": -0.9393131,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 6.89269638,
+      "sqrMagnitude": 47.5092621
+    },
+    "characterState": 0,
+    "playerHealth": 100.0
+  },
+  "itemSwitcherData": {
+    "switcherActiveItem": 1,
+    "switcherWeaponItem": 1,
+    "switcher_item_flashlight": {
+      "FlashlightItem": {
+        "batteryPercentage": 100.0
+      }
+    },
+    "switcher_item_lantern": {
+      "LanternItem": {
+        "lightPercentage": 85.17596,
+        "lightIntensity": 1.0,
+        "flameAlpha": 0.898489535
+      }
+    },
+    "switcher_item_candle": {
+      "CandleItem": {
+        "candleScale": 0.00113
+      }
+    },
+    "switcher_item_pistol": {
+      "WeaponController": {
+        "bulletsInMag": 7,
+        "uiShown": false
+      }
+    },
+    "switcher_item_shotgun": {
+      "WeaponController": {
+        "bulletsInMag": 7,
+        "uiShown": false
+      }
+    }
+  },
+  "inventoryData": {
+    "inv_slots_count": 10,
+    "slotsData": {
+      "inv_slot_0": {
+        "slotID": 0,
+        "itemID": 27,
+        "itemAmount": 1,
+        "itemData": {
+          "data": {
+            "object_path": "Level/InteractiveObjects/Items/IA_Lantern",
+            "object_scene": "TheHouse Demo",
+            "CanUse": true,
+            "CanCombine": true
+          }
+        }
+      },
+      "inv_slot_1": {
+        "slotID": 1,
+        "itemID": 22,
+        "itemAmount": 1,
+        "itemData": {
+          "data": {
+            "object_path": "Level/InteractiveObjects/Items/IC_PetrolOilBottle",
+            "object_scene": "TheHouse Demo",
+            "CanUse": true,
+            "CanCombine": true
+          }
+        }
+      },
+      "inv_slot_2": {
+        "slotID": 2,
+        "itemID": 15,
+        "itemAmount": 1,
+        "itemData": {
+          "data": {
+            "object_path": "Level/InteractiveObjects/Items/IH_Herb",
+            "object_scene": "TheHouse Demo",
+            "CanUse": true,
+            "CanCombine": true
+          }
+        }
+      },
+      "inv_slot_3": "null",
+      "inv_slot_4": "null",
+      "inv_slot_5": "null",
+      "inv_slot_6": "null",
+      "inv_slot_7": "null",
+      "inv_slot_8": "null",
+      "inv_slot_9": "null"
+    },
+    "shortcutsData": {
+      "shortcut_0": {
+        "itemID": 27,
+        "shortcutKey": "UseItem1"
+      }
+    }
+  },
+  "objectivesData": {
+    "activeObjectives": {
+      "0": {
+        "completion": 0,
+        "isCompleted": false
+      },
+      "1": {
+        "completion": 0,
+        "isCompleted": false
+      }
+    },
+    "touchedObjectives": {}
+  },
+  "saveablesData": {
+    "DraggableObject_74714e8250a64c7090550ed03ce2db04": {
+      "position": {
+        "x": 25.692,
+        "y": 0.488656342,
+        "z": 201.686,
+        "normalized": {
+          "x": 0.126364619,
+          "y": 0.002403428,
+          "z": 0.99198097,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 203.3164,
+        "sqrMagnitude": 41337.5625
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 7.665563,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.9995972,
+          "y": 0.028379539,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.999597251,
+            "y": 0.02837954,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 270.1088,
+        "sqrMagnitude": 72958.76
+      },
+      "isPlayed": false,
+      "rigidbody_kinematic": false,
+      "rigidbody_gravity": true,
+      "rigidbody_freeze": false
+    },
+    "DraggableObject_93b92b9f2e254aac9a83da0d830797a1": {
+      "position": {
+        "x": 29.145,
+        "y": 0.4886563,
+        "z": 204.126,
+        "normalized": {
+          "x": 0.1413456,
+          "y": 0.00236985483,
+          "z": 0.9899575,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 206.196732,
+        "sqrMagnitude": 42517.0938
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 30.44454,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.9937029,
+          "y": 0.112047508,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 271.711,
+        "sqrMagnitude": 73826.87
+      },
+      "isPlayed": false,
+      "rigidbody_kinematic": false,
+      "rigidbody_gravity": true,
+      "rigidbody_freeze": false
+    },
+    "DraggableObject_54c232c47886452389e871b2d31e975a": {
+      "position": {
+        "x": 29.93,
+        "y": 3.42,
+        "z": 192.495,
+        "normalized": {
+          "x": 0.153614849,
+          "y": 0.01755305,
+          "z": 0.987974942,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 194.837936,
+        "sqrMagnitude": 37961.8242
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "isPlayed": false,
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "DraggableObject_259059729629486eafed1e09a8106acc": {
+      "position": {
+        "x": 29.93,
+        "y": 3.42,
+        "z": 197.495,
+        "normalized": {
+          "x": 0.149815321,
+          "y": 0.01711889,
+          "z": 0.9885658,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 199.779312,
+        "sqrMagnitude": 39911.7734
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "isPlayed": false,
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "SaveObject_0dc36d32546f416ea16ed2276e98bf09": {
+      "angles": {
+        "x": 0.0,
+        "y": 4.09811328E-05,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 4.09811328E-05,
+        "sqrMagnitude": 1.67945324E-09
+      }
+    },
+    "InteractiveItem_22be041a75184634a1bb8f76165a5163": {
+      "position": {
+        "x": 32.29,
+        "y": 2.30000114,
+        "z": 180.51,
+        "normalized": {
+          "x": 0.176073119,
+          "y": 0.0125416033,
+          "z": 0.9842972,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 183.389725,
+        "sqrMagnitude": 33631.793
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 2.34374829E-06,
+        "z": 0.0,
+        "normalized": {
+          "x": 1.0,
+          "y": 8.68055E-09,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_c12d43e3ddb14bdd84f764fb9889f991": {
+      "position": {
+        "x": 6.798052,
+        "y": 0.195225239,
+        "z": 189.387985,
+        "normalized": {
+          "x": 0.03587172,
+          "y": 0.00103015767,
+          "z": 0.999355853,
+          "normalized": {
+            "x": 0.0358717255,
+            "y": 0.00103015779,
+            "z": 0.9993559,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 189.510056,
+        "sqrMagnitude": 35914.06
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 0.0164873414,
+        "z": 0.0,
+        "normalized": {
+          "x": 1.0,
+          "y": 6.10642237E-05,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "inv_id": 15,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Herb",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": false,
+      "floatingIcon": true
+    },
+    "InteractiveItem_66a1775a5a3c4c109be32451cb42f419": {
+      "position": {
+        "x": 8.361258,
+        "y": 1.463564,
+        "z": 189.3865,
+        "normalized": {
+          "x": 0.0441048965,
+          "y": 0.007720171,
+          "z": 0.9989971,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 189.57663,
+        "sqrMagnitude": 35939.3
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 210.002411,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.7893488,
+          "y": 0.613945,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 342.0541,
+        "sqrMagnitude": 117001.016
+      },
+      "inv_id": 22,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IC_PetrolOilBottle",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": false,
+      "floatingIcon": true
+    },
+    "InteractiveItem_eeea3f5510c34999a821c2a972fcc8f1": {
+      "position": {
+        "x": 8.010001,
+        "y": 1.59000421,
+        "z": 189.31,
+        "normalized": {
+          "x": 0.04227225,
+          "y": 0.008391142,
+          "z": 0.999070942,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 189.486038,
+        "sqrMagnitude": 35904.96
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 345.000336,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.6163079,
+          "y": 0.7875053,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 438.0927,
+        "sqrMagnitude": 191925.234
+      },
+      "inv_id": 27,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IA_Lantern",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": false,
+      "floatingIcon": true
+    },
+    "InteractiveItem_9152ede528794f2fbb69e5d97d26781b": {
+      "position": {
+        "x": 44.2658,
+        "y": 0.893402457,
+        "z": 185.6366,
+        "normalized": {
+          "x": 0.231948286,
+          "y": 0.004681338,
+          "z": 0.972716868,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 190.8434,
+        "sqrMagnitude": 36421.2031
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 180.0,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.4472136,
+          "y": 0.8944272,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.44721362,
+            "y": 0.89442724,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 201.246124,
+        "sqrMagnitude": 40500.0
+      },
+      "inv_id": 21,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Dynamic/ChestOfDrawers/Drawer1/IR_Battery01",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_b8e101a4ffec433aba5179987ea4dd40": {
+      "position": {
+        "x": 44.25591,
+        "y": 0.86141336,
+        "z": 185.718613,
+        "normalized": {
+          "x": 0.231802508,
+          "y": 0.00451188954,
+          "z": 0.9727524,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 190.920746,
+        "sqrMagnitude": 36450.73
+      },
+      "rotation": {
+        "x": 359.988953,
+        "y": 116.146545,
+        "z": 230.4362,
+        "normalized": {
+          "x": 0.812753,
+          "y": 0.262226,
+          "z": 0.5202596,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 442.925385,
+        "sqrMagnitude": 196182.9
+      },
+      "inv_id": 21,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Dynamic/ChestOfDrawers/Drawer1/IR_Battery01 (1)",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_a96b4bba52b141409208bb78b3ad3af5": {
+      "position": {
+        "x": 27.3268,
+        "y": 1.53486884,
+        "z": 204.1046,
+        "normalized": {
+          "x": 0.132698476,
+          "y": 0.007453297,
+          "z": 0.991128445,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 205.931534,
+        "sqrMagnitude": 42407.7969
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 359.989471,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.6000112,
+          "y": 0.799991548,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.6000113,
+            "y": 0.7999916,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 449.991577,
+        "sqrMagnitude": 202492.422
+      },
+      "inv_id": 33,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/I_Key03",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_db54ab6fbb3c4065a49057a4ac1aeb62": {
+      "position": {
+        "x": 13.2656107,
+        "y": 0.885798931,
+        "z": 200.746338,
+        "normalized": {
+          "x": 0.065937005,
+          "y": 0.004402883,
+          "z": 0.997814,
+          "normalized": {
+            "x": 0.06593701,
+            "y": 0.00440288335,
+            "z": 0.9978141,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.9999999,
+          "sqrMagnitude": 0.9999998
+        },
+        "magnitude": 201.186127,
+        "sqrMagnitude": 40475.8555
+      },
+      "rotation": {
+        "x": 1.49954567E-05,
+        "y": 255.000122,
+        "z": 2.89717559E-06,
+        "normalized": {
+          "x": 5.88056857E-08,
+          "y": 1.0,
+          "z": 1.13614673E-08,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 255.000122,
+        "sqrMagnitude": 65025.0625
+      },
+      "inv_id": 16,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Dynamic/ChestOfDrawers/Drawer1/IC_OilBottle",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_55eabd693e8a46afb32cd83f0bdac4de": {
+      "position": {
+        "x": 40.1746941,
+        "y": 1.03939044,
+        "z": 164.597046,
+        "normalized": {
+          "x": 0.237113684,
+          "y": 0.00613455055,
+          "z": 0.971462548,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 169.4322,
+        "sqrMagnitude": 28707.2734
+      },
+      "rotation": {
+        "x": 85.31416,
+        "y": 155.759186,
+        "z": 95.72569,
+        "normalized": {
+          "x": 0.4228719,
+          "y": 0.772042751,
+          "z": 0.474478126,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 201.749435,
+        "sqrMagnitude": 40702.8359
+      },
+      "inv_id": 19,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IC_Syringe (1)",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_4db07dc366bf4e05a56655b5759e3a0d": {
+      "position": {
+        "x": 37.83986,
+        "y": 1.203203,
+        "z": 163.55,
+        "normalized": {
+          "x": 0.2254054,
+          "y": 0.007167269,
+          "z": 0.974238634,
+          "normalized": {
+            "x": 0.22540541,
+            "y": 0.00716726948,
+            "z": 0.9742387,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 167.87468,
+        "sqrMagnitude": 28181.9063
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 29.9991684,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.948685944,
+          "y": 0.3162199,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 94.8680649,
+        "sqrMagnitude": 8999.95
+      },
+      "inv_id": 19,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IC_Syringe",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_c1160510dfdf4318b680877eb2ea0a0d": {
+      "position": {
+        "x": 37.6439667,
+        "y": 1.18631709,
+        "z": 163.594162,
+        "normalized": {
+          "x": 0.22424,
+          "y": 0.00706673041,
+          "z": 0.9745083,
+          "normalized": {
+            "x": 0.22424002,
+            "y": 0.007066731,
+            "z": 0.974508345,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 167.87355,
+        "sqrMagnitude": 28181.5273
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 104.999435,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.932005346,
+          "y": 0.36244458,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 289.6979,
+        "sqrMagnitude": 83924.88
+      },
+      "inv_id": 12,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Gauze",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_15570ddf358240ed9cb4c8944c43d563": {
+      "position": {
+        "x": 39.91033,
+        "y": 1.258107,
+        "z": 164.812027,
+        "normalized": {
+          "x": 0.235347912,
+          "y": 0.00741895242,
+          "z": 0.9718828,
+          "normalized": {
+            "x": 0.235347927,
+            "y": 0.007418953,
+            "z": 0.9718829,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 169.580139,
+        "sqrMagnitude": 28757.4219
+      },
+      "rotation": {
+        "x": 273.288971,
+        "y": 190.6477,
+        "z": 215.318512,
+        "normalized": {
+          "x": 0.6888521,
+          "y": 0.480546534,
+          "z": 0.542731762,
+          "normalized": {
+            "x": 0.688852131,
+            "y": 0.480546564,
+            "z": 0.5427318,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 396.731,
+        "sqrMagnitude": 157395.469
+      },
+      "inv_id": 18,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Medicine",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_83dd198e5c0341b388a03d2a747880b7": {
+      "position": {
+        "x": 37.754,
+        "y": 1.18631709,
+        "z": 163.751,
+        "normalized": {
+          "x": 0.224657908,
+          "y": 0.00705926539,
+          "z": 0.974412143,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 168.051071,
+        "sqrMagnitude": 28241.1641
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 224.999619,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.7682218,
+          "y": 0.640183747,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.768221855,
+            "y": 0.6401838,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 351.461,
+        "sqrMagnitude": 123524.828
+      },
+      "inv_id": 12,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Gauze (1)",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_85ba3365686f4c219ffd565d7ca62bdc": {
+      "position": {
+        "x": 32.7063255,
+        "y": 1.47880077,
+        "z": 189.575089,
+        "normalized": {
+          "x": 0.170007721,
+          "y": 0.00768681755,
+          "z": 0.9854127,
+          "normalized": {
+            "x": 0.170007735,
+            "y": 0.007686818,
+            "z": 0.9854128,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 192.381409,
+        "sqrMagnitude": 37010.6055
+      },
+      "rotation": {
+        "x": 358.8565,
+        "y": 180.0283,
+        "z": 180.091324,
+        "normalized": {
+          "x": 0.8155386,
+          "y": 0.409132957,
+          "z": 0.4092762,
+          "normalized": {
+            "x": 0.815538645,
+            "y": 0.409133,
+            "z": 0.409276217,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 440.023956,
+        "sqrMagnitude": 193621.078
+      },
+      "inv_id": 30,
+      "inv_amount": 1,
+      "weapon_id": 4,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IA_Axe",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_260829e5e7c048cd9237ba8013dc45f0": {
+      "position": {
+        "x": 13.1016273,
+        "y": 1.41882253,
+        "z": 200.692825,
+        "normalized": {
+          "x": 0.06514171,
+          "y": 0.007054431,
+          "z": 0.997851133,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 201.125015,
+        "sqrMagnitude": 40451.2734
+      },
+      "rotation": {
+        "x": 61.4063263,
+        "y": 83.97844,
+        "z": 339.415649,
+        "normalized": {
+          "x": 0.17297481,
+          "y": 0.236557946,
+          "z": 0.956096232,
+          "normalized": {
+            "x": 0.172974825,
+            "y": 0.236557961,
+            "z": 0.9560963,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 355.001556,
+        "sqrMagnitude": 126026.1
+      },
+      "inv_id": 1,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Banana",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_be52f7187fc147d184036c6dcc2c630c": {
+      "position": {
+        "x": 12.9143448,
+        "y": 1.43751574,
+        "z": 200.681564,
+        "normalized": {
+          "x": 0.06421795,
+          "y": 0.007148199,
+          "z": 0.9979103,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 201.1018,
+        "sqrMagnitude": 40441.9375
+      },
+      "rotation": {
+        "x": 275.9421,
+        "y": 9.122556,
+        "z": 350.344666,
+        "normalized": {
+          "x": 0.6186224,
+          "y": 0.0204514544,
+          "z": 0.7854222,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 446.059021,
+        "sqrMagnitude": 198968.656
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Items/IH_Apple",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_5006bbf2865748eeae4fb07bc30d3ba4": {
+      "position": {
+        "x": 44.3550949,
+        "y": 0.88328,
+        "z": 185.323883,
+        "normalized": {
+          "x": 0.23276189,
+          "y": 0.00463518174,
+          "z": 0.972522736,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 190.559952,
+        "sqrMagnitude": 36313.0977
+      },
+      "rotation": {
+        "x": 3.38587779E-06,
+        "y": 344.999878,
+        "z": -4.45763135E-07,
+        "normalized": {
+          "x": 9.814142E-09,
+          "y": 1.0,
+          "z": -1.29206756E-09,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 344.999878,
+        "sqrMagnitude": 119024.914
+      },
+      "inv_id": 26,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "object_path": "Level/InteractiveObjects/Dynamic/ChestOfDrawers/Drawer1/IA_Flashlight",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "DynamicObject_3868af079a404c73938fcd78ac6090ab": {
+      "use_type": 0,
+      "door_angle": 3.622255E-06,
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_4d794020a9f54d349b7341ac0d35deed": {
+      "use_type": 0,
+      "lever_angle": 180.0,
+      "is_up": false,
+      "is_holding": false,
+      "hold": false,
+      "invokeUp": false,
+      "isInvoked": false
+    },
+    "DynamicObject_2621b63e9f84476dabbab5c70890e895": {
+      "use_type": 0,
+      "position": {
+        "x": 12.9289989,
+        "y": 201.048645,
+        "normalized": {
+          "x": 0.06417525,
+          "y": 0.9979386,
+          "normalized": {
+            "x": 0.0641752556,
+            "y": 0.9979387,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.9999999,
+          "sqrMagnitude": 0.9999998
+        },
+        "magnitude": 201.463943,
+        "sqrMagnitude": 40587.72
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_676ba7c62a7345ddb5d69755ed3df5bb": {
+      "use_type": 0,
+      "position": {
+        "x": 12.9289989,
+        "y": 201.048645,
+        "normalized": {
+          "x": 0.06417525,
+          "y": 0.9979386,
+          "normalized": {
+            "x": 0.0641752556,
+            "y": 0.9979387,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.9999999,
+          "sqrMagnitude": 0.9999998
+        },
+        "magnitude": 201.463943,
+        "sqrMagnitude": 40587.72
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_a715f02fc6974dcda6f8a0f9091bfc69": {
+      "use_type": 0,
+      "position": {
+        "x": 12.9289989,
+        "y": 201.048645,
+        "normalized": {
+          "x": 0.06417525,
+          "y": 0.9979386,
+          "normalized": {
+            "x": 0.0641752556,
+            "y": 0.9979387,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.9999999,
+          "sqrMagnitude": 0.9999998
+        },
+        "magnitude": 201.463943,
+        "sqrMagnitude": 40587.72
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_a2ab9c4c30ab44fe8d9d10acaa79af99": {
+      "use_type": 0,
+      "position": {
+        "x": 8.190001,
+        "y": 188.959351,
+        "normalized": {
+          "x": 0.043302007,
+          "y": 0.999062061,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 189.136749,
+        "sqrMagnitude": 35772.71
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_a0509218f9ee4434937d2e28e3a704a5": {
+      "use_type": 0,
+      "position": {
+        "x": 8.190001,
+        "y": 188.959351,
+        "normalized": {
+          "x": 0.043302007,
+          "y": 0.999062061,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 189.136749,
+        "sqrMagnitude": 35772.71
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_057f121705c0491982565a491740a943": {
+      "use_type": 0,
+      "position": {
+        "x": 8.190001,
+        "y": 188.959351,
+        "normalized": {
+          "x": 0.043302007,
+          "y": 0.999062061,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 189.136749,
+        "sqrMagnitude": 35772.71
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_f3bde110cb8c4a12bc711c90be58eaaa": {
+      "use_type": 0,
+      "position": {
+        "x": 43.9893456,
+        "y": 185.01,
+        "normalized": {
+          "x": 0.231318668,
+          "y": 0.972878,
+          "normalized": {
+            "x": 0.231318682,
+            "y": 0.972878039,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 190.167725,
+        "sqrMagnitude": 36163.76
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_3dd8677f3f0b4046b71d437c559ac62c": {
+      "use_type": 0,
+      "position": {
+        "x": 43.9893456,
+        "y": 185.01,
+        "normalized": {
+          "x": 0.231318668,
+          "y": 0.972878,
+          "normalized": {
+            "x": 0.231318682,
+            "y": 0.972878039,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 190.167725,
+        "sqrMagnitude": 36163.76
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_4ff90a7b66ff497da7b9fc1f37c781b7": {
+      "use_type": 0,
+      "position": {
+        "x": 43.9893456,
+        "y": 185.01,
+        "normalized": {
+          "x": 0.231318668,
+          "y": 0.972878,
+          "normalized": {
+            "x": 0.231318682,
+            "y": 0.972878039,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.9999999
+        },
+        "magnitude": 190.167725,
+        "sqrMagnitude": 36163.76
+      },
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_3a8ff9310b8e4d1eb5cb9c451f071db2": {
+      "use_type": 1,
+      "door_angle": 89.9610062,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "DynamicObject_8c0cf7a6ed164b30a76fe43266757f24": {
+      "use_type": 1,
+      "door_angle": 359.961,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "DynamicObject_078d47ac41e4456baaa08918e54a7982": {
+      "use_type": 1,
+      "door_angle": 89.9607,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "DynamicObject_73fa89a1f2854e2781a503d55bf364d8": {
+      "use_type": 1,
+      "door_angle": 89.9610062,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "DynamicObject_94a64752103843648e418802ca1b417e": {
+      "use_type": 0,
+      "door_angle": 90.1468658,
+      "is_opened": true,
+      "is_locked": false
+    },
+    "DynamicObject_def904e8232545ecb0055e79b76db181": {
+      "use_type": 0,
+      "door_angle": 0.0,
+      "is_opened": false,
+      "is_locked": false
+    },
+    "DynamicObject_80136c8d297b43d0809a0706d155d356": {
+      "use_type": 2,
+      "door_angle": 179.980286,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "DynamicObjectPlank_d46e242f806049b48a1fc0815f01ea81": {
+      "isEnabled": true,
+      "position": {
+        "x": 42.3972473,
+        "y": 2.53935051,
+        "z": 179.886353,
+        "normalized": {
+          "x": 0.229381934,
+          "y": 0.0137386546,
+          "z": 0.9732396,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 184.83255,
+        "sqrMagnitude": 34163.0742
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 0.0398351438,
+        "z": 0.0,
+        "normalized": {
+          "x": 1.0,
+          "y": 0.000147537576,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "DynamicObjectPlank_6f574143c6894da68d431c7482efb81f": {
+      "isEnabled": true,
+      "position": {
+        "x": 42.41696,
+        "y": 2.042,
+        "z": 179.886337,
+        "normalized": {
+          "x": 0.229490638,
+          "y": 0.011047936,
+          "z": 0.9732482,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 184.8309,
+        "sqrMagnitude": 34162.46
+      },
+      "rotation": {
+        "x": 276.938629,
+        "y": 270.019775,
+        "z": 90.00007,
+        "normalized": {
+          "x": 0.6973645,
+          "y": 0.679942,
+          "z": 0.226630911,
+          "normalized": {
+            "x": 0.697364569,
+            "y": 0.6799421,
+            "z": 0.226630926,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 397.121765,
+        "sqrMagnitude": 157705.7
+      },
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "DynamicObjectPlank_10186ba253b2440ebe688d496bfc7c14": {
+      "isEnabled": true,
+      "position": {
+        "x": 42.39696,
+        "y": 1.539,
+        "z": 179.886353,
+        "normalized": {
+          "x": 0.229394153,
+          "y": 0.008326955,
+          "z": 0.973298,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 184.821457,
+        "sqrMagnitude": 34158.97
+      },
+      "rotation": {
+        "x": 272.915161,
+        "y": 90.02008,
+        "z": 269.999756,
+        "normalized": {
+          "x": 0.6921206,
+          "y": 0.228293478,
+          "z": 0.6847271,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 394.317352,
+        "sqrMagnitude": 155486.172
+      },
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "DynamicObjectPlank_51abc33f51d4484f976784242ca2e1eb": {
+      "isEnabled": true,
+      "position": {
+        "x": 42.36896,
+        "y": 0.9899999,
+        "z": 179.886353,
+        "normalized": {
+          "x": 0.229255274,
+          "y": 0.005356815,
+          "z": 0.9733516,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 184.811279,
+        "sqrMagnitude": 34155.207
+      },
+      "rotation": {
+        "x": 279.059021,
+        "y": 90.01984,
+        "z": 270.0,
+        "normalized": {
+          "x": 0.700107753,
+          "y": 0.2258432,
+          "z": 0.6773803,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 398.5944,
+        "sqrMagnitude": 158877.5
+      },
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "DynamicObjectPlank_bca4489eb6a841768da53a41feb511e2": {
+      "isEnabled": true,
+      "position": {
+        "x": 42.39696,
+        "y": 0.439,
+        "z": 179.886353,
+        "normalized": {
+          "x": 0.229401454,
+          "y": 0.002375341,
+          "z": 0.973329,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 184.815567,
+        "sqrMagnitude": 34156.793
+      },
+      "rotation": {
+        "x": 270.019775,
+        "y": 0.0398399681,
+        "z": 0.0,
+        "normalized": {
+          "x": 1.0,
+          "y": 0.000147544633,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.019775,
+        "sqrMagnitude": 72910.68
+      },
+      "rigidbody_kinematic": true,
+      "rigidbody_gravity": false,
+      "rigidbody_freeze": false
+    },
+    "InteractiveItem_3cae24c10281462b9dd0e7ee75df7f00": {
+      "position": {
+        "x": 38.788,
+        "y": 0.0243351348,
+        "z": 183.769,
+        "normalized": {
+          "x": 0.206519216,
+          "y": 0.000129567721,
+          "z": 0.97844255,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 187.817871,
+        "sqrMagnitude": 35275.55
+      },
+      "rotation": {
+        "x": 4.78113252E-05,
+        "y": 329.999847,
+        "z": 90.00007,
+        "normalized": {
+          "x": 1.3977774E-07,
+          "y": 0.964763761,
+          "z": 0.2631177,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 342.0525,
+        "sqrMagnitude": 116999.914
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_3ec7e95eccca4ba1a780059923824afe": {
+      "position": {
+        "x": 38.6181755,
+        "y": 0.029960433,
+        "z": 181.783768,
+        "normalized": {
+          "x": 0.207802758,
+          "y": 0.000161215823,
+          "z": 0.978170753,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 185.84053,
+        "sqrMagnitude": 34536.7031
+      },
+      "rotation": {
+        "x": 3.32971722E-05,
+        "y": 14.9997072,
+        "z": 90.00011,
+        "normalized": {
+          "x": 3.6493455E-07,
+          "y": 0.164395675,
+          "z": 0.9863945,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 91.24149,
+        "sqrMagnitude": 8325.01
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_a453963964a2464c84e0cc1c6e5e34a7": {
+      "position": {
+        "x": 39.417,
+        "y": 0.02149861,
+        "z": 184.543,
+        "normalized": {
+          "x": 0.208880886,
+          "y": 0.0001139267,
+          "z": 0.977941155,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 188.705627,
+        "sqrMagnitude": 35609.8164
+      },
+      "rotation": {
+        "x": 6.812795E-05,
+        "y": -0.000222599148,
+        "z": 90.0000839,
+        "normalized": {
+          "x": 7.569765E-07,
+          "y": -2.4733215E-06,
+          "z": 1.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 90.0000839,
+        "sqrMagnitude": 8100.015
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_5d173e3d17b645f5afaa8bbdfe93f0e7": {
+      "position": {
+        "x": 39.029,
+        "y": 0.0219015721,
+        "z": 183.517,
+        "normalized": {
+          "x": 0.208020091,
+          "y": 0.000116732874,
+          "z": 0.978124559,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 187.621292,
+        "sqrMagnitude": 35201.75
+      },
+      "rotation": {
+        "x": 1.96757719E-05,
+        "y": -0.000903931,
+        "z": 90.00007,
+        "normalized": {
+          "x": 2.18619519E-07,
+          "y": -1.004367E-05,
+          "z": 1.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 90.00007,
+        "sqrMagnitude": 8100.012
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_afa2eeb5d4544c83bdd499a878ad632e": {
+      "position": {
+        "x": 15.1747,
+        "y": 1.45516872,
+        "z": 185.5793,
+        "normalized": {
+          "x": 0.08149487,
+          "y": 0.007814902,
+          "z": 0.9966431,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 186.204361,
+        "sqrMagnitude": 34672.0664
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": 173.715912,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.840973735,
+          "y": 0.541076,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 321.0564,
+        "sqrMagnitude": 103077.219
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_d82e7f2003564666b8eceb4c2a6ea17b": {
+      "position": {
+        "x": 8.335,
+        "y": 1.45516837,
+        "z": 199.294,
+        "normalized": {
+          "x": 0.04178499,
+          "y": 0.0072950446,
+          "z": 0.99909997,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 199.473541,
+        "sqrMagnitude": 39789.69
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 90.00058,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.7071045,
+          "y": 0.707109034,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.707104564,
+            "y": 0.7071091,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 127.279633,
+        "sqrMagnitude": 16200.1045
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveItem_687d127b4b4f4a07a325022969d40515": {
+      "position": {
+        "x": 12.503,
+        "y": 1.53054833,
+        "z": 200.573,
+        "normalized": {
+          "x": 0.06221384,
+          "y": 0.00761587545,
+          "z": 0.9980338,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 200.96814,
+        "sqrMagnitude": 40388.1953
+      },
+      "rotation": {
+        "x": 270.0,
+        "y": -0.000149720348,
+        "z": 0.0,
+        "normalized": {
+          "x": 1.0,
+          "y": -5.54519829E-07,
+          "z": 0.0,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 270.0,
+        "sqrMagnitude": 72900.0
+      },
+      "inv_id": 0,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveLight_cea594af78ee4d52b5272ab3592d3b73": {
+      "isPoweredOn": true,
+      "defaultPower": true,
+      "lightType": 0
+    },
+    "InteractiveLight_b0e6998339c6464fb5fe80fab6c6ad94": {
+      "isPoweredOn": true,
+      "defaultPower": true,
+      "lightType": 0
+    },
+    "InteractiveLight_499e1f3656e74219a2eb95b237efb3f2": {
+      "isPoweredOn": true,
+      "defaultPower": true,
+      "lightType": 1
+    },
+    "Radio_29e82366b6a842e89c654928df9bb96c": {
+      "isOn": false,
+      "tunerPos": 0.0072,
+      "lastChannel": 0,
+      "playbackTimes": [
+        0.0,
+        0.0
+      ]
+    },
+    "InteractiveLight_03ea38a99a9c49f5ad70b6c8d56b3769": {
+      "isPoweredOn": false,
+      "defaultPower": false,
+      "lightType": 1
+    },
+    "InteractiveLight_a07405b0957841039cd67e48daf99ad8": {
+      "isPoweredOn": false,
+      "defaultPower": true,
+      "lightType": 1
+    },
+    "InteractiveLight_4012c07fe4b44d29b9e2118e440468f1": {
+      "isPoweredOn": false,
+      "defaultPower": true,
+      "lightType": 1
+    },
+    "InteractiveLight_006887d7ec4944b6bd51d0251711b7c1": {
+      "isPoweredOn": false,
+      "defaultPower": true,
+      "lightType": 1
+    },
+    "VCRPlayer_a2fed42f3df44092b8e1af352bd17676": {
+      "vhs_tape": 0,
+      "vhs_tape_tag": null,
+      "vhs_tape_desc": null,
+      "vhs_tape_texpath": null,
+      "player_isOn": false,
+      "player_canEject": false,
+      "player_canInsert": true,
+      "player_isEjecting": false,
+      "player_isRewinding": false,
+      "player_isTapeEnded": false,
+      "player_isStarted": false,
+      "player_duration": 0,
+      "player_secdiff": 0,
+      "player_minutes": 0,
+      "player_seconds": 0,
+      "vcr_tv": {
+        "tv_isOn": false,
+        "tv_lastframe": -1
+      }
+    },
+    "InteractiveItem_a4b980260a434722ba954bae22ea5837": {
+      "position": {
+        "x": 36.6889,
+        "y": 1.88687181,
+        "z": 163.46022,
+        "normalized": {
+          "x": 0.21898894,
+          "y": 0.0112623721,
+          "z": 0.975662351,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 167.537689,
+        "sqrMagnitude": 28068.8789
+      },
+      "rotation": {
+        "x": 272.6141,
+        "y": -0.000112319736,
+        "z": 269.999634,
+        "normalized": {
+          "x": 0.7105056,
+          "y": -2.927354E-07,
+          "z": 0.703691542,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 383.6903,
+        "sqrMagnitude": 147218.25
+      },
+      "inv_id": 35,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": null,
+      "stateDisable": false,
+      "floatingIcon": true
+    },
+    "ExamineObjectAnimation_273ef95ac96e41a08cc3c61c6ad97c22": {
+      "isPlayed": false,
+      "rotation": {
+        "x": 270.0,
+        "y": 270.000183,
+        "z": 0.0,
+        "normalized": {
+          "x": 0.707106531,
+          "y": 0.707107,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.7071066,
+            "y": 0.707107067,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 0.99999994,
+          "sqrMagnitude": 0.99999994
+        },
+        "magnitude": 381.8378,
+        "sqrMagnitude": 145800.1
+      }
+    },
+    "InteractiveItem_cf37f948a26142da96844698578cbb94": {
+      "inv_id": 35,
+      "inv_amount": 1,
+      "weapon_id": 0,
+      "examined": false,
+      "customData": {
+        "data": {
+          "Value": "Monster at woods!",
+          "Tag": "vhs_monster",
+          "Path": "Textures/VHS/VHS_Monster",
+          "object_path": "Level/InteractiveObjects/Interact/OldChest/OldChest_Body/VHSTape01",
+          "object_scene": "TheHouse Demo",
+          "CanUse": true,
+          "CanCombine": true
+        }
+      },
+      "stateDisable": true,
+      "floatingIcon": true
+    },
+    "InteractiveLight_f2e8efcc85db473186a79896fb1ab539": {
+      "isPoweredOn": false,
+      "defaultPower": false,
+      "lightType": 1
+    },
+    "TriggerHint_f86912a6e0c741dbb595979c13d8a591": {
+      "enabled": true,
+      "isShown": false
+    },
+    "TriggerHint_d6f6baa2d64a49f6a7371214ea1db244": {
+      "enabled": true,
+      "isShown": true
+    },
+    "DynamicObject_d0a3b5810a84435283c22461d987ae2c": {
+      "use_type": 1,
+      "door_angle": -0.000309153023,
+      "is_opened": false,
+      "is_locked": true
+    },
+    "TriggerHint_96952566d43d497288e7a31c22efd36c": {
+      "enabled": false,
+      "isShown": false
+    },
+    "TriggerEvent_bb98af5239524dc8b08343985d74b244": {
+      "isTriggered": false,
+      "triggerCount": 0
+    },
+    "SaveObject_1d88d294d5d1429ab8639abf0d88127b": {
+      "active_state": {
+        "activeSelf": false
+      }
+    },
+    "SaveObject_48c752175abd49a9b501646801bf0819": {
+      "active_state": {
+        "activeSelf": false
+      }
+    },
+    "SaveObject_4a76464360f94f0fa1ac828e662d6268": {
+      "active_state": {
+        "activeSelf": true
+      }
+    },
+    "SaveObject_df46d8263907442986de2b29148e6f1d": {
+      "active_state": {
+        "activeSelf": true
+      }
+    },
+    "TriggerHint_a334436b217d4950b883d3a6dec40519": {
+      "enabled": true,
+      "isShown": true
+    },
+    "TriggerEvent_7bdec3595251490ea49b0a45cf7a4287": {
+      "isTriggered": false,
+      "triggerCount": 0
+    },
+    "TriggerEvent_574f786b751444fb9136e36821caa9c4": {
+      "isTriggered": false,
+      "triggerCount": 0
+    },
+    "AmbienceZone_9167359fb9354ae5a3d399ceee8e97fc": {
+      "ZoneTriggered": false
+    },
+    "AmbienceZone_09b4f5930197487c94157dccc7a38dbf": {
+      "ZoneTriggered": false
+    },
+    "AmbienceZone_c6d2ec4b8b604ae5a0a21e05f6ae9ed2": {
+      "ZoneTriggered": true
+    },
+    "AmbienceZone_f8a9a914eafa4443b07dda8e68f24cc8": {
+      "ZoneTriggered": false
+    },
+    "SaveObject_230440ee81ca444ca8e6c669f68e8ceb": {
+      "active_state": {
+        "activeSelf": true
+      }
+    },
+    "AnimationPlayEvent_b0f247a497674562af1bee65b17e482e": {
+      "isPlayed": false
+    },
+    "ItemEvent_28817abc741a462698ce4392a90bc380": {
+      "eventExecuted": false
+    },
+    "TriggerObjective_bfba371ee0fb496ca6e1fa3beed05832": {
+      "isTriggered": false
+    },
+    "Electricity_5828e60677b847a1aa1a5f166ba02ae7": {
+      "isPoweredOn": false
+    },
+    "TriggerObjective_72d984b48b2844a987d32b9bd4f9df9c": {
+      "isTriggered": false
+    },
+    "TriggerObjective_1183ac2e38204bf38d494d9f331409ad": {
+      "isTriggered": false
+    },
+    "TriggerObjective_7198a18b64984d6aa53bff708f450a90": {
+      "isTriggered": true
+    },
+    "TriggerObjective_727efae442f242e2838bc5a68258c451": {
+      "isTriggered": true
+    },
+    "TriggerObjective_2c3096c07661495a880d06531a4ec475": {
+      "isTriggered": false
+    },
+    "TriggerObjective_dc4cd16791bf40098a982374a825d48f": {
+      "isTriggered": false
+    },
+    "TriggerAnimation_5e62c56edec64866bd2c0f31445dd45c": {
+      "isPlayed": true
+    },
+    "JumpscareTrigger_906a905ca0c84fceb6f35b3b3c12d0f6": {
+      "isPlayed": true
+    },
+    "JumpscareTrigger_1c2419e7c97243028d7820cb56dbc974": {
+      "isPlayed": false
+    },
+    "JumpscareTrigger_4968d213a6f64f0a8e263a605fd807a8": {
+      "isPlayed": false
+    },
+    "TriggerAnimation_ad2a2652c8c94ffa8408879998ceed15": {
+      "isPlayed": false
+    },
+    "Autosave_77d617ea2a8744c89b2cc5c9aa32a9ba": {
+      "isSaved": true
+    }
+  }
+}

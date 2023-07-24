@@ -1,0 +1,59 @@
+Converting script [1 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Misc/Screenshot.cs]
+	Fragments : 1
+		[ 0] : Line:   31	InputMethod   GetKeyDown          	(screesnhotKey)
+
+Converting script [2 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/!Managers/Main Scripts/HFPS_GameManager.cs]
+	Fragments : 10
+		[ 0] : Line:  252	Other mod.	[Cursor.visible]
+		[ 1] : Line:  253	Other mod.	[Cursor.lockState]
+		[ 2] : Line:  259	Other mod.	[Cursor.visible]
+		[ 3] : Line:  260	Other mod.	[Cursor.lockState]
+		[ 4] : Line:  264	Other mod.	[Cursor.visible]
+		[ 5] : Line:  265	Other mod.	[Cursor.lockState]
+		[ 6] : Line:  632	Other mod.	[Cursor.visible]
+		[ 7] : Line:  633	Other mod.	[Cursor.lockState]
+		[ 8] : Line:  636	Other mod.	[Cursor.visible]
+		[ 9] : Line:  637	Other mod.	[Cursor.lockState]
+
+Converting script [3 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/ArmsItems/Weapon/WeaponController.cs]
+	Fragments : 1
+		[ 0] : Line:  350	Other mod.	[Cursor.lockState]
+
+Converting script [4 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/BreathAnim.cs]
+	Fragments : 1
+		[ 0] : Line:   13	InputMethod   GetButton           	("Fire2")
+
+Converting script [5 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/DelayEffect.cs]
+	Fragments : 1
+		[ 0] : Line:   34	Other mod.	[Cursor.lockState]
+
+Converting script [6 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Controller/MouseLook.cs]
+	Fragments : 3
+		[ 0] : Line:   88	Other mod.	[Cursor.visible]
+		[ 1] : Line:   89	Other mod.	[Cursor.lockState]
+		[ 2] : Line:  159	Other mod.	[Cursor.lockState]
+
+Converting script [7 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/UI/Menu/OptionsController.cs]
+	Fragments : 4
+		[ 0] : Line:  602	Other mod.	[Screen.fullScreenMode]
+		[ 1] : Line:  878	Other mod.	[Screen.SetResolution(resolution.width, resolution.height, fullScreenMode, resolution.refreshRate)]
+		[ 2] : Line:  882	Other mod.	[Screen.SetResolution(resolution.width, resolution.height, fullScreenMode)]
+		[ 3] : Line:  889	Other mod.	[Screen.fullScreenMode]
+
+Converting script [8 / 8]	[/Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/CameraShake/CameraShaker.cs]
+	Fragments : 1
+		[ 0] : Line:   66	InputMethod   GetMouseButtonDown  	(0)
+
+
+8 scripts modified!
+Overwriting actual scripts...
+	[0 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Misc/Screenshot.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Misc/Screenshot.cs]
+	[1 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/!Managers/Main Scripts/HFPS_GameManager.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/!Managers/Main Scripts/HFPS_GameManager.cs]
+	[2 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/ArmsItems/Weapon/WeaponController.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/ArmsItems/Weapon/WeaponController.cs]
+	[3 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/BreathAnim.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/BreathAnim.cs]
+	[4 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/DelayEffect.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/DelayEffect.cs]
+	[5 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Controller/MouseLook.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Controller/MouseLook.cs]
+	[6 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/UI/Menu/OptionsController.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/UI/Menu/OptionsController.cs]
+	[7 / 8] from  [/Users/noor/development/unity/HorrorFPS/CF2-Data/Script-Backups/2023-07-19-18-28/Assets-After//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/CameraShake/CameraShaker.cs] to [/Users/noor/development/unity/HorrorFPS/Assets//Horror FPS KIT/HFPS Assets/Content/Scripts/Core/Base/Player/Camera/CameraShake/CameraShaker.cs]
+
+Overwriting COMPLETED!
