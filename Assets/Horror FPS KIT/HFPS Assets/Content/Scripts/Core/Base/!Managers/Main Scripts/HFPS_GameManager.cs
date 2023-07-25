@@ -196,11 +196,18 @@ namespace HFPS.Systems
         private string ShowCursorText;
         #endregion
 
-        private InputRigHandler inputRigHandler;
+        [HideInInspector]
+        public InputRigHandler inputRigHandler;
 
         void Awake()
         {
             inputRigHandler = ControlFreak2.CF2Input.activeRig.GetComponent<InputRigHandler>();
+
+            if (gamePanels.PaperReadPanel.GetComponent<DeselectPaper>() == null)
+            {
+                gamePanels.PaperReadPanel.GetComponent<Image>().raycastTarget = true;
+                gamePanels.PaperReadPanel.AddComponent<DeselectPaper>();
+            }
 
             InputHandler.OnInputsUpdated += OnInputsUpdated;
             TextsSource.Subscribe(OnInitTexts);
