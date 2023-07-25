@@ -194,10 +194,14 @@ namespace HFPS.Systems
         private string RotateText;
         private string ThrowText;
         private string ShowCursorText;
-#endregion
+        #endregion
+
+        private InputRigHandler inputRigHandler;
 
         void Awake()
         {
+            inputRigHandler = ControlFreak2.CF2Input.activeRig.GetComponent<InputRigHandler>();
+
             InputHandler.OnInputsUpdated += OnInputsUpdated;
             TextsSource.Subscribe(OnInitTexts);
 
@@ -556,6 +560,7 @@ namespace HFPS.Systems
 
                 //Lock Joystick
                 ControlFreak2.CF2Input.activeRig.ShowOrHideTouchControls(MobileInputRig, false);
+                inputRigHandler.TogglePlayerControls(Controller);
             }
 
             //Show Cursor
