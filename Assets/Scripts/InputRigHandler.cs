@@ -87,7 +87,17 @@ public class InputRigHandler : MonoBehaviour
         }
     }
 
-    internal void TogglePlayerControls(bool enabled)
+    internal void ToggleRotation(bool enabled)
+    {
+        rotate.SetActive(enabled);
+    }
+
+    internal void ToggleInteract(bool enabled)
+    {
+        use.SetActive(enabled);
+    }
+
+    internal void TogglePlayerControls(bool enabled, bool interact)
     {
         joystick.SetActive(enabled);
         jump.SetActive(enabled);
@@ -98,7 +108,8 @@ public class InputRigHandler : MonoBehaviour
         reload.SetActive(enabled);
         inventory.SetActive(enabled);
         pause.SetActive(enabled);
-        rotate.SetActive(enabled);
+
+        use.SetActive(interact);
     }
 
     internal void ToggleExamineManager(bool enabled)
