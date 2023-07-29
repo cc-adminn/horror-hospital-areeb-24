@@ -615,21 +615,6 @@ namespace HFPS.Player
 
             if (isInspect) firstExamine.isExamined = true;
 
-            if (!isPaper)
-            {
-                if (!string.IsNullOrEmpty(firstExamine.examineTitle))
-                    ShowExamineText(firstExamine);
-
-                ShowExamineUI();
-            }
-            else
-            {
-                bool canRotate = firstExamine.examineRotate != InteractiveItem.ExamineRotate.None;
-                bool canRead = !string.IsNullOrEmpty(firstExamine.paperText);
-
-                gameManager.ShowPaperExamineSprites(bp_Use, canRotate, canRead, ReadText);
-            }
-
             if (firstExamine.examineSound)
             {
                 Utilities.PlayOneShot2D(transform.position, firstExamine.examineSound, firstExamine.examineVolume);
@@ -700,12 +685,28 @@ namespace HFPS.Player
             gameManager.isExamining = true;
             gameManager.HideSprites(0);
             gameManager.LockPlayerControls(true, false, false, false, 1, true, true, 1);
+            
             GetComponent<ScriptManager>().ScriptEnabledGlobal = false;
             firstDistance = firstExamine.examineDistance.value;
             itemSwitcher.FreeHands(true);
 
             firstExamine.gameObject.SendMessage("OnExamine", SendMessageOptions.DontRequireReceiver);
             isObjectHeld = true;
+
+            if (!isPaper)
+            {
+                if (!string.IsNullOrEmpty(firstExamine.examineTitle))
+                    ShowExamineText(firstExamine);
+
+                ShowExamineUI();
+            }
+            else
+            {
+                bool canRotate = firstExamine.examineRotate != InteractiveItem.ExamineRotate.None;
+                bool canRead = !string.IsNullOrEmpty(firstExamine.paperText);
+
+                gameManager.ShowPaperExamineSprites(bp_Use, canRotate, canRead, ReadText);
+            }
         }
 
         void SetFloatingIconsVisible(bool visible)

@@ -567,7 +567,7 @@ namespace HFPS.Systems
 
                 //Lock Joystick
                 ControlFreak2.CF2Input.activeRig.ShowOrHideTouchControls(MobileInputRig, false);
-                inputRigHandler.TogglePlayerControls(Controller);
+                inputRigHandler.TogglePlayerControls(Controller, Interact);
             }
 
             //Show Cursor
@@ -793,6 +793,8 @@ namespace HFPS.Systems
         /// <param name="ControlName">Name of the Control</param>
         private void SetKey(Transform ControlObj, string BindingPath, string ControlName = "Null")
         {
+            Debug.Log(string.Format("ControlObj: {0} BindingPath: {1} ControlName: {2}", ControlObj.gameObject, BindingPath, ControlName));
+
             ControlObj.GetChild(1).GetComponent<Text>().text = ControlName;
 
             if (!string.IsNullOrEmpty(BindingPath))
@@ -1106,6 +1108,8 @@ namespace HFPS.Systems
                 SetKey(helpUI.HelpButton2.transform, BindingPath, ExamineText);
             else
                 helpUI.HelpButton2.SetActive(false);
+
+            inputRigHandler.ToggleInteract(Read);
 
             if (Rotate)
                 SetKey(helpUI.HelpButton3.transform, bindPath_Rotate, RotateText);
