@@ -29,11 +29,11 @@ namespace ThunderWire.Helpers
             switch (path)
             {
                 case SerializationPath.GamePath:
-                    return Application.dataPath + "/";
+                    return Application.persistentDataPath + "/";
                 case SerializationPath.GameDataPath:
-                    return Application.dataPath + "/Data/";
+                    return Application.persistentDataPath + "/Data/";
                 case SerializationPath.GameSavesPath:
-                    return Application.dataPath + "/Data/SavedGame/";
+                    return Application.persistentDataPath + "/Data/SavedGame/";
                 case SerializationPath.DocumentsGamePath:
                     return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Application.productName + "/";
                 case SerializationPath.DocumentsDataPath:
