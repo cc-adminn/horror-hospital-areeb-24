@@ -237,19 +237,10 @@ namespace HFPS.Systems
             }
 
             currentScene = SceneManager.GetActiveScene();
-            SetupUIControls();
-        }
-
-        void SetupUIControls()
-        {
-            //InputHandler.GetInputAction("Pause").performed += OnPause;
-            //InputHandler.GetInputAction("Inventory").performed += OnInventory;
         }
 
         void OnDestroy()
         {
-            //InputHandler.GetInputAction("Pause").performed -= OnPause;
-            //InputHandler.GetInputAction("Inventory").performed -= OnInventory;
             InputHandler.OnInputsUpdated -= OnInputsUpdated;
             colorGrading.saturation.Override(0);
         }
@@ -567,7 +558,7 @@ namespace HFPS.Systems
 
                 //Lock Joystick
                 ControlFreak2.CF2Input.activeRig.ShowOrHideTouchControls(MobileInputRig, false);
-                inputRigHandler.TogglePlayerControls(Controller, Interact);
+                inputRigHandler.TogglePlayerControls(Controller);
             }
 
             //Show Cursor
@@ -799,17 +790,25 @@ namespace HFPS.Systems
 
             if (!string.IsNullOrEmpty(BindingPath))
             {
-                CrossPlatformSprites sprites = InputHandler.GetSprites();
-
-                if (sprites != null)
+                var rigSprite = inputRigHandler.GetSprite(BindingPath, ControlName);
+                if (rigSprite)
                 {
-                    if (sprites.GetSprite(BindingPath) is var sprite && sprite != null)
+                    ControlObj.GetChild(0).GetComponent<Image>().sprite = rigSprite;
+                }
+                else
+                {
+                    CrossPlatformSprites sprites = InputHandler.GetSprites();
+
+                    if (sprites != null)
                     {
-                        ControlObj.GetChild(0).GetComponent<Image>().sprite = sprite;
-                    }
-                    else
-                    {
-                        Debug.LogError("[Control Sprite] The specified sprite was not found!");
+                        if (sprites.GetSprite(BindingPath) is var sprite && sprite != null)
+                        {
+                            ControlObj.GetChild(0).GetComponent<Image>().sprite = sprite;
+                        }
+                        else
+                        {
+                            Debug.LogError("[Control Sprite] The specified sprite was not found!");
+                        }
                     }
                 }
 

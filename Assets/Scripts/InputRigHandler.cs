@@ -1,13 +1,20 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using ControlFreak2;
 using HFPS.Player;
 using UnityEngine;
 using static HFPS.Systems.Inventory;
-
+//var btn = shortcuts.GetChild(0).gameObject.GetComponent<TouchButton>();
+//btn.pressBinding.axisList[0].SetAxis("UseItem2", true);
 [RequireComponent(typeof(InputRig))]
 public class InputRigHandler : MonoBehaviour
 {
+    [Serializable]
+    public sealed class ShortcutSettings
+    {
+        public bool enableShortcuts = true;
+        public Sprite flashlightSprite, lanternSprite, axeSprite, pistolSprite, shotgunSprite;
+    }
 
     private GameObject joystick;
     private GameObject jump;
@@ -26,6 +33,9 @@ public class InputRigHandler : MonoBehaviour
     private Transform shortcuts;
     private ExamineManager examineManager;
 
+    [SerializeField]
+    private ShortcutSettings shortcutSettings = new();
+    
     private void Awake()
     {
         var rigPanel = CF2Input.activeRig.transform.GetChild(0).GetChild(0);
@@ -53,16 +63,33 @@ public class InputRigHandler : MonoBehaviour
         examineManager = ExamineManager.Instance;
     }
 
+    private int visibleShortcutCount = 0;
     internal void UpdateShortcutKeys(List<ShortcutModel> shortcutModels)
     {
-        for (int i = 0; i < shortcuts.childCount; i++)
+        if (!shortcutSettings.enableShortcuts)
         {
-            shortcuts.GetChild(i).gameObject.SetActive(false);
+            return;
         }
 
         if (examineManager.isExamining)
         {
+            for (int i = 0; i < shortcuts.childCount; i++)
+            {
+                shortcuts.GetChild(i).gameObject.SetActive(false);
+            }
+            visibleShortcutCount = 0;
             return;
+        }
+
+        if (visibleShortcutCount == shortcutModels.Count)
+        {
+            return;
+        }
+        visibleShortcutCount = shortcutModels.Count;
+
+        for (int i = 0; i < shortcuts.childCount; i++)
+        {
+            shortcuts.GetChild(i).gameObject.SetActive(false);
         }
 
         foreach (var model in shortcutModels)
@@ -71,19 +98,46 @@ public class InputRigHandler : MonoBehaviour
             {
                 case "UseItem1":
                     shortcuts.GetChild(0).gameObject.SetActive(true);
+                    var sprite = shortcuts.GetChild(0).GetChild(0).GetComponent<TouchButtonSpriteAnimator>();
+                    sprite.SetStateSprite(TouchButtonSpriteAnimator.ControlState.Neutral, GetShortcutSprite(model.item.Title));
                     break;
                 case "UseItem2":
                     shortcuts.GetChild(1).gameObject.SetActive(true);
+                    var sprite2 = shortcuts.GetChild(1).GetChild(0).GetComponent<TouchButtonSpriteAnimator>();
+                    sprite2.SetStateSprite(TouchButtonSpriteAnimator.ControlState.Neutral, GetShortcutSprite(model.item.Title));
                     break;
                 case "UseItem3":
                     shortcuts.GetChild(2).gameObject.SetActive(true);
+                    var sprite3 = shortcuts.GetChild(2).GetChild(0).GetComponent<TouchButtonSpriteAnimator>();
+                    sprite3.SetStateSprite(TouchButtonSpriteAnimator.ControlState.Neutral, GetShortcutSprite(model.item.Title));
                     break;
                 case "UseItem4":
                     shortcuts.GetChild(3).gameObject.SetActive(true);
+                    var sprite4 = shortcuts.GetChild(3).GetChild(0).GetComponent<TouchButtonSpriteAnimator>();
+                    sprite4.SetStateSprite(TouchButtonSpriteAnimator.ControlState.Neutral, GetShortcutSprite(model.item.Title));
                     break;
                 default:
                     break;
             }
+        }
+    }
+
+    Sprite GetShortcutSprite(string Title)
+    {
+        switch (Title)
+        {
+            case "Flashlight":
+                return shortcutSettings.flashlightSprite;
+            case "Shotgun":
+                return shortcutSettings.shotgunSprite;
+            case "Pistol":
+                return shortcutSettings.pistolSprite;
+            case "Axe":
+                return shortcutSettings.axeSprite;
+            case "Oil Lamp":
+                return shortcutSettings.lanternSprite;
+            default:
+                return null;
         }
     }
 
@@ -97,7 +151,7 @@ public class InputRigHandler : MonoBehaviour
         use.SetActive(enabled);
     }
 
-    internal void TogglePlayerControls(bool enabled, bool interact)
+    internal void TogglePlayerControls(bool enabled)
     {
         joystick.SetActive(enabled);
         jump.SetActive(enabled);
@@ -108,8 +162,6 @@ public class InputRigHandler : MonoBehaviour
         reload.SetActive(enabled);
         inventory.SetActive(enabled);
         pause.SetActive(enabled);
-
-        use.SetActive(interact);
     }
 
     internal void ToggleExamineManager(bool enabled)
@@ -127,6 +179,34 @@ public class InputRigHandler : MonoBehaviour
             jump.SetActive(true);
             crouch.SetActive(true);
             prone.SetActive(true);
+        }
+    }
+
+    internal Sprite GetSprite(string BindingPath, string ControlName)
+    {
+        
+        if (BindingPath == "<Keyboard>/1" || BindingPath == "<Keyboard>/2" || BindingPath == "<Keyboard>/3" || BindingPath == "<Keyboard>/4")
+        {
+            switch (ControlName)
+            {
+                case "TO TURN ON OR OFF ":
+                    return shortcutSettings.flashlightSprite;
+                case "EQUIP SHOTGUN":
+                    return shortcutSettings.shotgunSprite;
+                case "EQUIP PISTOL":
+                    return shortcutSettings.pistolSprite;
+                case "EQUIP AXE":
+                    return shortcutSettings.axeSprite;
+                case "LIGHT UP OIL LAMP":
+                    return shortcutSettings.lanternSprite;
+                default:
+                    return null;
+            }
+        }
+        else
+        {
+            //string path = BindingPath + ControlName;
+            return null;
         }
     }
 }

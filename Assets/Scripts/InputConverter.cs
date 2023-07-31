@@ -9,7 +9,7 @@ public class InputConverter
 {
     private static readonly bool isInputRigged = true;
 
-    public static bool EnableShortcutSelection
+    public static bool EnableShortcutBinding
     {
         get
         {
