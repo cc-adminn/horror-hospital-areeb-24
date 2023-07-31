@@ -15,12 +15,12 @@ It's created by Noor Ali. I added Control Freak controls in order to make on-scr
 10. Paper reading
 11. Draggable objects
 12. Rotation of draggable objects
+13. Saving works now
 
 ## Functionalities to fix
 
 1. On demand buttons
 2. Sprites are not accurate
-3. Saving doesn't work on phone
-4. Item switcher has problems
-5. Zoom has conflicts with throw and zoom
-6. Sprites for take and examine works differently in player mode and examine mode
+3. Item switcher has problems
+4. Zoom has conflicts with throw and zoom
+5. Sprites for take and examine works differently in player mode and examine mode
