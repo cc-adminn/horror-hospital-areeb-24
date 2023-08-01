@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/showcase-cf.unity
+    path: Assets/FPS Adapter/Scenes/showcase-cf.unity
     guid: 94a4b4c70a14349e48671e4dadbf9312
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 879dc59d21f31734c95279731f769bef,
