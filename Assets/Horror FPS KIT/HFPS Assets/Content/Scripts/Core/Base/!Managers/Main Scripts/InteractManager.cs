@@ -224,7 +224,7 @@ namespace HFPS.Player
                                 {
                                     if (interactItem.itemType == InteractiveItem.ItemType.OnlyExamine)
                                     {
-                                        gameManager.ShowInteractSprite(1, ExamineText, bp_Pickup);
+                                        gameManager.ShowInteractSprite(2, ExamineText, bp_Pickup);
                                     }
                                     else if (interactItem.itemType == InteractiveItem.ItemType.GenericItem)
                                     {
@@ -245,7 +245,7 @@ namespace HFPS.Player
                                     }
                                     else if (interactItem.examineType == InteractiveItem.ExamineType.Paper)
                                     {
-                                        gameManager.ShowInteractSprite(1, ExamineText, bp_Pickup);
+                                        gameManager.ShowInteractSprite(2, ExamineText, bp_Pickup);
                                     }
                                     else
                                     {
@@ -269,7 +269,7 @@ namespace HFPS.Player
                             {
                                 if (!dragRigidbody.dragAndUse)
                                 {
-                                    gameManager.ShowInteractSprite(1, GrabText, bp_Pickup);
+                                    gameManager.ShowInteractSprite(2, GrabText, bp_Pickup);
                                 }
                                 else if(objectInfo && !string.IsNullOrEmpty(objectInfo.UseText))
                                 {
