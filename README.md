@@ -13,8 +13,8 @@ It's created by Noor Ali. I added Control Freak controls in order to make on-scr
 3. Item switcher has problems
 4. Zoom has conflicts with throw and zoom
 5. Sprites for take and examine works differently in player mode and examine mode
-6. Shortcuts should appropriately display their relevant sprites
-7. Player features should disable and enable on-screen buttons
+6. Player features should disable and enable on-screen buttons
+7. User can assign shortcuts on his own (Low Priority)
 
 ## List of working functionalities
 
