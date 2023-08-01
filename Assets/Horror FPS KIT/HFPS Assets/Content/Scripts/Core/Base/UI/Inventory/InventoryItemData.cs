@@ -65,14 +65,14 @@ namespace HFPS.UI
 
         void Update()
         {
-            if (ShortcutImg && !string.IsNullOrEmpty(shortcut) && !itemDrag)
-            {
-                ShortcutImg.enabled = true;
-            }
-            else
-            {
-                ShortcutImg.enabled = false;
-            }
+            //if (ShortcutImg && !string.IsNullOrEmpty(shortcut) && !itemDrag)
+            //{
+            //    ShortcutImg.enabled = true;
+            //}
+            //else
+            //{
+            //    ShortcutImg.enabled = false;
+            //}
 
             if (itemDrag) return;
 
