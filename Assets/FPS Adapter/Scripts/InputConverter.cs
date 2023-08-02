@@ -23,11 +23,6 @@ public class InputConverter
         {
             if (isInputRigged)
             {
-                Debug.Log("Direct touches: " + Input.touches.Length);
-                Debug.Log("CF2Input.mousePosition: " + CF2Input.mousePosition);
-                Debug.Log("Translated touches: " + InputRig.Touch.TranslateUnityTouches(Input.touches));
-                Debug.Log("CF2 Emulated touch array: " + CF2Input.activeRig.GetEmuTouchArray());
-
                 return Input.touchCount > 0 ? new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 0) : CF2Input.mousePosition;
             }
             else
