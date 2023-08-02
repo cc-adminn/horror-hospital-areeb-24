@@ -7,7 +7,7 @@ using ControlFreak2;
 
 public class InputConverter
 {
-    private static readonly bool isInputRigged = true;
+    public static readonly bool isInputRigged = true;
 
     public static bool EnableShortcutBinding
     {
