@@ -519,6 +519,7 @@ namespace HFPS.Player
 
         void InteractEvent(GameObject InteractObject)
         {
+            // NAB: Commented it out because it was creating problems for valve to work
             gameManager.HideSprites(0);
             InteractObject.SendMessage("UseObject", SendMessageOptions.DontRequireReceiver);
         }

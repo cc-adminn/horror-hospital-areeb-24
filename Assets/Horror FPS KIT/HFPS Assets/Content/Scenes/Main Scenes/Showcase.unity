@@ -35010,7 +35010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTitle: Apple
+  itemTitle: Red Keycard
   itemType: 2
   examineType: 1
   examineRotate: 3
@@ -59814,6 +59814,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: _GAMEUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1386418242}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 747403396}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 766001892}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[3]
+      value: 
+      objectReference: {fileID: 373588506}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[4]
+      value: 
+      objectReference: {fileID: 8986528855372433761}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[5]
+      value: 
+      objectReference: {fileID: 3005697399673515941}
+    - target: {fileID: 5483085263207227785, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: FloatingIcons.Array.data[6]
+      value: 
+      objectReference: {fileID: 1923560255}
     - target: {fileID: 5483085263207227788, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: m_RootOrder
