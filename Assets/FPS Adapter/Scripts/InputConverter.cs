@@ -1,27 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using ThunderWire.Input;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using ControlFreak2;
 
 public class InputConverter
 {
-    public static readonly bool isInputRigged = true;
-
-    public static bool EnableShortcutBinding
-    {
-        get
-        {
-            return isInputRigged == false;
-        }
-    }
-
     public static Vector3 MousePosition
     {
         get
         {
-            if (isInputRigged)
+            if (InputRigHandler.IsMobileMode)
             {
                 return Input.touchCount > 0 ? new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 0) : CF2Input.mousePosition;
             }
@@ -36,9 +23,9 @@ public class InputConverter
     {
         get
         {
-            if (isInputRigged)
+            if (InputRigHandler.IsMobileMode)
             {
-                return new Vector2(ControlFreak2.CF2Input.GetAxis("Mouse X"), ControlFreak2.CF2Input.GetAxis("Mouse Y"));
+                return new Vector2(CF2Input.GetAxis("Mouse X"), CF2Input.GetAxis("Mouse Y"));
             }
             else
             {
@@ -51,9 +38,9 @@ public class InputConverter
     {
         get
         {
-            if (isInputRigged)
+            if (InputRigHandler.IsMobileMode)
             {
-                return new Vector2(ControlFreak2.CF2Input.GetAxis("Horizontal"), ControlFreak2.CF2Input.GetAxis("Vertical"));
+                return new Vector2(CF2Input.GetAxis("Horizontal"), CF2Input.GetAxis("Vertical"));
             }
             else
             {
@@ -66,9 +53,9 @@ public class InputConverter
     {
         get
         {
-            if (isInputRigged)
+            if (InputRigHandler.IsMobileMode)
             {
-                return new Vector2(0, ControlFreak2.CF2Input.GetAxis("Mouse ScrollWheel"));
+                return new Vector2(0, CF2Input.GetAxis("Mouse ScrollWheel"));
             }
             else
             {
@@ -79,9 +66,9 @@ public class InputConverter
 
     public static bool ReadButton(string ActionName, string ActionMap = "Default")
     {
-        if (isInputRigged)
+        if (InputRigHandler.IsMobileMode)
         {
-            return ControlFreak2.CF2Input.GetButton(ActionName);
+            return CF2Input.GetButton(ActionName);
         }
         else
         {
@@ -92,9 +79,9 @@ public class InputConverter
 
     public static bool ReadButtonOnce(MonoBehaviour Instance, string ActionName, string ActionMap = "Default")
     {
-        if (isInputRigged)
+        if (InputRigHandler.IsMobileMode)
         {
-            return ControlFreak2.CF2Input.GetButtonDown(ActionName);
+            return CF2Input.GetButtonDown(ActionName);
         }
         else
         {

@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using ControlFreak2;
 using HFPS.Player;
+using HFPS.Systems;
 using UnityEngine;
+using static HFPS.Systems.HFPS_GameManager;
 using static HFPS.Systems.Inventory;
 //var btn = shortcuts.GetChild(0).gameObject.GetComponent<TouchButton>();
 //btn.pressBinding.axisList[0].SetAxis("UseItem2", true);
@@ -15,6 +17,20 @@ public class InputRigHandler : MonoBehaviour
         public bool enableShortcuts = true;
         public Sprite flashlightSprite, lanternSprite, axeSprite, pistolSprite, shotgunSprite;
     }
+
+    [Serializable]
+    public struct GamePanels
+    {
+        public GameObject InteractPanel;
+        public GameObject HelpKeysPanel;
+    }
+
+    public static bool IsMobileMode => CF2Input.IsInMobileMode();
+
+    [Header("UI References")]
+    public InteractUI interactUI = new();
+    public HelpPanelUI helpUI = new();
+    public GamePanels gamePanels = new();
 
     private GameObject joystick;
     private GameObject jump;
@@ -31,7 +47,8 @@ public class InputRigHandler : MonoBehaviour
     private GameObject pause;
     private Transform buttons;
     private Transform shortcuts;
-    private ExamineManager examineManager;
+
+    private HFPS_GameManager gameManager;
 
     [SerializeField]
     private ShortcutSettings shortcutSettings = new();
@@ -60,7 +77,11 @@ public class InputRigHandler : MonoBehaviour
 
     private void Start()
     {
-        examineManager = ExamineManager.Instance;
+        gameManager = HFPS_GameManager.Instance;
+        gameManager.gamePanels.HelpKeysPanel = gamePanels.HelpKeysPanel;
+        gameManager.gamePanels.InteractPanel = gamePanels.InteractPanel;
+        gameManager.interactUI = interactUI;
+        gameManager.helpUI = helpUI;
     }
 
     private int visibleShortcutCount = 0;
@@ -71,7 +92,7 @@ public class InputRigHandler : MonoBehaviour
             return;
         }
 
-        if (examineManager.isExamining)
+        if (gameManager.isExamining)
         {
             for (int i = 0; i < shortcuts.childCount; i++)
             {
@@ -124,21 +145,15 @@ public class InputRigHandler : MonoBehaviour
 
     Sprite GetShortcutSprite(string Title)
     {
-        switch (Title)
+        return Title switch
         {
-            case "Flashlight":
-                return shortcutSettings.flashlightSprite;
-            case "Shotgun":
-                return shortcutSettings.shotgunSprite;
-            case "Pistol":
-                return shortcutSettings.pistolSprite;
-            case "Axe":
-                return shortcutSettings.axeSprite;
-            case "Oil Lamp":
-                return shortcutSettings.lanternSprite;
-            default:
-                return null;
-        }
+            "Flashlight" => shortcutSettings.flashlightSprite,
+            "Shotgun" => shortcutSettings.shotgunSprite,
+            "Pistol" => shortcutSettings.pistolSprite,
+            "Axe" => shortcutSettings.axeSprite,
+            "Oil Lamp" => shortcutSettings.lanternSprite,
+            _ => null,
+        };
     }
 
     internal void ToggleRotation(bool enabled)
@@ -187,21 +202,15 @@ public class InputRigHandler : MonoBehaviour
         
         if (BindingPath == "<Keyboard>/1" || BindingPath == "<Keyboard>/2" || BindingPath == "<Keyboard>/3" || BindingPath == "<Keyboard>/4")
         {
-            switch (ControlName)
+            return ControlName switch
             {
-                case "TO TURN ON OR OFF ":
-                    return shortcutSettings.flashlightSprite;
-                case "EQUIP SHOTGUN":
-                    return shortcutSettings.shotgunSprite;
-                case "EQUIP PISTOL":
-                    return shortcutSettings.pistolSprite;
-                case "EQUIP AXE":
-                    return shortcutSettings.axeSprite;
-                case "LIGHT UP OIL LAMP":
-                    return shortcutSettings.lanternSprite;
-                default:
-                    return null;
-            }
+                "TO TURN ON OR OFF " => shortcutSettings.flashlightSprite,
+                "EQUIP SHOTGUN" => shortcutSettings.shotgunSprite,
+                "EQUIP PISTOL" => shortcutSettings.pistolSprite,
+                "EQUIP AXE" => shortcutSettings.axeSprite,
+                "LIGHT UP OIL LAMP" => shortcutSettings.lanternSprite,
+                _ => null,
+            };
         }
         else
         {

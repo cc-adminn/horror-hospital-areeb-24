@@ -100,6 +100,7 @@ namespace HFPS.Systems
             public GameObject HelpButton2;
             public GameObject HelpButton3;
             public GameObject HelpButton4;
+            public GameObject HelpButton5;
         }
 #endregion
 

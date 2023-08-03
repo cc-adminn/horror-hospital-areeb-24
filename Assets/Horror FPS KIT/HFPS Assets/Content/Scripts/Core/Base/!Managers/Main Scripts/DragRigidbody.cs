@@ -108,7 +108,8 @@ namespace HFPS.Player
 
             if (InputHandler.InputIsInitialized && !gameManager.isPaused && !gameManager.isInventoryShown)
             {
-                RotateButton = InputConverter.ReadButton("Fire2");
+                string buttonName = InputRigHandler.IsMobileMode ? "Fire2" : "Fire";
+                RotateButton = InputConverter.ReadButton(buttonName);
 
                 if (objectRaycast && !antiSpam && !gameManager.isWeaponZooming)
                 {
