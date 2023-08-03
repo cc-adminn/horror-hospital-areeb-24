@@ -161,12 +161,8 @@ namespace HFPS.Player
         private string ReadText;
         #endregion
 
-        private InputRigHandler inputRigHandler;
-
         void Awake()
         {
-            inputRigHandler = ControlFreak2.CF2Input.activeRig.GetComponent<InputRigHandler>();
-
             TextsSource.OnInitTexts += OnInitTexts;
 
             scriptManager = ScriptManager.Instance;
@@ -219,8 +215,9 @@ namespace HFPS.Player
                 device = InputHandler.CurrentDevice;
 
                 bp_Use = InputHandler.CompositeOf("Use").GetBindingPath();
-                rotateKey = InputConverter.ReadButton("Fire1");
-                selectKey = InputConverter.ReadButtonOnce(this, "Fire1");
+                string buttonName = InputRigHandler.IsMobileMode ? "Fire1" : "Fire";
+                rotateKey = InputConverter.ReadButton(buttonName);
+                selectKey = InputConverter.ReadButtonOnce(this, buttonName);
 
                 lookVector = InputConverter.Look;
                 movementVector = InputConverter.Move;
