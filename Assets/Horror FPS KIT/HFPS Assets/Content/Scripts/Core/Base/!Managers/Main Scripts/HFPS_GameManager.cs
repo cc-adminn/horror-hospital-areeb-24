@@ -101,6 +101,7 @@ namespace HFPS.Systems
             public GameObject HelpButton3;
             public GameObject HelpButton4;
             public GameObject HelpButton5;
+            public GameObject HelpButton6;
         }
 #endregion
 
@@ -1045,8 +1046,18 @@ namespace HFPS.Systems
         /// </summary>
         public void ShowHelpButtons(HelpButton help1, HelpButton help2, HelpButton help3, HelpButton help4)
         {
-            if(helpUI.HelpButton1 != null)
-                if (help1 != null) { SetKey(helpUI.HelpButton1.transform, help1.BindingPath, help1.Name); } else { helpUI.HelpButton1.SetActive(false); }
+            if (InputRigHandler.IsMobileMode && help1 != null && help1.Name == "Exit Ladder")
+            {
+                helpUI.HelpButton1.SetActive(false);
+
+                SetKey(helpUI.HelpButton6.transform, help1.BindingPath, help1.Name);
+                helpUI.HelpButton6.SetActive(true);
+            }
+            else
+            {
+                if (helpUI.HelpButton1 != null)
+                    if (help1 != null) { SetKey(helpUI.HelpButton1.transform, help1.BindingPath, help1.Name); } else { helpUI.HelpButton1.SetActive(false); }
+            }
 
             if (helpUI.HelpButton2 != null)
                 if (help2 != null) { SetKey(helpUI.HelpButton2.transform, help2.BindingPath, help2.Name); } else { helpUI.HelpButton2.SetActive(false); }
@@ -1088,8 +1099,10 @@ namespace HFPS.Systems
             if (helpUI.HelpButton4 != null)
                 if (btn4) { SetKey(helpUI.HelpButton4.transform, bindPath_Cursor, InputRigHandler.IsMobileMode ? "Interact" : ShowCursorText); } else { helpUI.HelpButton4.SetActive(false); }
 
-            if (helpUI.HelpButton5 != null)
-                { SetKey(helpUI.HelpButton5.transform, "Zoom", "Zoom"); }
+            if (InputRigHandler.IsMobileMode && helpUI.HelpButton6 != null)
+            {
+                helpUI.HelpButton6.SetActive(false);
+            }
 
             if (gamePanels.HelpKeysPanel != null)
                 gamePanels.HelpKeysPanel.SetActive(true);
@@ -1112,14 +1125,18 @@ namespace HFPS.Systems
             else
                 helpUI.HelpButton2.SetActive(false);
 
-            inputRigHandler.ToggleInteract(Read);
-
             if (Rotate)
                 SetKey(helpUI.HelpButton3.transform, bindPath_Rotate, RotateText);
             else
                 helpUI.HelpButton3.SetActive(false);
 
             helpUI.HelpButton4.SetActive(false);
+
+            if (InputRigHandler.IsMobileMode && helpUI.HelpButton6 != null)
+            {
+                helpUI.HelpButton6.SetActive(false);
+            }
+
             gamePanels.HelpKeysPanel.SetActive(true);
         }
 
@@ -1132,6 +1149,12 @@ namespace HFPS.Systems
             SetKey(helpUI.HelpButton3.transform, bindPath_Rotate, RotateText);
             SetKey(helpUI.HelpButton4.transform, bindPath_Throw, ThrowText);
             helpUI.HelpButton2.SetActive(false);
+
+            if (InputRigHandler.IsMobileMode && helpUI.HelpButton6 != null)
+            {
+                helpUI.HelpButton6.SetActive(false);
+            }
+
             gamePanels.HelpKeysPanel.SetActive(true);
         }
 

@@ -19,7 +19,7 @@ public class InputRigHandler : MonoBehaviour
     }
 
     [SerializeField]
-    private Sprite ZoomSprite, ThrowSprite, TouchSprite;
+    private Sprite ZoomSprite, ThrowSprite, TouchSprite, JumpSprite;
 
     [Serializable]
     public struct GamePanels
@@ -95,7 +95,7 @@ public class InputRigHandler : MonoBehaviour
             return;
         }
 
-        if (gameManager.isExamining)
+        if (gameManager.isExamining || gameManager.isHeld)
         {
             for (int i = 0; i < shortcuts.childCount; i++)
             {
@@ -180,6 +180,7 @@ public class InputRigHandler : MonoBehaviour
         reload.SetActive(enabled);
         inventory.SetActive(enabled);
         pause.SetActive(enabled);
+        zoom.SetActive(enabled);
     }
 
     internal void ToggleExamineManager(bool enabled)
@@ -226,6 +227,10 @@ public class InputRigHandler : MonoBehaviour
         else if (BindingPath + ControlName == "<Mouse>/rightButtonInteract")
         {
             return TouchSprite;
+        }
+        else if (BindingPath + ControlName == "<Keyboard>/spaceExit Ladder")
+        {
+            return JumpSprite;
         }
         else
         {
