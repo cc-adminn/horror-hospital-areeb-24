@@ -8312,6 +8312,8 @@ MonoBehaviour:
     axeSprite: {fileID: 21300000, guid: 2ddc1f31176c94f4e84a1dded7e1eba2, type: 3}
     pistolSprite: {fileID: 21300000, guid: 1cce2ffe89cec448584ed533841aab6d, type: 3}
     shotgunSprite: {fileID: 21300000, guid: 2c6f6fd85706aaf40a2e74545d978363, type: 3}
+  mobileControls:
+    inventory: {fileID: 1761846739629211229}
 --- !u!1 &1761846739243449947
 GameObject:
   m_ObjectHideFlags: 0
