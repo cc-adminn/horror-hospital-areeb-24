@@ -28,6 +28,12 @@ public class InputRigHandler : MonoBehaviour
         public GameObject HelpKeysPanel;
     }
 
+    [Serializable]
+    public struct MobileControls
+    {
+        public GameObject inventory;
+    }
+
     public static bool IsMobileMode => CF2Input.IsInMobileMode();
 
     [Header("UI References")]
@@ -35,6 +41,7 @@ public class InputRigHandler : MonoBehaviour
     public HelpPanelUI helpUI = new();
     public GamePanels gamePanels = new();
 
+    [Header("Controls")]
     private GameObject joystick;
     private GameObject jump;
     private GameObject use;
@@ -46,7 +53,6 @@ public class InputRigHandler : MonoBehaviour
     private GameObject reload;
     private GameObject examine;
     private GameObject rotate;
-    private GameObject inventory;
     private GameObject pause;
     private Transform buttons;
     private Transform shortcuts;
@@ -55,7 +61,11 @@ public class InputRigHandler : MonoBehaviour
 
     [SerializeField]
     private ShortcutSettings shortcutSettings = new();
-    
+    [SerializeField]
+    private MobileControls mobileControls = new();
+
+    private bool IsPlayerControlsEnabled = true;
+
     private void Awake()
     {
         var rigPanel = CF2Input.activeRig.transform.GetChild(0).GetChild(0);
@@ -72,7 +82,6 @@ public class InputRigHandler : MonoBehaviour
         reload = buttons.Find("Reload-Button").gameObject;
         examine = buttons.Find("Examine-Button").gameObject;
         rotate = buttons.Find("Rotate").gameObject;
-        inventory = buttons.Find("Inventory").gameObject;
         pause = buttons.Find("Pause-Button").gameObject;
 
         shortcuts = buttons.Find("Shortcuts");
@@ -93,6 +102,11 @@ public class InputRigHandler : MonoBehaviour
         if (!shortcutSettings.enableShortcuts)
         {
             return;
+        }
+
+        if (shortcutModels == null)
+        {
+            shortcuts.gameObject.SetActive(false);
         }
 
         if (gameManager.isExamining || gameManager.isHeld)
@@ -164,13 +178,15 @@ public class InputRigHandler : MonoBehaviour
         rotate.SetActive(enabled);
     }
 
-    internal void ToggleInteract(bool enabled)
+    internal void ToggleInventory(bool enabled)
     {
-        use.SetActive(enabled);
+        mobileControls.inventory.SetActive(enabled && IsPlayerControlsEnabled && !gameManager.isHeld);
     }
 
     internal void TogglePlayerControls(bool enabled)
     {
+        IsPlayerControlsEnabled = enabled;
+
         joystick.SetActive(enabled);
         jump.SetActive(enabled);
         crouch.SetActive(enabled);
@@ -178,7 +194,6 @@ public class InputRigHandler : MonoBehaviour
         run.SetActive(enabled);
         fire.SetActive(enabled);
         reload.SetActive(enabled);
-        inventory.SetActive(enabled);
         pause.SetActive(enabled);
         zoom.SetActive(enabled);
     }

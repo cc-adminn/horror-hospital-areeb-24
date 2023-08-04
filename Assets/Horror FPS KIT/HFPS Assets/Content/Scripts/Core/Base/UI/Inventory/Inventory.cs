@@ -411,6 +411,8 @@ namespace HFPS.Systems
 
         void Update()
         {
+            inputRigHandler.ToggleInventory(AnyItemInventroy());
+
             inputRigHandler.UpdateShortcutKeys(Shortcuts);
 
             if (itemSwitcher) selectedSwitcherID = itemSwitcher.currentItem;
