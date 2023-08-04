@@ -163,13 +163,10 @@ namespace HFPS.Player
 
         void Awake()
         {
-            TextsSource.OnInitTexts += OnInitTexts;
-
             scriptManager = ScriptManager.Instance;
             itemSwitcher = scriptManager.C<ItemSwitcher>();
 
-            if (!TextsSource.HasReference)
-                OnInitTexts();
+            TextsSource.Subscribe(OnInitTexts);
         }
 
         private void OnInitTexts()
@@ -226,7 +223,10 @@ namespace HFPS.Player
                 {
                     readTakeKey = InputConverter.ReadButtonOnce(this, "Use");
                     examineKey = InputConverter.ReadButtonOnce(this, "Examine");
-                    cursorKey = InputConverter.ReadButtonOnce(this, "Zoom");
+                    if (InputRigHandler.IsMobileMode == false)
+                    {
+                        cursorKey = InputConverter.ReadButtonOnce(this, "Zoom");
+                    }
                 }
 
                 float currectSpeed = device.IsGamepadDevice() == 1 ? gamepadRotateSpeed : rotateSpeed;
@@ -404,7 +404,7 @@ namespace HFPS.Player
                     }
                 }
 
-                const bool alwaysDisplayCursor = true;
+                bool alwaysDisplayCursor = InputRigHandler.IsMobileMode;
                 if (alwaysDisplayCursor || cursorShown)
                 {
                     Vector3 consoleCursorPos = gameManager.userInterface.ConsoleCursor.transform.position;
@@ -416,7 +416,7 @@ namespace HFPS.Player
 
                     if (selectKey)
                     {
-                        
+                        Debug.Log("consoleCursorPos: " + consoleCursorPos);
                         Vector3 mousePosition = InputConverter.MousePosition;
                         Ray ray = PlayerCam.ScreenPointToRay(device == InputHandler.Device.MouseKeyboard ? mousePosition : consoleCursorPos);
 

@@ -18,6 +18,9 @@ public class InputRigHandler : MonoBehaviour
         public Sprite flashlightSprite, lanternSprite, axeSprite, pistolSprite, shotgunSprite;
     }
 
+    [SerializeField]
+    private Sprite ZoomSprite, ThrowSprite, TouchSprite;
+
     [Serializable]
     public struct GamePanels
     {
@@ -211,6 +214,18 @@ public class InputRigHandler : MonoBehaviour
                 "LIGHT UP OIL LAMP" => shortcutSettings.lanternSprite,
                 _ => null,
             };
+        }
+        else if (BindingPath == "Zoom")
+        {
+            return ZoomSprite;
+        }
+        else if (BindingPath+ControlName == "<Mouse>/rightButtonThrow")
+        {
+            return ThrowSprite;
+        }
+        else if (BindingPath + ControlName == "<Mouse>/rightButtonInteract")
+        {
+            return TouchSprite;
         }
         else
         {

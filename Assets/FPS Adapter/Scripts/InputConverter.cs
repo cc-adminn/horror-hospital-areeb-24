@@ -10,7 +10,7 @@ public class InputConverter
         {
             if (InputRigHandler.IsMobileMode)
             {
-                return Input.touchCount > 0 ? new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 0) : CF2Input.mousePosition;
+                return Input.touchCount > 0 ? new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 0) : InputHandler.ReadInput<Vector2>("MousePosition", "PlayerExtra");
             }
             else
             {
@@ -55,7 +55,21 @@ public class InputConverter
         {
             if (InputRigHandler.IsMobileMode)
             {
-                return new Vector2(0, CF2Input.GetAxis("Mouse ScrollWheel"));
+                float y = CF2Input.GetAxis("Mouse ScrollWheel");
+                float up = CF2Input.GetAxis("Mouse ScrollWheel Up");
+                float down = CF2Input.GetAxis("Mouse ScrollWheel Down");
+
+                if (down > 0)
+                {
+                    y = -1;
+                }
+                else if (up < 0)
+                {
+                    y = 1;
+                }
+
+                
+                return new Vector2(0, y);
             }
             else
             {

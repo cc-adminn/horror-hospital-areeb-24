@@ -1086,7 +1086,10 @@ namespace HFPS.Systems
                 if (btn3) { SetKey(helpUI.HelpButton3.transform, bindPath_Rotate, RotateText); } else { helpUI.HelpButton3.SetActive(false); }
 
             if (helpUI.HelpButton4 != null)
-                if (btn4) { SetKey(helpUI.HelpButton4.transform, bindPath_Cursor, ShowCursorText); } else { helpUI.HelpButton4.SetActive(false); }
+                if (btn4) { SetKey(helpUI.HelpButton4.transform, bindPath_Cursor, InputRigHandler.IsMobileMode ? "Interact" : ShowCursorText); } else { helpUI.HelpButton4.SetActive(false); }
+
+            if (helpUI.HelpButton5 != null)
+                { SetKey(helpUI.HelpButton5.transform, "Zoom", "Zoom"); }
 
             if (gamePanels.HelpKeysPanel != null)
                 gamePanels.HelpKeysPanel.SetActive(true);
@@ -1126,9 +1129,9 @@ namespace HFPS.Systems
         public void ShowGrabSprites()
         {
             SetKey(helpUI.HelpButton1.transform, bindPath_Grab, PutAwayText);
-            SetKey(helpUI.HelpButton2.transform, bindPath_Rotate, RotateText);
-            SetKey(helpUI.HelpButton3.transform, bindPath_Throw, ThrowText);
-            helpUI.HelpButton4.SetActive(false);
+            SetKey(helpUI.HelpButton3.transform, bindPath_Rotate, RotateText);
+            SetKey(helpUI.HelpButton4.transform, bindPath_Throw, ThrowText);
+            helpUI.HelpButton2.SetActive(false);
             gamePanels.HelpKeysPanel.SetActive(true);
         }
 
