@@ -237,7 +237,7 @@ namespace HFPS.Player
             {
                 if (!antiSpam)
                 {
-                    Vector2 scroll = InputConverter.Scroll;
+                    Vector2 scroll = InputRigHandler.IsMobileMode ? Vector2.zero : InputConverter.Scroll;
 
                     //Mouse ScrollWheel Backward - Deselect Current Item
                     if (scroll.y < 0f)
