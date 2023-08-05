@@ -336,10 +336,12 @@ namespace HFPS.Player
                 if (inventory.preventUse)
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(false);
+                    gameManager.inputRigHandler.SetAttackControls(false);
                 }
                 else
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(true);
+                    gameManager.inputRigHandler.SetAttackControls(true);
                 }
             }
 
@@ -774,6 +776,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(true);
+                gameManager.inputRigHandler.SetAttackControls(true);
                 uiShown = true;
             }
 
@@ -794,6 +797,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(false);
+                gameManager.inputRigHandler.SetAttackControls(false);
                 uiShown = false;
             }
         }
@@ -820,6 +824,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(true);
+                gameManager.inputRigHandler.SetAttackControls(true);
                 uiShown = true;
             }
 
@@ -846,6 +851,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(false);
+                gameManager.inputRigHandler.SetAttackControls(false);
                 uiShown = false;
             }
 
@@ -891,6 +897,7 @@ namespace HFPS.Player
                 if (gameManager)
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(true);
+                    gameManager.inputRigHandler.SetAttackControls(true);
                     uiShown = true;
                 }
             }

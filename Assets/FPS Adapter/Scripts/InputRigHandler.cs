@@ -32,6 +32,9 @@ public class InputRigHandler : MonoBehaviour
     public struct MobileControls
     {
         public GameObject inventory;
+        public GameObject reload;
+        public GameObject attack;
+        public GameObject zoom;
     }
 
     public static bool IsMobileMode => CF2Input.IsInMobileMode();
@@ -44,14 +47,9 @@ public class InputRigHandler : MonoBehaviour
     [Header("Controls")]
     private GameObject joystick;
     private GameObject jump;
-    private GameObject use;
     private GameObject run;
     private GameObject crouch;
     private GameObject prone;
-    private GameObject fire;
-    private GameObject zoom;
-    private GameObject reload;
-    private GameObject examine;
     private GameObject rotate;
     private GameObject pause;
     private Transform buttons;
@@ -73,14 +71,9 @@ public class InputRigHandler : MonoBehaviour
 
         buttons = rigPanel.GetChild(2);
         jump = buttons.Find("Jump-Button").gameObject;
-        use = buttons.Find("InteractControl1").gameObject;
         run = buttons.Find("Run").gameObject;
         crouch = buttons.Find("Crouch-Button").gameObject;
         prone = buttons.Find("Prone-Button").gameObject;
-        fire = buttons.Find("Fire-Button").gameObject;
-        zoom = buttons.Find("Zoom-Button").gameObject;
-        reload = buttons.Find("Reload-Button").gameObject;
-        examine = buttons.Find("Examine-Button").gameObject;
         rotate = buttons.Find("Rotate").gameObject;
         pause = buttons.Find("Pause-Button").gameObject;
 
@@ -173,9 +166,16 @@ public class InputRigHandler : MonoBehaviour
         };
     }
 
+    internal void SetAttackControls(bool enabled, bool isFireArm = true)
+    {
+        mobileControls.attack.SetActive(enabled && IsPlayerControlsEnabled);
+        mobileControls.reload.SetActive(enabled && IsPlayerControlsEnabled && isFireArm);
+        mobileControls.attack.transform.GetChild(1).gameObject.SetActive(enabled && IsPlayerControlsEnabled && isFireArm);
+    }
+
     internal void ToggleRotation(bool enabled)
     {
-        rotate.SetActive(enabled);
+        rotate.SetActive(enabled && IsPlayerControlsEnabled);
     }
 
     internal void ToggleInventory(bool enabled)
@@ -192,28 +192,8 @@ public class InputRigHandler : MonoBehaviour
         crouch.SetActive(enabled);
         prone.SetActive(enabled);
         run.SetActive(enabled);
-        fire.SetActive(enabled);
-        reload.SetActive(enabled);
         pause.SetActive(enabled);
-        zoom.SetActive(enabled);
-    }
-
-    internal void ToggleExamineManager(bool enabled)
-    {
-        if (enabled)
-        {
-            joystick.SetActive(false);
-            jump.SetActive(false);
-            crouch.SetActive(false);
-            prone.SetActive(false);
-        }
-        else
-        {
-            joystick.SetActive(true);
-            jump.SetActive(true);
-            crouch.SetActive(true);
-            prone.SetActive(true);
-        }
+        mobileControls.zoom.SetActive(enabled);
     }
 
     internal Sprite GetSprite(string BindingPath, string ControlName)
