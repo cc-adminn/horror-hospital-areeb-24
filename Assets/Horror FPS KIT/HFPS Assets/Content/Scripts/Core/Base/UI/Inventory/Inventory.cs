@@ -2818,7 +2818,7 @@ namespace HFPS.Systems
         /// </summary>
         public void ShowContexMenu(bool show, Item item = null, int slot = -1, bool ctx_use = true, bool ctx_combine = true, bool ctx_examine = true, bool ctx_drop = true, bool ctx_shortcut = false, bool ctx_store = false, bool ctx_remove = false)
         {
-            if (InputRigHandler.IsMobileMode == false)
+            if (InputRigHandler.IsMobileMode)
             {
                 ctx_shortcut = false;
             }
