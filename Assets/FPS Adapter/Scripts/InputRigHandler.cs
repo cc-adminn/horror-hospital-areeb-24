@@ -36,6 +36,10 @@ public class InputRigHandler : MonoBehaviour
         public GameObject reload;
         public GameObject attack;
         public GameObject zoom;
+        public GameObject jump;
+        public GameObject run;
+        public GameObject crouch;
+        public GameObject prone;
     }
 
     public static bool IsMobileMode => CF2Input.IsInMobileMode();
@@ -47,16 +51,14 @@ public class InputRigHandler : MonoBehaviour
 
     [Header("Controls")]
     private GameObject joystick;
-    private GameObject jump;
-    private GameObject run;
-    private GameObject crouch;
-    private GameObject prone;
+    
     private GameObject rotate;
     private GameObject pause;
     private Transform buttons;
     private Transform shortcuts;
 
     private HFPS_GameManager gameManager;
+    private PlayerController controller;
 
     [SerializeField]
     private ShortcutSettings shortcutSettings = new();
@@ -71,10 +73,6 @@ public class InputRigHandler : MonoBehaviour
         joystick = rigPanel.Find("Joystick-Region").gameObject;
 
         buttons = rigPanel.GetChild(2);
-        jump = buttons.Find("Jump-Button").gameObject;
-        run = buttons.Find("Run").gameObject;
-        crouch = buttons.Find("Crouch-Button").gameObject;
-        prone = buttons.Find("Prone-Button").gameObject;
         rotate = buttons.Find("Rotate").gameObject;
         pause = buttons.Find("Pause-Button").gameObject;
 
@@ -84,10 +82,25 @@ public class InputRigHandler : MonoBehaviour
     private void Start()
     {
         gameManager = HFPS_GameManager.Instance;
+        controller = PlayerController.Instance;
+
         gameManager.gamePanels.HelpKeysPanel = gamePanels.HelpKeysPanel;
         gameManager.gamePanels.InteractPanel = gamePanels.InteractPanel;
         gameManager.interactUI = interactUI;
         gameManager.helpUI = helpUI;
+
+        mobileControls.jump.SetActive(controller.controllerFeatures.enableJump);
+        mobileControls.prone.SetActive(controller.controllerFeatures.enableProne);
+        mobileControls.run.SetActive(controller.controllerFeatures.enableRun);
+        mobileControls.crouch.SetActive(controller.controllerFeatures.enableCrouch);
+    }
+
+    void SetControlVisibility(bool enabled, bool visible, GameObject control)
+    {
+        if (enabled)
+        {
+            control.SetActive(visible);
+        }
     }
 
     private int visibleShortcutCount = 0;
@@ -221,12 +234,15 @@ public class InputRigHandler : MonoBehaviour
         IsPlayerControlsEnabled = enabled;
 
         joystick.SetActive(enabled);
-        jump.SetActive(enabled);
-        crouch.SetActive(enabled);
-        prone.SetActive(enabled);
-        run.SetActive(enabled);
+
         pause.SetActive(enabled);
+
         mobileControls.zoom.SetActive(enabled);
+
+        mobileControls.jump.SetActive(controller.controllerFeatures.enableJump && enabled);
+        mobileControls.prone.SetActive(controller.controllerFeatures.enableProne && enabled);
+        mobileControls.run.SetActive(controller.controllerFeatures.enableRun && enabled);
+        mobileControls.crouch.SetActive(controller.controllerFeatures.enableCrouch && enabled);
     }
 
     internal Sprite GetSprite(string BindingPath, string ControlName)

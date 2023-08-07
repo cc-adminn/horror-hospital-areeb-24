@@ -786,7 +786,7 @@ namespace HFPS.Systems
         /// <param name="ControlName">Name of the Control</param>
         private void SetKey(Transform ControlObj, string BindingPath, string ControlName = "Null")
         {
-            Debug.Log(string.Format("ControlObj: {0} BindingPath: {1} ControlName: {2}", ControlObj.gameObject, BindingPath, ControlName));
+            //Debug.Log(string.Format("ControlObj: {0} BindingPath: {1} ControlName: {2}", ControlObj.gameObject, BindingPath, ControlName));
 
             ControlObj.GetChild(1).GetComponent<Text>().text = ControlName;
 

@@ -41,12 +41,12 @@ namespace HFPS.Player
             public bool enableRun = true;
             public bool enableCrouch = true;
             public bool enableProne = true;
-            public bool enableSliding = false;
+            public bool enableSliding = true;
             public bool airControl = false;
             public bool enableFly = false;
             public bool enableWallRicochet = true;
-            public bool enableStamina = false;
-            public bool enableJumpSounds = false;
+            public bool enableStamina = true;
+            public bool enableJumpSounds = true;
         }
 
         [Serializable]

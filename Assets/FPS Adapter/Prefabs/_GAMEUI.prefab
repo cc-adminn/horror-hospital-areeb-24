@@ -6198,7 +6198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6080763605177516985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7728,7 +7728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6080763605247117076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9930,7 +9930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6080763605344090501
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15360,7 +15360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245, y: -40}
+  m_AnchoredPosition: {x: 380, y: -40}
   m_SizeDelta: {x: 200, y: 25}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6080763605642593599
@@ -15787,16 +15787,11 @@ MonoBehaviour:
     FirstOption: {fileID: 6080763606796505873}
     FirstOptionAlt: {fileID: 6080763606294791772}
     IsControls: 0
-  - TabContents: {fileID: 6080763605830583531}
-    ButtonToSelect: {fileID: 6080763605177516984}
-    FirstOption: {fileID: 0}
-    FirstOptionAlt: {fileID: 0}
-    IsControls: 1
   platformMode: 0
   postProcessing: {fileID: 0}
   GameQuality: {fileID: 6080763605275858696}
-  chngeableInput: 1
-  showRefreshRate: 0
+  chngeableInput: 0
+  showRefreshRate: 1
   debugMode: 1
 --- !u!114 &2287548867139702421
 MonoBehaviour:
@@ -19292,7 +19287,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Sensitivity
+  m_Text: Look Sensitivity
 --- !u!1 &6080763605874194787
 GameObject:
   m_ObjectHideFlags: 0
@@ -23891,7 +23886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6080763606175827233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31292,7 +31287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -40}
+  m_AnchoredPosition: {x: 175, y: -40}
   m_SizeDelta: {x: 200, y: 25}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6080763606530524393
@@ -36506,7 +36501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6080763606796505878
 RectTransform:
   m_ObjectHideFlags: 0

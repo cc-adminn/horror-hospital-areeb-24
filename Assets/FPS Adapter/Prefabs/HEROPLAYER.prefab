@@ -19922,8 +19922,8 @@ MonoBehaviour:
     stateChangeSpeed: 3
     runTransitionSpeed: 8
   controllerFeatures:
-    enableJump: 1
-    enableRun: 1
+    enableJump: 0
+    enableRun: 0
     enableCrouch: 1
     enableProne: 1
     enableSliding: 1
@@ -19931,7 +19931,7 @@ MonoBehaviour:
     enableFly: 0
     enableWallRicochet: 1
     enableStamina: 1
-    enableJumpSounds: 0
+    enableJumpSounds: 1
   controllerSettings:
     baseGravity: -9.81
     inputSmoothing: 5
