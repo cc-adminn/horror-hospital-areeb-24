@@ -8,13 +8,11 @@ It's created by Noor Ali. I added Control Freak controls in order to make on-scr
 
 ## Functionalities to fix
 
-1. On-screen interaction buttons should be displayed accordingly
+1. Use on lever doesn't work right now (Low Priority)
 2. Sprites are not accurate
-3. Item switcher has problems
-4. Zoom has conflicts with throw and zoom
-5. Sprites for take and examine works differently in player mode and examine mode
-6. Player features should disable and enable on-screen buttons
-7. User can assign shortcuts on his own (Low Priority)
+3. Item switcher is disabled on mobile (Low Priority)
+4. Zoom has conflicts with drag rigidbody
+5. User is unable to assign shortcuts on his own (Low Priority)
 
 ## List of working functionalities
 
