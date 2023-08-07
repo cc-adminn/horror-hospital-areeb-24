@@ -4,6 +4,7 @@ using ControlFreak2;
 using HFPS.Player;
 using HFPS.Systems;
 using UnityEngine;
+using UnityEngine.UI;
 using static HFPS.Systems.HFPS_GameManager;
 using static HFPS.Systems.Inventory;
 //var btn = shortcuts.GetChild(0).gameObject.GetComponent<TouchButton>();
@@ -166,11 +167,43 @@ public class InputRigHandler : MonoBehaviour
         };
     }
 
-    internal void SetAttackControls(bool enabled, bool isFireArm = true)
+    internal void SetAttackControls(bool enabled, bool isFireArm = true, string bullets = null, string magazines = null)
     {
         mobileControls.attack.SetActive(enabled && IsPlayerControlsEnabled);
-        mobileControls.reload.SetActive(enabled && IsPlayerControlsEnabled && isFireArm);
-        mobileControls.attack.transform.GetChild(1).gameObject.SetActive(enabled && IsPlayerControlsEnabled && isFireArm);
+        
+        Transform bulletsTransform = mobileControls.attack.transform.GetChild(1);
+        if (enabled && IsPlayerControlsEnabled && isFireArm && bullets != null && magazines != null)
+        {
+            bulletsTransform.gameObject.SetActive(true);
+            var bulletsText = bulletsTransform.GetChild(0).GetComponent<Text>();
+            var megazinesText = bulletsTransform.GetChild(2).GetComponent<Text>();
+            bulletsText.text = bullets;
+            megazinesText.text = magazines;
+
+            if (magazines == "0")
+            {
+                mobileControls.reload.SetActive(false);
+                megazinesText.gameObject.SetActive(false);
+                bulletsTransform.GetChild(1).gameObject.SetActive(false);
+
+                if (bullets == "0")
+                {
+                    bulletsText.text = "Empty";
+                }
+            }
+            else
+            {
+                mobileControls.reload.SetActive(true);
+                bulletsTransform.GetChild(1).gameObject.SetActive(true);
+                megazinesText.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            bulletsTransform.gameObject.SetActive(false);
+            mobileControls.reload.SetActive(false);
+        }
+        
     }
 
     internal void ToggleRotation(bool enabled)

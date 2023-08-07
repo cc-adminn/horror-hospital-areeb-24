@@ -330,9 +330,17 @@ namespace HFPS.Player
 
             if (gameManager && uiShown)
             {
-                gameManager.userInterface.BulletsText.text = bulletSettings.bulletsInMag.ToString();
-                gameManager.userInterface.MagazinesText.text = carryingBullets.ToString();
-
+                if (!InputRigHandler.IsMobileMode)
+                {
+                    gameManager.userInterface.BulletsText.text = bulletSettings.bulletsInMag.ToString();
+                    gameManager.userInterface.MagazinesText.text = carryingBullets.ToString();
+                }
+                else
+                {
+                    gameManager.userInterface.BulletsText.gameObject.SetActive(false);
+                    gameManager.userInterface.MagazinesText.gameObject.SetActive(false);
+                }
+                
                 if (inventory.preventUse)
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(false);
@@ -341,7 +349,7 @@ namespace HFPS.Player
                 else
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(true);
-                    gameManager.inputRigHandler.SetAttackControls(true);
+                    gameManager.inputRigHandler.SetAttackControls(true, bullets: bulletSettings.bulletsInMag.ToString(), magazines: carryingBullets.ToString());
                 }
             }
 
