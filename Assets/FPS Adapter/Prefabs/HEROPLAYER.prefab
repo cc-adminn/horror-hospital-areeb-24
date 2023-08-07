@@ -19922,8 +19922,8 @@ MonoBehaviour:
     stateChangeSpeed: 3
     runTransitionSpeed: 8
   controllerFeatures:
-    enableJump: 0
-    enableRun: 0
+    enableJump: 1
+    enableRun: 1
     enableCrouch: 1
     enableProne: 1
     enableSliding: 1

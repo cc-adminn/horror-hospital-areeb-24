@@ -178,7 +178,7 @@ namespace HFPS.Player
 
                 scriptManager.IsGrabRaycast = objectRaycast != null;
 
-                gameManager.inputRigHandler.ToggleRotation(enableObjectRotation && objectHeld);
+                gameManager.inputRigHandler.ToggleRotation(enableObjectRotation, objectHeld);
 
                 if (objectHeld)
                 {

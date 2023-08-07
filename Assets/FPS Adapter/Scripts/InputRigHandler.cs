@@ -32,6 +32,7 @@ public class InputRigHandler : MonoBehaviour
     [Serializable]
     public struct MobileControls
     {
+        public GameObject joystick;
         public GameObject inventory;
         public GameObject reload;
         public GameObject attack;
@@ -40,6 +41,10 @@ public class InputRigHandler : MonoBehaviour
         public GameObject run;
         public GameObject crouch;
         public GameObject prone;
+        public GameObject shortcuts;
+        public GameObject rotate;
+        public GameObject pause;
+
     }
 
     public static bool IsMobileMode => CF2Input.IsInMobileMode();
@@ -48,14 +53,6 @@ public class InputRigHandler : MonoBehaviour
     public InteractUI interactUI = new();
     public HelpPanelUI helpUI = new();
     public GamePanels gamePanels = new();
-
-    [Header("Controls")]
-    private GameObject joystick;
-    
-    private GameObject rotate;
-    private GameObject pause;
-    private Transform buttons;
-    private Transform shortcuts;
 
     private HFPS_GameManager gameManager;
     private PlayerController controller;
@@ -66,18 +63,6 @@ public class InputRigHandler : MonoBehaviour
     private MobileControls mobileControls = new();
 
     private bool IsPlayerControlsEnabled = true;
-
-    private void Awake()
-    {
-        var rigPanel = CF2Input.activeRig.transform.GetChild(0).GetChild(0);
-        joystick = rigPanel.Find("Joystick-Region").gameObject;
-
-        buttons = rigPanel.GetChild(2);
-        rotate = buttons.Find("Rotate").gameObject;
-        pause = buttons.Find("Pause-Button").gameObject;
-
-        shortcuts = buttons.Find("Shortcuts");
-    }
 
     private void Start()
     {
@@ -110,6 +95,8 @@ public class InputRigHandler : MonoBehaviour
         {
             return;
         }
+
+        Transform shortcuts = mobileControls.shortcuts.transform;
 
         if (shortcutModels == null)
         {
@@ -219,9 +206,10 @@ public class InputRigHandler : MonoBehaviour
         
     }
 
-    internal void ToggleRotation(bool enabled)
+    internal void ToggleRotation(bool enableObjectRotation, bool objectHeld)
     {
-        rotate.SetActive(enabled && IsPlayerControlsEnabled);
+        mobileControls.rotate.SetActive(enableObjectRotation && objectHeld && IsPlayerControlsEnabled);
+        mobileControls.zoom.SetActive(!objectHeld && IsPlayerControlsEnabled);
     }
 
     internal void ToggleInventory(bool enabled)
@@ -233,9 +221,9 @@ public class InputRigHandler : MonoBehaviour
     {
         IsPlayerControlsEnabled = enabled;
 
-        joystick.SetActive(enabled);
+        mobileControls.joystick.SetActive(enabled);
 
-        pause.SetActive(enabled);
+        mobileControls.pause.SetActive(enabled);
 
         mobileControls.zoom.SetActive(enabled);
 
