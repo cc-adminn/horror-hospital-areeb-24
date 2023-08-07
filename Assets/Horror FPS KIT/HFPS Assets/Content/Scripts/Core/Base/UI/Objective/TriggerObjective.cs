@@ -45,6 +45,11 @@ namespace HFPS.Systems
             }
         }
 
+        public void SetTrigger(bool state)
+        {
+            isTriggered = state;
+        }
+
         public void UseObject()
         {
             if (isTriggered || isInteractive) return;
