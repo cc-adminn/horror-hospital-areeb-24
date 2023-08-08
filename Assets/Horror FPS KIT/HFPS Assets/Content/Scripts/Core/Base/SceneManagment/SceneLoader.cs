@@ -149,7 +149,15 @@ namespace HFPS.Systems
                     TipsManager.TipsText.gameObject.SetActive(false);
                 }
 
-                yield return new WaitUntil(() => InputHandler.AnyInputPressed());
+
+                if (Application.isMobilePlatform)
+                {
+                    yield return new WaitUntil(() => Input.touchCount > 0);
+                }
+                else
+                {
+                    yield return new WaitUntil(() => InputHandler.AnyInputPressed());
+                }
 
                 RemoveDontDestroyOnLoad();
 
