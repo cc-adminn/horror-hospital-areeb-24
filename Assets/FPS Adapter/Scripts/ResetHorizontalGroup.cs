@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 public class ResetHorizontalGroup : MonoBehaviour
 {
-    private HorizontalLayoutGroup group;
+    private LayoutGroup group;
 
     void Start()
     {
-        group = GetComponent<HorizontalLayoutGroup>();
+        group = GetComponent<LayoutGroup>();
     }
 
     void Update()
