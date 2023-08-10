@@ -437,6 +437,13 @@ namespace ThunderWire.Input
             {
                 connectedDevices.Remove(Device.MouseKeyboard);
             }
+            else
+            {
+                if (!connectedDevices.Contains(Device.MouseKeyboard))
+                {
+                    connectedDevices.Add(Device.MouseKeyboard);
+                }
+            }
 
             if (connectedDevices.Count > 0)
             {
