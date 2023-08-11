@@ -11,6 +11,8 @@ namespace HFPS.Systems
         public const string LOAD_STATE = "LoadState";
         public const string LOAD_LEVEL_NAME = "LevelToLoad";
         public const string LOAD_SAVE_NAME = "LoadSaveName";
+        private const string IS_GAME_RATED = "IsGameRated";
+        private const string HAS_BOUGHT_FREE_MODE = "HasBoughtFreeMode";
 
         #region HFPS Functions
         /// <summary>
@@ -67,6 +69,18 @@ namespace HFPS.Systems
             PlayerPrefs.SetString(LOAD_SAVE_NAME, value);
         }
         #endregion
+
+        public static bool IsMyGameAlreadyRated
+        {
+            get => Exist(IS_GAME_RATED) && Load<bool>(IS_GAME_RATED);
+            set => Save(IS_GAME_RATED, value);
+        }
+
+        public static bool HasBoughtFreeMode
+        {
+            get => Exist(HAS_BOUGHT_FREE_MODE) && Load<bool>(HAS_BOUGHT_FREE_MODE);
+            set => Save(HAS_BOUGHT_FREE_MODE, value);
+        }
 
         /// <summary>
         /// Save Key/Value to PlayerPrefs.
