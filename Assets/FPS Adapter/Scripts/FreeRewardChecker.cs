@@ -18,15 +18,13 @@ namespace CC
         {
             get
             {
-                if (Application.platform == RuntimePlatform.Android)
-                {
-                    return IsAndroidApproving;
-                }
-                else if (Application.platform == RuntimePlatform.IPhonePlayer)
-                {
-                    return IsIosApproving;
-                }
+#if UNITY_ANDROID
+                return IsAndroidApproving;
+#elif UNITY_IPHONE
+                return IsIosApproving;
+#else
                 return true;
+#endif
             }
         }
 
