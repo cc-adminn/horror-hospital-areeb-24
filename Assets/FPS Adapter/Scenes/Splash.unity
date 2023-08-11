@@ -834,16 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4619f71a1e9e33f408b1b289811ccdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneInfos:
-  - SceneBuildName: MainMenu
-    LevelName: Horror House
-    LevelNameKey: 
-    LevelDescription: 'Investigate the haunted house and reveal its deepest darkest
-      secrets
-
-'
-    LevelDescriptionKey: 
-    Background: {fileID: 21300000, guid: 2cadeb25dc3374fd0a0bf6e342c5ebc1, type: 3}
+  SceneInfos: []
   TipsManager: {fileID: 6475444655471464112}
   BlackScreenFade: {fileID: 1194870787015369332}
   Spinner: {fileID: 4309817404881236958}
