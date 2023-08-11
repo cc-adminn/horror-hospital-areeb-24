@@ -43,6 +43,8 @@ namespace HFPS.Systems
         public Image LevelBackground;
 
         [Header("Settings")]
+        [SerializeField]
+        private bool isStartUpScene = false;
         public bool SwitchManually;
         public bool WaitBeforeLoad = true;
         public ThreadPriority LoadPriority = ThreadPriority.High;
@@ -82,7 +84,11 @@ namespace HFPS.Systems
             Spinner.SetActive(true);
             ManualSwitchText.SetActive(false);
 
-            if (Prefs.Exist(Prefs.LOAD_LEVEL_NAME))
+            if (isStartUpScene)
+            {
+                LoadLevelAsync("MainMenu");
+            }
+            else if (Prefs.Exist(Prefs.LOAD_LEVEL_NAME))
             {
                 LoadLevelAsync(Prefs.Game_LevelName());
             }
@@ -113,14 +119,14 @@ namespace HFPS.Systems
                 }
                 else
                 {
-                    LevelNameText.text = scene;
-                    LevelDescriptionText.text = $"No info for \"{scene}\" scene!";
+                    LevelNameText.text = "";
+                    LevelDescriptionText.text = "";
                 }
             }
             else
             {
-                LevelNameText.text = scene;
-                LevelDescriptionText.text = "No scene infos!";
+                LevelNameText.text = "";
+                LevelDescriptionText.text = "";
             }
 
             StartCoroutine(LoadScene(scene, TimeBeforeLoad));
