@@ -6859,7 +6859,7 @@ PrefabInstance:
     - target: {fileID: 1761846739212691052, guid: 956ef9f3267954462bce83fb4ca488fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1761846739212691052, guid: 956ef9f3267954462bce83fb4ca488fb,
         type: 3}
@@ -10069,7 +10069,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &605277647 stripped
 Transform:
@@ -15463,7 +15463,7 @@ PrefabInstance:
     - target: {fileID: 4002064368963933418, guid: 82b07470b107949d7901bfa5596f5cae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4002064368963933418, guid: 82b07470b107949d7901bfa5596f5cae,
         type: 3}
@@ -16777,7 +16777,7 @@ PrefabInstance:
     - target: {fileID: 5698884337563614366, guid: e36341abcac6046c89efae7c443159e8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5698884337563614366, guid: e36341abcac6046c89efae7c443159e8,
         type: 3}
@@ -19907,7 +19907,7 @@ PrefabInstance:
     - target: {fileID: 2287548867139702416, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702416, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -19962,262 +19962,262 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.size
-      value: 109
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[0].BlockKey
-      value: DraggableObject_0c840331401e412cb104933549265c79
+      value: AmbienceZone_2602f07da52046ee81cb90b3a7d7645b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[0].Instance
       value: 
-      objectReference: {fileID: 1049665939}
+      objectReference: {fileID: 30961271}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[1].BlockKey
-      value: InteractiveLight_27be918cec5b4e44b960c2d7bbc99f48
+      value: DynamicObject_d6ca9565ea694d05928b016313de5d6c
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[1].Instance
       value: 
-      objectReference: {fileID: 5464923800850318920}
+      objectReference: {fileID: 32704425}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[2].BlockKey
-      value: DynamicObject_5898332433dc4c96925da9050e3277c3
+      value: DynamicObject_7a9edce17d5940e38cf501e3d6e4a8cb
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[2].Instance
       value: 
-      objectReference: {fileID: 1887960866}
+      objectReference: {fileID: 41532939}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[3].BlockKey
-      value: DynamicObject_72714985ea0e49b7a003b1d8e7924b71
+      value: DynamicObject_af5aa2662dfe4e3ba033eafb753c9287
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[3].Instance
       value: 
-      objectReference: {fileID: 1887960867}
+      objectReference: {fileID: 41532940}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[4].BlockKey
-      value: DynamicObject_6b685886c4c348dd9780af019d0376b5
+      value: DynamicObject_b2c23eba5b334e59bf8a18e8b85f12da
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[4].Instance
       value: 
-      objectReference: {fileID: 1887960868}
+      objectReference: {fileID: 41532941}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[5].BlockKey
-      value: InteractiveItem_7db5eb7f987341749296da1f859ad680
+      value: TriggerHint_7220ad56ea38466182f71805a9c7ee12
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[5].Instance
       value: 
-      objectReference: {fileID: 1717259041}
+      objectReference: {fileID: 57055459}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[6].BlockKey
-      value: InteractiveLight_425f02d469034adfa6a07dbaa93cf9bb
+      value: InteractiveItem_3f8439f41d8c486a916a89e1d2c5497e
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[6].Instance
       value: 
-      objectReference: {fileID: 1683540327}
+      objectReference: {fileID: 115273267}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[7].BlockKey
-      value: InteractiveItem_aa0a2a0c26444c39b02ccd89c2f604f3
+      value: InteractiveLight_cf1ca0e004c14d399404e7ba33f2d700
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[7].Instance
       value: 
-      objectReference: {fileID: 1553074314}
+      objectReference: {fileID: 130997375}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[8].BlockKey
-      value: InteractiveItem_0c283ec190584b91b5ae937dec5fe745
+      value: InteractiveItem_a13bb69236b5494da7d06c372262ca8e
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[8].Instance
       value: 
-      objectReference: {fileID: 1540969087}
+      objectReference: {fileID: 185105888}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[9].BlockKey
-      value: ZombieBehaviourAI_3c809f749cf64049a415f186ae9a6f0a
+      value: DynamicObject_e10730398e2b42ec909876269092512a
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[9].Instance
       value: 
-      objectReference: {fileID: 1484075940}
+      objectReference: {fileID: 260147235}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[10].BlockKey
-      value: InteractiveItem_fc4be742fcf64e4aa3f627ae898cf188
+      value: DynamicObject_0f518744b3014120b5dbd09ebe951607
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[10].Instance
       value: 
-      objectReference: {fileID: 1359323862}
+      objectReference: {fileID: 260147236}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[11].BlockKey
-      value: InteractiveItem_393c24eb6bdd48e2991e9307cd40dc42
+      value: DynamicObject_87a2e8070e4a4fefae2439b3d3fbfdf1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[11].Instance
       value: 
-      objectReference: {fileID: 1340098711}
+      objectReference: {fileID: 260147237}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[12].BlockKey
-      value: InteractiveItem_15d49e578a87485cbd35edae82adc6d1
+      value: SaveObject_e12d631f25774231a14cd1164d35bac9
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[12].Instance
       value: 
-      objectReference: {fileID: 1284045350}
+      objectReference: {fileID: 284010903}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[13].BlockKey
-      value: InteractiveItem_6fa6e52b7ca2451984474cce3adb8f09
+      value: Radio_bad824a09f0b4d53b01275c366cc76cd
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[13].Instance
       value: 
-      objectReference: {fileID: 1187876623}
+      objectReference: {fileID: 285788975}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[14].BlockKey
-      value: InteractiveItem_60acd079bf21452d814bfe67c16ea402
+      value: InteractiveItem_32f6d02902ec4cc194a0c47415793849
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[14].Instance
       value: 
-      objectReference: {fileID: 1172896685}
+      objectReference: {fileID: 285788976}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[15].BlockKey
-      value: InteractiveItem_9a95f31a85fc431baeb7d20f33184c18
+      value: InteractiveItem_54f253f8fe3b49b79baff0de53f8257f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[15].Instance
       value: 
-      objectReference: {fileID: 1060870476}
+      objectReference: {fileID: 330621154}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[16].BlockKey
-      value: InteractiveItem_eac5c0c59e284959895bf0e121ee963e
+      value: VCRPlayer_b9d0521b170a4fc799e730f04c9ecb52
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[16].Instance
       value: 
-      objectReference: {fileID: 989774460}
+      objectReference: {fileID: 365600263}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[17].BlockKey
-      value: InteractiveItem_fdddca4ac42745a0b3ed6c91ae93f8f0
+      value: InteractiveItem_9904874b6d2143d99d510706447b44fc
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[17].Instance
       value: 
-      objectReference: {fileID: 912593833}
+      objectReference: {fileID: 365600264}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[18].BlockKey
-      value: InteractiveItem_67323bdcfc1f4c81b4c04d96f9dc08e3
+      value: InteractiveItem_4b51a4967e834bfc8016bc0c9a08600f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[18].Instance
       value: 
-      objectReference: {fileID: 882323992}
+      objectReference: {fileID: 390502846}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[19].BlockKey
-      value: InteractiveItem_bb99ff2d777542e690ac09c584abe7fd
+      value: AmbienceZone_8bae1deed6b34ab68b07cb7ff9abf980
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[19].Instance
       value: 
-      objectReference: {fileID: 870378614}
+      objectReference: {fileID: 392589963}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[20].BlockKey
-      value: InteractiveItem_93ab04ed41a44a758770a39d49a42794
+      value: InteractiveItem_36e2d12d0cf04cf58b398e3a31f00e26
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[20].Instance
       value: 
-      objectReference: {fileID: 768180589}
+      objectReference: {fileID: 440624062}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[21].BlockKey
-      value: InteractiveItem_c44f96f5bcdf46f890e64e6187c97258
+      value: InteractiveItem_60ecdc48be4e4a9dbfe8d498f5003a4a
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[21].Instance
       value: 
-      objectReference: {fileID: 756821207}
+      objectReference: {fileID: 468335421}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[22].BlockKey
-      value: InteractiveItem_76488ce2d01b4592b242c276ceac93d9
+      value: InteractiveItem_13b7673407d54b31b70d7d320ba27df5
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[22].Instance
       value: 
-      objectReference: {fileID: 696829749}
+      objectReference: {fileID: 485865098}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[23].BlockKey
-      value: InteractiveLight_ad49b121cf75426f82fd063cab5a76ea
+      value: InteractiveItem_c4be4e8bad434e9c8acc66677e1ae323
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[23].Instance
       value: 
-      objectReference: {fileID: 651346119}
+      objectReference: {fileID: 533440484}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[24].BlockKey
-      value: InteractiveItem_9d2c9c46635e421dbc560c6a778c6f31
+      value: SaveObject_9429e16d047b4d5c96083f951e69736f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[24].Instance
       value: 
-      objectReference: {fileID: 633669551}
+      objectReference: {fileID: 561252789}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[25].BlockKey
-      value: InteractiveItem_265685cf995f49a69efda14af7cef1c4
+      value: InteractiveItem_c0319a6b26a84362b4ab0ebac784db77
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -20227,823 +20227,823 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[26].BlockKey
-      value: InteractiveItem_25cdaff68a17490ba7440315768ee320
+      value: InteractiveItem_e5d61cce6270406b8676caf03393c377
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[26].Instance
       value: 
-      objectReference: {fileID: 533440484}
+      objectReference: {fileID: 633669551}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[27].BlockKey
-      value: InteractiveItem_33e399979e3644159d211c941f144a36
+      value: InteractiveLight_fe3a51348e984eeaa425c7214482d3f9
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[27].Instance
       value: 
-      objectReference: {fileID: 485865098}
+      objectReference: {fileID: 651346119}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[28].BlockKey
-      value: InteractiveItem_8a707e56cfea484ab57abea48a87cdc5
+      value: DraggableObject_ac5a03d3791044408b294acb03cd2ab2
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[28].Instance
       value: 
-      objectReference: {fileID: 468335421}
+      objectReference: {fileID: 675126489}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[29].BlockKey
-      value: InteractiveItem_a00df00b629441f1afcc4108d70160ce
+      value: InteractiveItem_4f6eaf7d886f4dbaa844c895781f8bc9
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[29].Instance
       value: 
-      objectReference: {fileID: 440624062}
+      objectReference: {fileID: 696829749}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[30].BlockKey
-      value: InteractiveItem_a987c1f0e0f5422abd3f225ae2a26904
+      value: SaveObject_c3f602d31e7a44eeb7edff2cf88ab140
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[30].Instance
       value: 
-      objectReference: {fileID: 390502846}
+      objectReference: {fileID: 722966744}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[31].BlockKey
-      value: InteractiveItem_f922c2325bd64418bd944189b52e3ef1
+      value: InteractiveItem_2adfb45cf3a04f88b9fbb3f211f32b0b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[31].Instance
       value: 
-      objectReference: {fileID: 365600264}
+      objectReference: {fileID: 756821207}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[32].BlockKey
-      value: VCRPlayer_3fa4efb8d58e40f7a31fff592c0743d7
+      value: InteractiveItem_b9cbabb469fe4765a2a0781f4e11ad92
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[32].Instance
       value: 
-      objectReference: {fileID: 365600263}
+      objectReference: {fileID: 768180589}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[33].BlockKey
-      value: InteractiveItem_0226a5b54e94479fbe967a10f7e6569e
+      value: TriggerEvent_d67d4e01b5bc44c796f768a05725d98b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[33].Instance
       value: 
-      objectReference: {fileID: 330621154}
+      objectReference: {fileID: 860085015}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[34].BlockKey
-      value: Radio_56b45458800641a0aca1f62a5a72e485
+      value: InteractiveItem_46e67f20caaa40c087f244b2dd27e9ac
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[34].Instance
       value: 
-      objectReference: {fileID: 285788975}
+      objectReference: {fileID: 870378614}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[35].BlockKey
-      value: InteractiveItem_26a1c28fe55047678189559a9d93f1bf
+      value: InteractiveItem_b0166423f1874375952c401caac52155
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[35].Instance
       value: 
-      objectReference: {fileID: 285788976}
+      objectReference: {fileID: 882323992}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[36].BlockKey
-      value: DynamicObject_5e4a44df1b5a4f8ea9a812fa9394c626
+      value: InteractiveItem_2bfce5c50529426e83f6545bc6e75605
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[36].Instance
       value: 
-      objectReference: {fileID: 260147235}
+      objectReference: {fileID: 912593833}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[37].BlockKey
-      value: DynamicObject_62ec05f95e8f4a7bb75b494f55ef3980
+      value: TriggerHint_b8915571cf774b4b87bef42254142bbc
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[37].Instance
       value: 
-      objectReference: {fileID: 260147236}
+      objectReference: {fileID: 958431641}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[38].BlockKey
-      value: DynamicObject_cfdcd910134f4543a2d59061f244943d
+      value: SaveObject_9b7a7f61b9a24b75bb0edccdc1237f45
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[38].Instance
       value: 
-      objectReference: {fileID: 260147237}
+      objectReference: {fileID: 958431642}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[39].BlockKey
-      value: InteractiveItem_ce0871381855479d8f95ee4c3b6c1d33
+      value: InteractiveItem_39a3e84bd0334522a10b4331181e92b8
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[39].Instance
       value: 
-      objectReference: {fileID: 185105888}
+      objectReference: {fileID: 989774460}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[40].BlockKey
-      value: InteractiveItem_75e4d6ed0c914cb0b112896fcd3a0033
+      value: TriggerHint_6aa6cbb77e78455e9043b1795eb41f1f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[40].Instance
       value: 
-      objectReference: {fileID: 115273267}
+      objectReference: {fileID: 999032442}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[41].BlockKey
-      value: DynamicObject_a01903ec650b41089b394e0758291662
+      value: SaveObject_3d83744a578c4472891700411f4421ee
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[41].Instance
       value: 
-      objectReference: {fileID: 41532939}
+      objectReference: {fileID: 1002226743}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[42].BlockKey
-      value: DynamicObject_73df4d62e8f94776b56da006b9f6ba94
+      value: AmbienceZone_bb6243a377d0496591df93b411a04a73
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[42].Instance
       value: 
-      objectReference: {fileID: 41532940}
+      objectReference: {fileID: 1051632467}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[43].BlockKey
-      value: DynamicObject_2f07e29ffaf141858c05d9f99b9fb08a
+      value: TriggerHint_d0a37971a5854ef5967a386946f3354b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[43].Instance
       value: 
-      objectReference: {fileID: 41532941}
+      objectReference: {fileID: 1054400483}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[44].BlockKey
-      value: AmbienceZone_88c60c395c3e4591bd230ddc5ac7ba06
+      value: InteractiveItem_0be449f335704a75ba7ee9158b135dcc
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[44].Instance
       value: 
-      objectReference: {fileID: 30961271}
+      objectReference: {fileID: 1060870476}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[45].BlockKey
-      value: DynamicObject_b479ab8b34494566af87bed30582da1a
+      value: InteractiveLight_0131824c20e04dbca1f7778555fc5bc7
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[45].Instance
       value: 
-      objectReference: {fileID: 32704425}
+      objectReference: {fileID: 1131750473}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[46].BlockKey
-      value: TriggerHint_7280784aa72247159ecdad5301446376
+      value: TriggerEvent_cfa29a4d1d68423ca4064573009e563b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[46].Instance
       value: 
-      objectReference: {fileID: 57055459}
+      objectReference: {fileID: 1152604969}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[47].BlockKey
-      value: InteractiveLight_3ed64fdb613040dcb5dd19bda6a33d40
+      value: SaveObject_a84829b1eebf4d8290e50dd0a3cfc7cb
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[47].Instance
       value: 
-      objectReference: {fileID: 130997375}
+      objectReference: {fileID: 1152604971}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[48].BlockKey
-      value: SaveObject_b8e9ff95ed2e41b0aee2e949f0c7206a
+      value: DynamicObject_85b56342861c483cb41a27a793804cf7
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[48].Instance
       value: 
-      objectReference: {fileID: 284010903}
+      objectReference: {fileID: 1155577964}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[49].BlockKey
-      value: AmbienceZone_738852cf68aa48c4b9a375eae9fa53fd
+      value: InteractiveItem_20ebef7c63764dad941dc4712203cdd0
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[49].Instance
       value: 
-      objectReference: {fileID: 392589963}
+      objectReference: {fileID: 1172896685}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[50].BlockKey
-      value: SaveObject_403cc757cea542c6a6c3686b68ba6367
+      value: InteractiveItem_47425e1fb75448fa980f310f531b2336
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[50].Instance
       value: 
-      objectReference: {fileID: 561252789}
+      objectReference: {fileID: 1187876623}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[51].BlockKey
-      value: DraggableObject_7a05026681214513a231d8e6fdad9a6e
+      value: DraggableObject_ecc2f3ecbcfb43219264759ed27d086b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[51].Instance
       value: 
-      objectReference: {fileID: 675126489}
+      objectReference: {fileID: 1246512138}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[52].BlockKey
-      value: SaveObject_7e066da2cdd445b08469f7f7ae9b0a23
+      value: InteractiveLight_c3ed7823cc9b42dc900a564a537d8269
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[52].Instance
       value: 
-      objectReference: {fileID: 722966744}
+      objectReference: {fileID: 1247419349}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[53].BlockKey
-      value: TriggerEvent_5caae5511f04499bb1e7948a1800c33a
+      value: InteractiveItem_5dada98d62974f65926b269c0280d164
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[53].Instance
       value: 
-      objectReference: {fileID: 860085015}
+      objectReference: {fileID: 1284045350}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[54].BlockKey
-      value: TriggerHint_752740f114134e989006c30e8238da92
+      value: InteractiveItem_7dd05b1bfd524204a729704fcf6a3036
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[54].Instance
       value: 
-      objectReference: {fileID: 958431641}
+      objectReference: {fileID: 1340098711}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[55].BlockKey
-      value: SaveObject_53145bcb2ea54a44ae3202ad3f5befd2
+      value: TriggerEvent_c60ffcc23164430082197885167227b1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[55].Instance
       value: 
-      objectReference: {fileID: 958431642}
+      objectReference: {fileID: 1344469663}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[56].BlockKey
-      value: TriggerHint_f97bb4e1146942239effcb1d5750d2b7
+      value: InteractiveItem_90eb3d3b247b4178aae4ee6c8771e5a5
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[56].Instance
       value: 
-      objectReference: {fileID: 999032442}
+      objectReference: {fileID: 1359323862}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[57].BlockKey
-      value: SaveObject_9f7c6bf0104040d2a7675695bc91956d
+      value: ZombieBehaviourAI_f7a10fe5f8c24dfaa80ef57edfd81ed4
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[57].Instance
       value: 
-      objectReference: {fileID: 1002226743}
+      objectReference: {fileID: 1484075940}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[58].BlockKey
-      value: AmbienceZone_21040cb8ed6842ccb8bad4a7583d76c1
+      value: InteractiveItem_30a094faa57b4840b4613551ef9299e4
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[58].Instance
       value: 
-      objectReference: {fileID: 1051632467}
+      objectReference: {fileID: 1540969087}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[59].BlockKey
-      value: TriggerHint_1d756f3e2223480ba8ff19635d47a99a
+      value: InteractiveItem_03abd02591fe42999fa434caa5b813a8
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[59].Instance
       value: 
-      objectReference: {fileID: 1054400483}
+      objectReference: {fileID: 1553074314}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[60].BlockKey
-      value: InteractiveLight_049b478ce17b463daf7e33094e3199be
+      value: SaveObject_72e2652710af471eabda566917521404
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[60].Instance
       value: 
-      objectReference: {fileID: 1131750473}
+      objectReference: {fileID: 1590309419}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[61].BlockKey
-      value: TriggerEvent_4c67206e977b4e4f9371543493ce4879
+      value: InteractiveLight_f6634f39141b4fbbaeefa30c1a4db508
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[61].Instance
       value: 
-      objectReference: {fileID: 1152604969}
+      objectReference: {fileID: 1683540327}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[62].BlockKey
-      value: SaveObject_bbeed6678bad4b3f8060bcf52addfacc
+      value: InteractiveItem_6c606fc303ef4c5f88e97429810d42b2
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[62].Instance
       value: 
-      objectReference: {fileID: 1152604971}
+      objectReference: {fileID: 1717259041}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[63].BlockKey
-      value: DynamicObject_e6aa0cce868246b8905cdd34674d1e15
+      value: InteractiveLight_eb7ec563fe2d4b42b7630e57ac1ff9e7
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[63].Instance
       value: 
-      objectReference: {fileID: 1155577964}
+      objectReference: {fileID: 1718750358}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[64].BlockKey
-      value: DraggableObject_f70bc16a6f2749ad97992f0b46b1ec43
+      value: SaveObject_77b3c82c7da4479bbaab191f11784d9f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[64].Instance
       value: 
-      objectReference: {fileID: 1246512138}
+      objectReference: {fileID: 1830161404}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[65].BlockKey
-      value: InteractiveLight_fb2f5d2d58724352890ae972d88831a8
+      value: AmbienceZone_ec07ba3ef212416db2e91056968da555
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[65].Instance
       value: 
-      objectReference: {fileID: 1247419349}
+      objectReference: {fileID: 1858866796}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[66].BlockKey
-      value: TriggerEvent_5cebeb2a0c3b40cc81cdd0d33ae7df57
+      value: DynamicObject_3eaac458628944dc84a57fd609ab8393
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[66].Instance
       value: 
-      objectReference: {fileID: 1344469663}
+      objectReference: {fileID: 1887960866}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[67].BlockKey
-      value: SaveObject_49ed7b2c093f4e0cb343908903638073
+      value: DynamicObject_83506a34aef84fabba809a963b8e11ea
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[67].Instance
       value: 
-      objectReference: {fileID: 1590309419}
+      objectReference: {fileID: 1887960867}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[68].BlockKey
-      value: InteractiveLight_71a6eeedc7cd4e5ebaaf70758295d83b
+      value: DynamicObject_cd46f10b3c8f4ed7a0ef4fd518f9e0ae
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[68].Instance
       value: 
-      objectReference: {fileID: 1718750358}
+      objectReference: {fileID: 1887960868}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[69].BlockKey
-      value: SaveObject_af2908956b52422e859a175b779da108
+      value: DynamicObject_32c32c0cf5894ce19d6091d95c985168
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[69].Instance
       value: 
-      objectReference: {fileID: 1830161404}
+      objectReference: {fileID: 114079704495930977}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[70].BlockKey
-      value: AmbienceZone_8c407d4fb07f4af1b876960fd8b1385b
+      value: DynamicObject_0dda2a0893d349c5bfeb604088aa3fd5
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[70].Instance
       value: 
-      objectReference: {fileID: 1858866796}
+      objectReference: {fileID: 114134205965899245}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[71].BlockKey
-      value: DynamicObject_337187a0a0bb48b7b9e4250c01c7e02a
+      value: DynamicObject_0eb2e60c355e4585a1760f5873b1c6d7
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[71].Instance
       value: 
-      objectReference: {fileID: 114079704495930977}
+      objectReference: {fileID: 114247069337605223}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[72].BlockKey
-      value: DynamicObject_9b79f5a1a1b249b5bd03dd966e0ebb4b
+      value: DynamicObject_7a1e1331205b48778f2151117dd1d667
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[72].Instance
       value: 
-      objectReference: {fileID: 114134205965899245}
+      objectReference: {fileID: 114247069378969581}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[73].BlockKey
-      value: DynamicObject_c283905de6d94080be5e4d8b79f59599
+      value: DynamicObject_f9259a818bb7499baec24eda815b4c43
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[73].Instance
       value: 
-      objectReference: {fileID: 114247069337605223}
+      objectReference: {fileID: 114247069646830761}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[74].BlockKey
-      value: DynamicObject_329f9332806a49a1a166063fab1c9745
+      value: DynamicObject_7aa2fa44effc46059463a07a3d1a38e2
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[74].Instance
       value: 
-      objectReference: {fileID: 114247069378969581}
+      objectReference: {fileID: 114247069919780179}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[75].BlockKey
-      value: DynamicObject_48e16a41e0c3481b8c54cd8f9ee9b792
+      value: InteractiveItem_7550dfc64a774262b61599ed5b10fbb1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[75].Instance
       value: 
-      objectReference: {fileID: 114247069646830761}
+      objectReference: {fileID: 114756057063765490}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[76].BlockKey
-      value: DynamicObject_2c1e9e30733b4a869ff13de0ed284246
+      value: DynamicObject_d86e09a10c9d45658cd7d7e1a7c47448
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[76].Instance
       value: 
-      objectReference: {fileID: 114247069919780179}
+      objectReference: {fileID: 114976373296356008}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[77].BlockKey
-      value: InteractiveItem_9601aa4c11be4193a7fcfc7ab82bfc4b
+      value: DynamicObjectPlank_a36bf3707f06442f9863f3f51d8b6491
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[77].Instance
       value: 
-      objectReference: {fileID: 114756057063765490}
+      objectReference: {fileID: 762270734551503498}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[78].BlockKey
-      value: DynamicObject_95ae1f05731c47b482bff02ffa3f1f39
+      value: DynamicObjectPlank_b3424208abc64ce1b03cb92907a7b034
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[78].Instance
       value: 
-      objectReference: {fileID: 114976373296356008}
+      objectReference: {fileID: 762370465557051912}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[79].BlockKey
-      value: DynamicObjectPlank_f01e1b57be0041599e4050a82ca0f953
+      value: DynamicObjectPlank_2c588b1fffac4def9595c771824ea2ef
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[79].Instance
       value: 
-      objectReference: {fileID: 762270734551503498}
+      objectReference: {fileID: 762776100764148728}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[80].BlockKey
-      value: DynamicObjectPlank_b63588bc96884835a0e5b8ee0765c4ff
+      value: DynamicObjectPlank_78e14d0623ea4cb88302c7111528e9db
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[80].Instance
       value: 
-      objectReference: {fileID: 762370465557051912}
+      objectReference: {fileID: 763117854991317022}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[81].BlockKey
-      value: DynamicObjectPlank_c178a1ad1d2d423c872d9f4dbec24e64
+      value: DynamicObject_fda91c6ea1b5450598b37abf9fc3deac
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[81].Instance
       value: 
-      objectReference: {fileID: 762776100764148728}
+      objectReference: {fileID: 763230720010719492}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[82].BlockKey
-      value: DynamicObjectPlank_7ebd0309674e4d0d961ddbe5ff30490e
+      value: DynamicObjectPlank_30e9e585a8b843e2b99e9f7dee44b953
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[82].Instance
       value: 
-      objectReference: {fileID: 763117854991317022}
+      objectReference: {fileID: 764176347324394384}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[83].BlockKey
-      value: DynamicObject_04f79db3a3764b678d0f1ad1c0869f52
+      value: InteractiveItem_f0f588799a2f4372adec23cb4419b945
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[83].Instance
       value: 
-      objectReference: {fileID: 763230720010719492}
+      objectReference: {fileID: 1976381393232910736}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[84].BlockKey
-      value: DynamicObjectPlank_00cdf2b95018490c882fc90ca33c9a53
+      value: DraggableObject_5340972caca8496995ab5dca138e4681
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[84].Instance
       value: 
-      objectReference: {fileID: 764176347324394384}
+      objectReference: {fileID: 2184050678252947774}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[85].BlockKey
-      value: InteractiveItem_aed0a8e0a6a3473faec627a7e95750b7
+      value: DraggableObject_cc52f8b152e14aa69b1f205eaf213415
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[85].Instance
       value: 
-      objectReference: {fileID: 1976381393232910736}
+      objectReference: {fileID: 2184050679253867139}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[86].BlockKey
-      value: DraggableObject_6b4add4f180f464aabda1a88d77171e0
+      value: InteractiveLight_dcb8a2b168324479b0436e1476d83539
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[86].Instance
       value: 
-      objectReference: {fileID: 2184050678252947774}
+      objectReference: {fileID: 2454444126610704011}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[87].BlockKey
-      value: DraggableObject_0ddaabe309ce4c3581969940fb8a4195
+      value: InteractiveItem_2d3c1a7abd80468b81333f5f12ed306a
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[87].Instance
       value: 
-      objectReference: {fileID: 2184050679253867139}
+      objectReference: {fileID: 3069384480569950233}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[88].BlockKey
-      value: InteractiveLight_a92425049b9f4235b9183f8a44e7d6a5
+      value: InteractiveItem_f4c44f322c5a4ce68db27fb861218db0
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[88].Instance
       value: 
-      objectReference: {fileID: 2454444126610704011}
+      objectReference: {fileID: 3257918365142510517}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[89].BlockKey
-      value: InteractiveItem_5bc809ee246e4211bf83bf6934973add
+      value: ExamineObjectAnimation_3f7923ae9df848d2b273f6841127e086
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[89].Instance
       value: 
-      objectReference: {fileID: 3069384480569950233}
+      objectReference: {fileID: 3288452766643549072}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[90].BlockKey
-      value: InteractiveItem_71bd4193ac0847b281d4165b1930d69c
+      value: SaveObject_d60f33678d214d77a6f508b623f064de
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[90].Instance
       value: 
-      objectReference: {fileID: 3257918365142510517}
+      objectReference: {fileID: 5055863829072849452}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[91].BlockKey
-      value: ExamineObjectAnimation_793dccf973554869968868fefe2c976b
+      value: InteractiveLight_1577438052684ae88b8cbd6054f06137
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[91].Instance
       value: 
-      objectReference: {fileID: 3288452766643549072}
+      objectReference: {fileID: 5464923800850318920}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[92].BlockKey
-      value: SaveObject_6719abdbfffa4d4e8dd8017b169bf6e6
+      value: TriggerAnimation_5075d4bf932e4d54b22eb49628fc5afd
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[92].Instance
       value: 
-      objectReference: {fileID: 5055863829072849452}
+      objectReference: {fileID: 57055456}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[93].BlockKey
-      value: TriggerAnimation_cbdca988864c4666b430d592f63e7d10
+      value: Electricity_315321f902384a80810214a69708cc3d
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[93].Instance
       value: 
-      objectReference: {fileID: 57055456}
+      objectReference: {fileID: 102987761}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[94].BlockKey
-      value: Electricity_d534e39108e24fd3aa5e70325184c86d
+      value: TriggerObjective_2d5e700235674603a003df984744b326
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[94].Instance
       value: 
-      objectReference: {fileID: 102987761}
+      objectReference: {fileID: 102987763}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[95].BlockKey
-      value: TriggerObjective_e6bf50a76b764acc817c0f8e09866698
+      value: TriggerAnimation_a38a9e2ab48d405fbff619440286220f
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[95].Instance
       value: 
-      objectReference: {fileID: 102987763}
+      objectReference: {fileID: 525083300}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[96].BlockKey
-      value: TriggerAnimation_03d8f7f9b6e24ca6ad0f8b437844ca53
+      value: Autosave_a7b91817d2ac4f96b35af4117b6bd66b
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[96].Instance
       value: 
-      objectReference: {fileID: 525083300}
+      objectReference: {fileID: 561252790}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[97].BlockKey
-      value: Autosave_74323496fa3843edb400b444daa9e6b5
+      value: JumpscareTrigger_8bc535731d5f42a6a4666df8f0ce00fd
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[97].Instance
       value: 
-      objectReference: {fileID: 561252790}
+      objectReference: {fileID: 860085016}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[98].BlockKey
-      value: JumpscareTrigger_cda9fe68ece74723a55150503402eb3f
+      value: TriggerObjective_3e96d21c98f74732a48b107ff62a7446
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[98].Instance
       value: 
-      objectReference: {fileID: 860085016}
+      objectReference: {fileID: 862757318}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[99].BlockKey
-      value: TriggerObjective_11ee9a895fc24b69bbb2c6efa78cbe26
+      value: TriggerObjective_a569a15219344048a8e952ca490041ac
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[99].Instance
       value: 
-      objectReference: {fileID: 862757318}
+      objectReference: {fileID: 958431639}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[100].BlockKey
-      value: TriggerObjective_2c349da081e3437b9c9a58ac12df866c
+      value: TriggerObjective_8ba3d144e46d4613acee3d7a3772b022
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[100].Instance
       value: 
-      objectReference: {fileID: 958431639}
+      objectReference: {fileID: 981542839}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[101].BlockKey
-      value: TriggerObjective_154f5b6c30534ab8906c92e41cb84eba
+      value: JumpscareTrigger_75e33aabee4c4049b85c0cd78c1516f2
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[101].Instance
       value: 
-      objectReference: {fileID: 981542839}
+      objectReference: {fileID: 999032440}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[102].BlockKey
-      value: JumpscareTrigger_1df4ca874d044ddea4fe3f1151f75d31
+      value: AnimationPlayEvent_11ef30ad528b409fb2bc04c4e2963b0d
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[102].Instance
       value: 
-      objectReference: {fileID: 999032440}
+      objectReference: {fileID: 1002226739}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[103].BlockKey
-      value: AnimationPlayEvent_bbbedffc186043b59b75200a2333ce69
+      value: JumpscareTrigger_fe71a33e31aa418eba450d86e73f0cdf
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[103].Instance
       value: 
-      objectReference: {fileID: 1002226739}
+      objectReference: {fileID: 1344469661}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[104].BlockKey
-      value: JumpscareTrigger_c847e70272e84526a8f1358b49255ece
+      value: TriggerObjective_b449db78ec4045bb902da235989600cb
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[104].Instance
       value: 
-      objectReference: {fileID: 1344469661}
+      objectReference: {fileID: 1764490590}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[105].BlockKey
-      value: TriggerObjective_16f50c51fae343faadce7efbcd1498dc
+      value: TriggerObjective_3ac112d6eabd4933a993fc9ff0d2be59
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[105].Instance
       value: 
-      objectReference: {fileID: 1764490590}
+      objectReference: {fileID: 1942957568}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[106].BlockKey
-      value: TriggerObjective_e6ebd4eae0c947d1bffb911f174fa03c
+      value: ItemEvent_b28fcf68727b42b5a791927ba31e6da2
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[106].Instance
       value: 
-      objectReference: {fileID: 1942957568}
+      objectReference: {fileID: 1045000743967625}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[107].BlockKey
-      value: ItemEvent_ec05f5a86c04461bbc3c0cdf0d174cf3
+      value: TriggerObjective_8d5bfb75bbbd4e2db3b4c2887c213bf5
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[107].Instance
       value: 
-      objectReference: {fileID: 1045000743967625}
+      objectReference: {fileID: 1045000743967626}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[108].BlockKey
@@ -21067,7 +21067,7 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[92].BlockType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21157,7 +21157,7 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[92].FieldData.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21252,32 +21252,32 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[93].FieldData.Array.data[0]
-      value: isPlayed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
-        type: 3}
-      propertyPath: constantSaveables.Array.data[94].FieldData.Array.data[0]
       value: isPoweredOn
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
-      propertyPath: constantSaveables.Array.data[95].FieldData.Array.data[0]
+      propertyPath: constantSaveables.Array.data[94].FieldData.Array.data[0]
       value: isTriggered
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
-      propertyPath: constantSaveables.Array.data[96].FieldData.Array.data[0]
+      propertyPath: constantSaveables.Array.data[95].FieldData.Array.data[0]
       value: isPlayed
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
-      propertyPath: constantSaveables.Array.data[97].FieldData.Array.data[0]
+      propertyPath: constantSaveables.Array.data[96].FieldData.Array.data[0]
       value: isSaved
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
-      propertyPath: constantSaveables.Array.data[98].FieldData.Array.data[0]
+      propertyPath: constantSaveables.Array.data[97].FieldData.Array.data[0]
       value: isPlayed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: constantSaveables.Array.data[98].FieldData.Array.data[0]
+      value: isTriggered
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21292,7 +21292,7 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[101].FieldData.Array.data[0]
-      value: isTriggered
+      value: isPlayed
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21307,7 +21307,7 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[104].FieldData.Array.data[0]
-      value: isPlayed
+      value: isTriggered
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21317,12 +21317,12 @@ PrefabInstance:
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[106].FieldData.Array.data[0]
-      value: isTriggered
+      value: eventExecuted
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: constantSaveables.Array.data[107].FieldData.Array.data[0]
-      value: eventExecuted
+      value: isTriggered
       objectReference: {fileID: 0}
     - target: {fileID: 2287548867139702423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
@@ -21430,10 +21430,20 @@ PrefabInstance:
       propertyPath: m_PlayerObj
       value: 
       objectReference: {fileID: 1515858966}
+    - target: {fileID: 6080763604960635423, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6080763605646089222, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
         type: 3}
       propertyPath: m_Name
       value: _GAMEUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080763606506988435, guid: cb7cb38f928ee46d5ab9465fc8655f5d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb7cb38f928ee46d5ab9465fc8655f5d, type: 3}
@@ -21796,18 +21806,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1042648906}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1049665939 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2184050677790738620, guid: 0d8d1edbe0bebc445a8e2a7ba6694217,
-    type: 3}
-  m_PrefabInstance: {fileID: 1875351417}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9977f91cd232b41a55f03760833051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1051632465
 GameObject:
   m_ObjectHideFlags: 0
@@ -25084,7 +25082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1154748628 stripped
 Transform:
@@ -31247,7 +31245,7 @@ PrefabInstance:
     - target: {fileID: 4424858499264029935, guid: 923c22099bac04c38b8bfdc9cb721de4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4424858499264029935, guid: 923c22099bac04c38b8bfdc9cb721de4,
         type: 3}
@@ -32308,7 +32306,7 @@ Transform:
   - {fileID: 870378613}
   - {fileID: 533440483}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1579418168 stripped
 GameObject:
@@ -36444,63 +36442,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1168848566}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1875351417
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1358394128314658, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_Name
-      value: Box02
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.935341
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.4870504
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 201.65741
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814066505094486, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d8d1edbe0bebc445a8e2a7ba6694217, type: 3}
 --- !u!4 &1880922640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4879865730670588, guid: da50c1f185bc38b449bb74dad975dcb9,
