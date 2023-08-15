@@ -14,6 +14,14 @@ It's created by Noor Ali. I added Control Freak controls in order to make on-scr
 4. Zoom has conflicts with drag rigidbody
 5. User is unable to assign shortcuts on his own (Low Priority)
 
+## Functionalities to Add
+
+1. Add Connection Status for game pause on no internet connection
+2. Add Puzzler in HFPS
+3. Hint on Rewarded ad
+4. Add Components of HFPS
+5. Add Interactive Book System
+
 ## List of working functionalities
 
 ### PLAYER FUNCTIONS
