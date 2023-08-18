@@ -1,4 +1,4 @@
-#if UNITY_IOS && EM
+#if UNITY_IOS && EM_ATT
 using EasyMobile;
 #endif
 using UnityEngine;
@@ -7,7 +7,7 @@ public class AppTrackingTransparencyRequest : MonoBehaviour
 {
     private void Start()
     {
-    #if UNITY_IOS && EM
+#if UNITY_IOS && EM_ATT
         var previousStatus = Privacy.AppTrackingManager.TrackingAuthorizationStatus;
 
         if (previousStatus == AppTrackingAuthorizationStatus.ATTrackingManagerAuthorizationStatusNotDetermined)
@@ -25,6 +25,6 @@ public class AppTrackingTransparencyRequest : MonoBehaviour
                 Advertisement.SetMetaData(gdprMetaData);
             });
         }
-    #endif
+#endif
     }
 }
