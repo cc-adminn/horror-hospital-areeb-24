@@ -67,3 +67,15 @@ It's created by Noor Ali. I added Control Freak controls in order to make on-scr
 ## House demo story:
 The player starts within an alleyway of the house, there is a door behind him alongside a light switch, which turns on the lamp. There are also pictures hanging on the wall and some pictures are intractable and present a story. When player moves ahead, there is a table on the right, which has a bunch of items like phone, radio and stuff. The Player tries to interact with the phone but the phone is dead, (again presenting a hint here) (or maybe show a message for the story or something)
 There is also a lamp and a paper on the table, both are intractable, player can read paper (presenting story or clues) There is a radio, again intractable, (you can play some audio for hints or clues) (moving ahead, there is a trigger when player walks there) There is a rat flashing pass the corner of the alleyway, scary player and showing a hint why there is a rat? there is another table right beside, which has intractable draws and on top there are some health pickable items like fruits (which will increase player health), there is also an examinable budha (I don't know why we placed it there :P)  There is a interactable lamp and a painting there in the corner when player turns from the corner and move ahead, (there is a jumpscare trigger) A zombie pass by in front of the player, light switches off and on and off and on and player starts breathing heavily electricity goes off and second objective appears, (turn on the electricity)
+
+### Tutorials
+
+#### Zombie
+
+- Setup Zombie and NavMesh https://www.youtube.com/watch?v=ZPiEEUPiwKI
+- Replace Zombie https://www.youtube.com/watch?v=LZN-G22ju-U
+
+#### Menus
+
+- Update Main Menu
+https://www.youtube.com/watch?v=h6i_JPhQ6Qk
