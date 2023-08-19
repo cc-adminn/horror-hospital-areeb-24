@@ -20,6 +20,8 @@ namespace HFPS.Systems
             [ReadOnly]
             public int objectiveID;
             public string localeKey;
+            [Multiline]
+            public string hintText;
 
             public Objective Clone()
             {
@@ -30,7 +32,8 @@ namespace HFPS.Systems
                     objectiveText = objectiveText,
                     completeCount = completeCount,
                     objectiveID = objectiveID,
-                    localeKey = localeKey
+                    localeKey = localeKey,
+                    hintText = hintText
                 };
             }
         }

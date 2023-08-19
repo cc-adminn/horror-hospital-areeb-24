@@ -19,28 +19,46 @@ MonoBehaviour:
     completeCount: 0
     objectiveID: 0
     localeKey: Obj.TheHouse.Investigate
+    hintText: 
   - shortName: Electricity
     eventID: 
     objectiveText: Locate the electric box and turn on the power again
     completeCount: 0
     objectiveID: 1
     localeKey: Obj.TheHouse.Electricity
+    hintText: '<size=20><color=yellow>Electricity</color></size>
+
+      Electricity
+      room can only be accessed through vents. Vents are in store room.'
   - shortName: Room Way Out
     eventID: 
     objectiveText: Find a way out from room
     completeCount: 0
     objectiveID: 2
     localeKey: Obj.TheHouse.RoomWayOut
+    hintText: '<size=20><color=yellow>Room Way Out</color></size>
+
+      Go back
+      from the vent. You need to drag and drop the box beside washing machine. Jump
+      on the box from machine and go through the vent.'
   - shortName: DoorKey
     eventID: 
     objectiveText: Find a proper key for the door
     completeCount: 0
     objectiveID: 3
     localeKey: Obj.TheHouse.DoorKey
+    hintText: '<size=20><color=yellow>Door Key</color></size>
+
+      Key is in electricity
+      room, go through the vent and grab the key.'
   - shortName: Play VHS
     eventID: 
     objectiveText: Play a VHS Tape
     completeCount: 0
     objectiveID: 4
     localeKey: Obj.TheHouse.PlayVHS
+    hintText: '<size=20><color=yellow>Play VHS</color></size>
+
+      VHS tape is
+      inside the chest. Turn on VHS first and then insert the tape from inventory'
   enableLocalization: 0

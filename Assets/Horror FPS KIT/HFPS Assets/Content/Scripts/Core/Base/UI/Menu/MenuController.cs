@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 using ThunderWire.Input;
 using ThunderWire.Utility;
 using HFPS.UI;
+using CC;
 
 namespace HFPS.Systems
 {
@@ -102,6 +103,14 @@ namespace HFPS.Systems
             InputHandler.GetInputAction("Cancel", "UI").performed -= OnCancel;
         }
 
+        private void OnDisable()
+        {
+#if EASY_MOBILE_PRO
+            EasyMobile.Advertising.RewardedAdCompleted -= RewardedAdCompletedHandler;
+            EasyMobile.Advertising.RewardedAdSkipped -= RewardedAdSkippedHandler;
+#endif
+        }
+
         private void OnInitTexts()
         {
             OnDuplicateTextPC = TextsSource.GetText("MenuUI.PCActionDuplicate");
@@ -133,7 +142,7 @@ namespace HFPS.Systems
             }
         }
 
-        #region InputHandler Events
+#region InputHandler Events
         private void OnApply(UnityEngine.InputSystem.InputAction.CallbackContext obj)
         {
             if (rebindPending) return;
@@ -332,7 +341,7 @@ namespace HFPS.Systems
 
         InputActionProperties FindActionPropertiesFor(string actionName, int bindingIndex)
             => actionProperties.Where(x => x.realActionName == actionName && x.bindingIndex == bindingIndex).FirstOrDefault();
-        #endregion
+#endregion
 
         private void RestrictSelections(bool state)
         {
@@ -462,6 +471,60 @@ namespace HFPS.Systems
                 FirstOrAltButton(FirstButton, FirstAltButton);
             }
         }
+
+        public void OnTapWatch()
+        {
+#if UNITY_EDITOR
+            ShowHintsPanel();
+#endif
+            if (!AdController.HasReference) return;
+            
+            bool rewardedVideoAdDisplayed = AdController.Instance.DisplayRandomRewardedVideoAd();
+
+            if (rewardedVideoAdDisplayed)
+            {
+#if EASY_MOBILE_PRO
+                Advertising.RewardedAdCompleted += RewardedAdCompletedHandler;
+                Advertising.RewardedAdSkipped += RewardedAdSkippedHandler;
+#endif
+            }
+            else
+            {
+#if EASY_MOBILE_PRO
+                NativeUI.Alert(
+                    "No Ad",
+                    "Video Ad is not available right now. Please try later.",
+                    "Okay"
+                    );
+#endif
+            }
+        }
+
+        private void ShowHintsPanel()
+        {
+            ShowPanel("HintAnswerPanel");
+        }
+
+#if EASY_MOBILE_PRO
+        // Event handler called when a rewarded ad has completed
+        void RewardedAdCompletedHandler(RewardedAdNetwork network, AdPlacement location)
+        {
+            ShowHintsPanel();
+
+            Advertising.RewardedAdCompleted -= RewardedAdCompletedHandler;
+            Advertising.RewardedAdSkipped -= RewardedAdSkippedHandler;
+        }
+
+        // Event handler called when a rewarded ad has been skipped
+        void RewardedAdSkippedHandler(RewardedAdNetwork network, AdPlacement location)
+        {
+            // Left this bug on Purpose, ideally on skipped it shouldn't reward user.
+            ShowHintsPanel();
+
+            Advertising.RewardedAdCompleted -= RewardedAdCompletedHandler;
+            Advertising.RewardedAdSkipped -= RewardedAdSkippedHandler;
+        }
+#endif
 
         public static void FirstOrAltButton(Selectable first, Selectable alt, bool sendMessage = false, bool activeCheck = true)
         {

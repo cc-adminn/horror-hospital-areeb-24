@@ -18,7 +18,7 @@ namespace HFPS.Editors
         {
             public bool baseState = false;
             public float height = 0f;
-            public bool[] categories = new bool[3];
+            public bool[] categories = new bool[4];
         }
 
         SerializedProperty m_Objectives;
@@ -128,6 +128,7 @@ namespace HFPS.Editors
                     SerializedProperty m_ObjText = element.FindPropertyRelative("objectiveText");
                     SerializedProperty m_ObjCompCount = element.FindPropertyRelative("completeCount");
                     SerializedProperty m_LocalizationKey = element.FindPropertyRelative("localeKey");
+                    SerializedProperty m_hintText = element.FindPropertyRelative("hintText");
 
                     string title = $"[{m_ObjID.intValue}] " + (!string.IsNullOrEmpty(m_Name.stringValue) ? m_Name.stringValue : $"Objective {i + 1}");
 
@@ -194,6 +195,25 @@ namespace HFPS.Editors
                         localeRect.width -= EditorGUIUtility.singleLineHeight + (EditorGUIUtility.standardVerticalSpacing * 2);
                         localeRect.x += EditorGUIUtility.singleLineHeight;
                         DrawLocalizationHeader(ref foldout[i].categories[2], localeRect, m_LocalizationKey, "Localization");
+
+                        // Hints Foldout
+                        Rect hintRect = GUILayoutUtility.GetRect(1f, 20);
+                        hintRect.width -= EditorGUIUtility.singleLineHeight + (EditorGUIUtility.standardVerticalSpacing * 2);
+                        hintRect.x += EditorGUIUtility.singleLineHeight;
+
+                        if (foldout[i].categories[3] = EditorGUI.BeginFoldoutHeaderGroup(hintRect, foldout[i].categories[3], "Hint"))
+                        {
+                            if (localizationExist && m_Localization.boolValue)
+                            {
+                                EditorUtils.TrHelpIconText("<b>Hint Text</b> will change depending on the current localization.", MessageType.Warning, true, false);
+                            }
+
+                            using (new EditorGUI.DisabledGroupScope(m_Localization.boolValue && localizationExist))
+                            {
+                                EditorGUILayout.PropertyField(m_hintText);
+                            }
+                        }
+                        EditorGUI.EndFoldoutHeaderGroup();
 
                         EditorGUI.indentLevel--;
                     }

@@ -33,6 +33,8 @@ namespace HFPS.Systems
         public GameObject PushObjectivesUI;
         public GameObject ObjectivePrefab;
         public GameObject PushObjectivePrefab;
+        public GameObject HintsButton;
+        public Text HintDialogText;
 
         [Header("Timing")]
         public float CompleteTime = 3f;
@@ -74,7 +76,7 @@ namespace HFPS.Systems
                     {
                         if (evt.EventID.Equals(obj.eventID))
                         {
-                            objectives.Add(new ObjectiveModel(obj.objectiveID, obj.completeCount, obj.objectiveText, evt));
+                            objectives.Add(new ObjectiveModel(obj.objectiveID, obj.completeCount, obj.objectiveText, obj.hintText, evt));
                             eventExist = true;
                             break;
                         }
@@ -82,7 +84,7 @@ namespace HFPS.Systems
 
                     if (!eventExist)
                     {
-                        objectives.Add(new ObjectiveModel(obj.objectiveID, obj.completeCount, obj.objectiveText, null));
+                        objectives.Add(new ObjectiveModel(obj.objectiveID, obj.completeCount, obj.objectiveText, obj.hintText, null));
                     }
                 }
             }
@@ -174,6 +176,20 @@ namespace HFPS.Systems
                 {
                     ObjectivesUI.SetActive(true);
 
+                    var hintList = activeObjectives.Where(obj => !obj.isCompleted && !string.IsNullOrEmpty(obj.hintText)).ToList();
+                    if (hintList != null && hintList.Count > 0)
+                    {
+                        HintsButton.SetActive(true);
+
+                        var hintText = hintList.Count == 1 ? hintList.First().hintText : string.Join("\n\n", hintList.Select(x => x.hintText).ToArray());
+
+                        HintDialogText.text = hintText;
+                    }
+                    else
+                    {
+                        HintsButton.SetActive(false);
+                    }
+
                     foreach (var obj in activeObjectives)
                     {
                         if (obj.objective != null)
@@ -188,11 +204,13 @@ namespace HFPS.Systems
                 else
                 {
                     ObjectivesUI.SetActive(false);
+                    HintsButton.SetActive(false);
                 }
             }
             else
             {
                 ObjectivesUI.SetActive(false);
+                HintsButton.SetActive(false);
             }
         }
 
@@ -428,12 +446,14 @@ namespace HFPS.Systems
         public bool isTouched;
 
         public ObjectiveEvent objEvent;
+        public string hintText;
 
-        public ObjectiveModel(int id, int complete, string text, ObjectiveEvent evt)
+        public ObjectiveModel(int id, int complete, string text, string hint, ObjectiveEvent evt)
         {
             identifier = id;
             toComplete = complete;
             objectiveText = text;
+            hintText = hint;
             objEvent = evt;
         }
 
@@ -443,6 +463,7 @@ namespace HFPS.Systems
             toComplete = complete;
             isCompleted = completed;
             objectiveText = "";
+            hintText = "";
             objEvent = evt;
         }
 

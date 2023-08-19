@@ -350,6 +350,60 @@ namespace HFPS.Systems
             }
         }
 
+        public void OnDialog()
+        {
+            if (!healthManager.isDead && !cutscene.cutsceneRunning)
+            {
+                gamePanels.MainGamePanel.SetActive(!gamePanels.MainGamePanel.activeSelf);
+
+                if (greyscaleState)
+                    greyscaleState = !greyscaleState;
+
+                isPaused = !isPaused;
+
+                if (isPaused)
+                {
+                    userInterface.Crosshair.enabled = false;
+                    LockPlayerControls(false, false, false, true, 3, true);
+                    GetComponent<FloatingIconManager>().SetAllIconsVisible(false);
+
+                    if (pauseTime)
+                    {
+                        foreach (var PauseEvent in PauseEvents)
+                        {
+                            PauseEvent.OnPauseEvent(true);
+                        }
+
+                        Time.timeScale = 0;
+                    }
+                }
+                else
+                {
+                    userInterface.Crosshair.enabled = true;
+                    LockPlayerControls(true, true, true, false, 3, false);
+                    GetComponent<FloatingIconManager>().SetAllIconsVisible(true);
+
+                    if (gamePanels.TabButtonPanel.activeSelf)
+                    {
+                        gamePanels.TabButtonPanel.SetActive(false);
+                        gamePanels.MiscPanel.SetActive(true);
+                        LockScript<ExamineManager>(true);
+                        isInventoryShown = false;
+                    }
+
+                    if (pauseTime)
+                    {
+                        foreach (var PauseEvent in PauseEvents)
+                        {
+                            PauseEvent.OnPauseEvent(false);
+                        }
+
+                        Time.timeScale = 1;
+                    }
+                }
+            }
+        }
+
         private void OnPause()
         {
             if (!healthManager.isDead && !cutscene.cutsceneRunning)
