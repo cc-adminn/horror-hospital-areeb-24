@@ -400,6 +400,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4881407833966160785, guid: e3a2ed480ce714aa0bd1f8d7fa7a8e8f,
+        type: 3}
+      propertyPath: NewGameBuildName
+      value: The House
+      objectReference: {fileID: 0}
     - target: {fileID: 4881407833966160791, guid: e3a2ed480ce714aa0bd1f8d7fa7a8e8f,
         type: 3}
       propertyPath: m_RootOrder
