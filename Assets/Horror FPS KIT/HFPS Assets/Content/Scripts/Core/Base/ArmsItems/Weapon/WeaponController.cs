@@ -784,7 +784,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(true);
-                gameManager.inputRigHandler.SetAttackControls(true);
+                gameManager.inputRigHandler.SetAttackControls(true, bullets: bulletSettings.bulletsInMag.ToString(), magazines: carryingBullets.ToString());
                 uiShown = true;
             }
 
@@ -814,11 +814,15 @@ namespace HFPS.Player
         {
             wallHit = hit;
             playerFunctions.wallHit = hit;
+
+            HFPS_GameManager.Instance.inputRigHandler.SetAttackControls(!hit, isFireArm: true);
         }
 
         public override void OnSwitcherDisable(bool enabled)
         {
             isBlocked = enabled;
+
+            gameManager.inputRigHandler.SetAttackControls(!isBlocked && !wallHit, bullets: bulletSettings.bulletsInMag.ToString(), magazines: carryingBullets.ToString());
         }
 
         IEnumerator SelectEvent()
@@ -832,7 +836,7 @@ namespace HFPS.Player
             if (gameManager)
             {
                 gameManager.gamePanels.AmmoPanel.SetActive(true);
-                gameManager.inputRigHandler.SetAttackControls(true);
+                gameManager.inputRigHandler.SetAttackControls(true, bullets: bulletSettings.bulletsInMag.ToString(), magazines: carryingBullets.ToString());
                 uiShown = true;
             }
 
@@ -905,7 +909,7 @@ namespace HFPS.Player
                 if (gameManager)
                 {
                     gameManager.gamePanels.AmmoPanel.SetActive(true);
-                    gameManager.inputRigHandler.SetAttackControls(true);
+                    gameManager.inputRigHandler.SetAttackControls(true, bullets: bulletSettings.bulletsInMag.ToString(), magazines: carryingBullets.ToString());
                     uiShown = true;
                 }
             }
