@@ -416,7 +416,6 @@ namespace HFPS.Player
 
                     if (selectKey)
                     {
-                        Debug.Log("consoleCursorPos: " + consoleCursorPos);
                         Vector3 mousePosition = InputConverter.MousePosition;
                         Ray ray = PlayerCam.ScreenPointToRay(device == InputHandler.Device.MouseKeyboard ? mousePosition : consoleCursorPos);
 
