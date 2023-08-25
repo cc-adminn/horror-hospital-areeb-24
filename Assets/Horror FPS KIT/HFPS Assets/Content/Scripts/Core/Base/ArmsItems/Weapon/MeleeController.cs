@@ -91,9 +91,9 @@ namespace HFPS.Player
 
         public override void OnSwitcherSelect()
         {
-            if (anim.isPlaying || isSelected) return;
-
             HFPS_GameManager.Instance.inputRigHandler.SetAttackControls(true, isFireArm: false);
+
+            if (anim.isPlaying || isSelected) return;
 
             MeleeGO.SetActive(true);
             anim.Play(DrawAnim);
@@ -104,9 +104,9 @@ namespace HFPS.Player
 
         public override void OnSwitcherDeselect()
         {
-            if (anim.isPlaying || !isSelected) return;
-
             HFPS_GameManager.Instance.inputRigHandler.SetAttackControls(false, isFireArm: false);
+
+            if (anim.isPlaying || !isSelected) return;
 
             isHideAnim = true;
 
@@ -134,11 +134,15 @@ namespace HFPS.Player
         public override void OnSwitcherWallHit(bool hit)
         {
             wallHit = hit;
+
+            HFPS_GameManager.Instance.inputRigHandler.SetAttackControls(!hit, isFireArm: false);
         }
 
         public override void OnSwitcherDisable(bool enabled)
         {
             isBlocked = enabled;
+
+            HFPS_GameManager.Instance.inputRigHandler.SetAttackControls(!isBlocked && !wallHit, isFireArm: false);
         }
 
         IEnumerator SelectCoroutine()
