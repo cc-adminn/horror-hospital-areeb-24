@@ -282,7 +282,10 @@ namespace HFPS.Player
             gameManager.ShowGrabSprites();
             gameManager.isGrabbed = true;
             delay.isEnabled = false;
-            pfunc.zoomEnabled = false;
+            if (!InputRigHandler.IsMobileMode)
+            {
+                pfunc.zoomEnabled = false;
+            }
             timeDropCheck = 0f;
 
             GetComponent<ScriptManager>().ScriptEnabledGlobal = false;
