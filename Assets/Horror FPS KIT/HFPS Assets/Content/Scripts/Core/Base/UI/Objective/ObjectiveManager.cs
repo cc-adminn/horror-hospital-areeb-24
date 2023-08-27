@@ -179,7 +179,7 @@ namespace HFPS.Systems
                     var hintList = activeObjectives.Where(obj => !obj.isCompleted && !string.IsNullOrEmpty(obj.hintText)).ToList();
                     if (hintList != null && hintList.Count > 0)
                     {
-                        HintsButton.SetActive(true);
+                        if (HintsButton) HintsButton.SetActive(true);
 
                         var hintText = hintList.Count == 1 ? hintList.First().hintText : string.Join("\n\n", hintList.Select(x => x.hintText).ToArray());
 
@@ -187,7 +187,7 @@ namespace HFPS.Systems
                     }
                     else
                     {
-                        HintsButton.SetActive(false);
+                        if (HintsButton) HintsButton.SetActive(false);
                     }
 
                     foreach (var obj in activeObjectives)
@@ -204,13 +204,13 @@ namespace HFPS.Systems
                 else
                 {
                     ObjectivesUI.SetActive(false);
-                    HintsButton.SetActive(false);
+                    if (HintsButton) HintsButton.SetActive(false);
                 }
             }
             else
             {
                 ObjectivesUI.SetActive(false);
-                HintsButton.SetActive(false);
+                if (HintsButton) HintsButton.SetActive(false);
             }
         }
 
