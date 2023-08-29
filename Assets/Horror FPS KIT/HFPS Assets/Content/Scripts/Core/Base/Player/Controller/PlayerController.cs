@@ -196,9 +196,9 @@ namespace HFPS.Player
         private bool PronePressed;
         private bool ZoomPressed;
 
-        private float inputX;
-        private float inputY;
-        private Vector2 inputMovement;
+        public float inputX;
+        public float inputY;
+        public Vector2 inputMovement;
 
         private bool proneTimeStart;
         private float proneTime;
@@ -270,6 +270,25 @@ namespace HFPS.Player
         private ParticleSystem foamParticles;
         #endregion
 
+        public bool useCustomSpeed;
+        public float customSpeed;
+
+        public bool lockMovement;
+
+        public bool lockMoveX;
+        public bool limitMoveX;
+        public int moveXLimitDir;
+
+        public bool lockMoveY;
+        public bool limitMoveY;
+        public int moveYLimitDir;
+
+        public bool noFallDamage;
+        public bool lockJump;
+        public bool lockPlayState;
+        public bool lockSprint;
+        public bool lockZoom;
+
         void Awake()
         {
             footsteps = GetComponent<FootstepsController>();
@@ -322,24 +341,224 @@ namespace HFPS.Player
 
             void GetInput()
             {
-                Vector2 movement;
-
-                if ((movement = InputConverter.Move) != null)
+                if (!lockMovement)
                 {
-                    if (InputHandler.CurrentDevice != InputHandler.Device.MouseKeyboard)
+
+                    Vector2 movement;
+
+                    if ((movement = InputConverter.Move) != null)
                     {
-                        inputX = movement.x;
-                        inputY = movement.y;
-                        inputMovement = movement;
+                        if (InputHandler.CurrentDevice != InputHandler.Device.MouseKeyboard)
+                        {
+                            if (!lockMoveX)
+                            {
+
+                                if (!limitMoveX)
+                                {
+
+                                    inputX = movement.x;
+                                    inputMovement.x = movement.x;
+
+                                    //!limitMoveX
+                                }
+                                else
+                                {
+
+                                    inputX = movement.x;
+
+                                    if (moveXLimitDir == 0)
+                                    {
+
+                                        if (movement.x < -0.000001 | movement.x == 0)
+                                        {
+
+                                            inputMovement.x = movement.x;
+
+                                        }//movement.x < -0.001
+
+                                    }//moveXLimitDir = left
+
+                                    if (moveXLimitDir == 1)
+                                    {
+
+                                        if (movement.x > 0.000001 | movement.x == 0)
+                                        {
+
+                                            inputMovement.x = movement.x;
+
+                                        }//movement.x > -0.001
+
+                                    }//moveXLimitDir = right
+
+                                }//!limitMoveX
+
+                                //!lockMoveX
+                            }
+                            else
+                            {
+
+                                inputMovement.x = inputX;
+
+                            }//!lockMoveX
+
+                            if (!lockMoveY)
+                            {
+
+                                if (!limitMoveY)
+                                {
+
+                                    inputY = movement.y;
+                                    inputMovement.y = movement.y;
+
+                                    //!limitMoveY
+                                }
+                                else
+                                {
+
+                                    inputY = movement.y;
+
+                                    if (moveYLimitDir == 0)
+                                    {
+
+                                        if (movement.y > 0.000001 | movement.y == 0)
+                                        {
+
+                                            inputMovement.y = movement.y;
+
+                                        }//movement.y > 0.001
+
+                                    }//moveYLimitDir = up
+
+                                    if (moveYLimitDir == 1)
+                                    {
+
+                                        if (movement.y < -0.0000001 | movement.y == 0)
+                                        {
+
+                                            inputMovement.y = movement.y;
+
+                                        }//movement.y < -0.001
+
+                                    }//moveYLimitDir = down
+
+                                }//!limitMoveY
+
+                                //!lockMoveY
+                            }
+                            else
+                            {
+
+                                inputMovement.y = inputY;
+
+                            }//!lockMoveY
+                        }
+                        else
+                        {
+                            if (!lockMoveX)
+                            {
+
+                                if (!limitMoveX)
+                                {
+
+                                    inputX = Mathf.MoveTowards(inputX, movement.x, Time.deltaTime * controllerSettings.inputSmoothing);
+                                    inputMovement.x = inputX;
+
+                                    //!limitMoveX
+                                }
+                                else
+                                {
+
+                                    inputX = Mathf.MoveTowards(inputX, movement.x, Time.deltaTime * controllerSettings.inputSmoothing);
+
+                                    if (moveXLimitDir == 0)
+                                    {
+
+                                        if (inputX < -0.001 | inputX == 0)
+                                        {
+
+                                            inputMovement.x = inputX;
+
+                                        }//inputX < -0.001
+
+                                    }//moveXLimitDir = left
+
+                                    if (moveXLimitDir == 1)
+                                    {
+
+                                        if (inputX > 0.001 | inputX == 0)
+                                        {
+
+                                            inputMovement.x = inputX;
+
+                                        }//inputX > -0.001
+
+                                    }//moveXLimitDir = right
+
+                                }//!limitMoveX
+
+                                //!lockMoveX
+                            }
+                            else
+                            {
+
+                                inputMovement.x = inputX;
+
+                            }//!lockMoveX
+
+                            if (!lockMoveY)
+                            {
+
+                                if (!limitMoveY)
+                                {
+
+                                    inputY = Mathf.MoveTowards(inputY, movement.y, Time.deltaTime * controllerSettings.inputSmoothing);
+                                    inputMovement.y = inputY;
+
+                                    //!limitMoveY
+                                }
+                                else
+                                {
+
+                                    inputY = Mathf.MoveTowards(inputY, movement.y, Time.deltaTime * controllerSettings.inputSmoothing);
+
+                                    if (moveYLimitDir == 0)
+                                    {
+
+                                        if (inputY > 0.001 | inputY == 0)
+                                        {
+
+                                            inputMovement.y = inputY;
+
+                                        }//inputY < -0.001
+
+                                    }//moveYLimitDir = up
+
+                                    if (moveYLimitDir == 1)
+                                    {
+
+                                        if (inputY < -0.001 | inputY == 0)
+                                        {
+
+                                            inputMovement.y = inputY;
+
+                                        }//inputY > -0.001
+
+                                    }//moveYLimitDir = down
+
+                                }//!limitMoveY
+
+                                //!lockMoveY
+                            }
+                            else
+                            {
+
+                                inputMovement.y = inputY;
+
+                            }//!lockMoveY
+                        }
                     }
-                    else
-                    {
-                        inputY = Mathf.MoveTowards(inputY, movement.y, Time.deltaTime * controllerSettings.inputSmoothing);
-                        inputX = Mathf.MoveTowards(inputX, movement.x, Time.deltaTime * controllerSettings.inputSmoothing);
-                        inputMovement.y = inputY;
-                        inputMovement.x = inputX;
-                    }
-                }
+
+                }//lockMovement
             }
 
             //Break update when player is dead and ragdoll is activated
@@ -351,18 +570,23 @@ namespace HFPS.Player
                 return;
             }
 
-            if (InputHandler.InputIsInitialized && !isPauseMenu)
+            if (!lockMovement && InputHandler.InputIsInitialized && !isPauseMenu)
             {
                 inputDevice = InputHandler.CurrentDevice;
-                ZoomPressed = InputConverter.ReadButton("Zoom");
+                if (!lockZoom)
+                {
 
-                if (controllerFeatures.enableJump)
+                    ZoomPressed = InputConverter.ReadButton("Zoom");
+
+                }//!lockZoom
+
+                if (controllerFeatures.enableJump && !lockJump)
                 {
                     JumpPressed = InputConverter.ReadButtonOnce(this, "Jump") &&
                         (!controllerFeatures.enableStamina || currentStamina > 0);
                 }
 
-                if (controllerFeatures.enableRun)
+                if (controllerFeatures.enableRun && !lockSprint)
                 {
                     if (inputDevice != InputHandler.Device.MouseKeyboard)
                     {
@@ -401,41 +625,44 @@ namespace HFPS.Player
                     }
                 }
 
-                if (!InputHandler.IsCompositesSame("Crouch", "Prone"))
+                if (!lockPlayState)
                 {
-                    CrouchPressed = InputConverter.ReadButtonOnce(this, "Crouch");
-                    PronePressed = InputConverter.ReadButtonOnce(this, "Prone");
-                }
-                else
-                {
-                    bool prone = InputConverter.ReadButton("Prone");
-
-                    if (prone && !inProne)
+                    if (!InputHandler.IsCompositesSame("Crouch", "Prone"))
                     {
-                        proneTimeStart = true;
-                        proneTime += Time.deltaTime;
-
-                        if (proneTime >= controllerSettings.consoleToProneTime)
-                        {
-                            PronePressed = true;
-                            inProne = true;
-                        }
-                    }
-                    else if (proneTimeStart && proneTime < controllerSettings.consoleToProneTime)
-                    {
-                        CrouchPressed = true;
-                        proneTimeStart = false;
-                        proneTime = 0;
+                        CrouchPressed = InputConverter.ReadButtonOnce(this, "Crouch");
+                        PronePressed = InputConverter.ReadButtonOnce(this, "Prone");
                     }
                     else
                     {
-                        CrouchPressed = false;
-                        PronePressed = false;
-                        proneTime = 0;
+                        bool prone = InputConverter.ReadButton("Prone");
 
-                        if (!prone && inProne)
+                        if (prone && !inProne)
                         {
-                            inProne = false;
+                            proneTimeStart = true;
+                            proneTime += Time.deltaTime;
+
+                            if (proneTime >= controllerSettings.consoleToProneTime)
+                            {
+                                PronePressed = true;
+                                inProne = true;
+                            }
+                        }
+                        else if (proneTimeStart && proneTime < controllerSettings.consoleToProneTime)
+                        {
+                            CrouchPressed = true;
+                            proneTimeStart = false;
+                            proneTime = 0;
+                        }
+                        else
+                        {
+                            CrouchPressed = false;
+                            PronePressed = false;
+                            proneTime = 0;
+
+                            if (!prone && inProne)
+                            {
+                                inProne = false;
+                            }
                         }
                     }
                 }
@@ -624,7 +851,16 @@ namespace HFPS.Player
                             {
                                 if (!isInWater && !isRunning)
                                 {
-                                    movementSpeed = basicSettings.walkSpeed;
+                                    if(!useCustomSpeed){
+                                    
+                                        movementSpeed = basicSettings.walkSpeed;
+                                
+                                    //!useCustomSpeed
+                                    } else {
+                                    
+                                        movementSpeed = customSpeed;
+                                    
+                                    }//!useCustomSpeed
                                 }
                                 else if (!isInWater && isRunning)
                                 {
@@ -637,16 +873,43 @@ namespace HFPS.Player
                             }
                             else
                             {
+                                if(!useCustomSpeed){
+                            
                                 movementSpeed = basicSettings.crouchSpeed;
+                        
+                            //!useCustomSpeed
+                            } else {
+                                    
+                                movementSpeed = customSpeed;
+                                    
+                            }//!useCustomSpeed
                             }
                         }
                         else if (characterState == CharacterState.Crouch)
                         {
-                            movementSpeed = basicSettings.crouchSpeed;
+                            if(!useCustomSpeed){
+                            
+                                movementSpeed = basicSettings.crouchSpeed;
+                        
+                            //!useCustomSpeed
+                            } else {
+                                    
+                                movementSpeed = customSpeed;
+                                    
+                            }//!useCustomSpeed
                         }
                         else if (characterState == CharacterState.Prone)
                         {
-                            movementSpeed = basicSettings.proneSpeed;
+                            if(!useCustomSpeed){
+                            
+                                movementSpeed = basicSettings.proneSpeed;
+                        
+                            //!useCustomSpeed
+                            } else {
+                                    
+                                movementSpeed = customSpeed;
+                                    
+                            }//!useCustomSpeed
                         }
 
                         //Apply normal movement physics
@@ -1020,6 +1283,8 @@ namespace HFPS.Player
 
         void ApplyFallingDamage(float fallDistance)
         {
+            if (noFallDamage) return;
+
             healthManager.ApplyDamage((int)(fallDistance * controllerSettings.fallDamageMultiplier));
             if (characterState != CharacterState.Prone) footsteps.OnJump();
             StartCoroutine(ApplyKickback(new Vector3(12, UnityEngine.Random.Range(-2.0f, 2.0f), 0), 0.1f));
@@ -1205,7 +1470,7 @@ namespace HFPS.Player
             }
         }
 
-        IEnumerator MovePlayer(Vector3 pos, float speed, bool isLadder, bool unlockLook = false)
+        public IEnumerator MovePlayer(Vector3 pos, float speed, bool isLadder, bool unlockLook = false)
         {
             CharacterControl.enabled = false;
 
@@ -1262,6 +1527,119 @@ namespace HFPS.Player
             yield return new WaitForSeconds(spamWaitTime);
             antiSpam = false;
         }
+
+        public void CustomSpeed_State(bool state)
+        {
+
+            useCustomSpeed = state;
+
+        }//CustomSpeed_State
+
+        public void CustomSpeed(float speed)
+        {
+
+            customSpeed = speed;
+
+        }//CustomSpeed
+
+        public void NoFallDamage_State(bool state)
+        {
+
+            noFallDamage = state;
+
+        }//NoFallDamage_State
+
+        public void LockMove_State(bool state)
+        {
+
+            lockMovement = state;
+
+        }//LockMove_State
+
+        public void LockMoveX_State(bool state)
+        {
+
+            lockMoveX = state;
+
+        }//LockMoveX_State
+
+        public void LimitMoveX_State(bool state)
+        {
+
+            limitMoveX = state;
+
+            if (!state)
+            {
+
+                moveXLimitDir = -1;
+
+            }//!state
+
+        }//LimitMoveX_State
+
+        public void LimitMoveX_Set(int direction)
+        {
+
+            moveXLimitDir = direction;
+
+        }//LimitMoveX_Set
+
+        public void LockMoveY_State(bool state)
+        {
+
+            lockMoveY = state;
+
+        }//LockMoveY_State
+
+        public void LimitMoveY_State(bool state)
+        {
+
+            limitMoveY = state;
+
+            if (!state)
+            {
+
+                moveYLimitDir = -1;
+
+            }//!state
+
+        }//LimitMoveY_State
+
+        public void LimitMoveY_Set(int direction)
+        {
+
+            moveYLimitDir = direction;
+
+        }//LimitMoveY_Set
+
+        public void LockJump_State(bool state)
+        {
+
+            lockJump = state;
+
+        }//LockJump_State
+
+        public void LockStateInput_State(bool state)
+        {
+
+            lockPlayState = state;
+
+        }//LockStateInput_State
+
+        public void LockSprint_State(bool state)
+        {
+
+            lockSprint = state;
+
+        }//LockSprint_State
+
+        public void LockZoom_State(bool state)
+        {
+
+            lockZoom = state;
+
+        }//LockZoom_State
+
 
         void OnDrawGizmos()
         {

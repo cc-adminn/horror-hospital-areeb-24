@@ -71,6 +71,43 @@ namespace HFPS.Systems
             isShown = state;
         }
 
+        public void TriggerHint_Manual()
+        {
+
+            if (!isShown && gameManager && inputHandler != null)
+            {
+                char[] hintChars = Hint.ToCharArray();
+
+                if (hintChars.Contains('{') && hintChars.Contains('}'))
+                {
+                    string key = InputHandler.CompositeOf(Hint.GetBetween('{', '}')).displayString;
+                    Hint = Hint.ReplacePart('{', '}', key);
+                }
+
+                if (ShowAfter > 0)
+                {
+                    timedShow = true;
+                }
+                else
+                {
+                    if (!string.IsNullOrEmpty(Hint))
+                    {
+                        gameManager.ShowHintPopup(Hint, TimeShow);
+                    }
+
+                    if (HintSound && soundEffects)
+                    {
+                        soundEffects.clip = HintSound;
+                        soundEffects.Play();
+                    }
+
+                    isShown = true;
+                }
+            }
+
+        }//TriggerHint_Manual
+
+
         void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player") && !isShown && gameManager && inputHandler != null)

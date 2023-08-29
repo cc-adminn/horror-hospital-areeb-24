@@ -187,6 +187,8 @@ namespace HFPS.Systems
         private bool isGamepad;
 
         private int oldBlurLevel;
+        private bool pauseLocked;
+        private bool inventoryLocked;
 #endregion
 
 #region Texts
@@ -325,6 +327,8 @@ namespace HFPS.Systems
 
         public void OnInventory()
         {
+            if (inventoryLocked) return;
+
             if (!isPaused && !isExamining && !healthManager.isDead && !cutscene.cutsceneRunning)
             {
                 gamePanels.TabButtonPanel.SetActive(!gamePanels.TabButtonPanel.activeSelf);
@@ -406,6 +410,8 @@ namespace HFPS.Systems
 
         private void OnPause()
         {
+            if (pauseLocked) return;
+
             if (!healthManager.isDead && !cutscene.cutsceneRunning)
             {
                 gamePanels.PauseGamePanel.SetActive(!gamePanels.PauseGamePanel.activeSelf);
@@ -1308,5 +1314,19 @@ namespace HFPS.Systems
 
             SceneManager.LoadScene(sceneLoaderName);
         }
+
+        public void PauseLock_State(bool state)
+        {
+
+            pauseLocked = state;
+
+        }//PauseLock_State
+
+        public void InventoryLock_State(bool state)
+        {
+
+            inventoryLocked = state;
+
+        }//InventoryLock_State
     }
 }

@@ -45,8 +45,10 @@ namespace HFPS.Player
         public string horizontalSensitivity = "horizontal_look";
         public string invertLook = "invert_look";
 
-        private float deltaInputX;
-        private float deltaInputY;
+        [HideInInspector]
+        public float deltaInputX;
+        [HideInInspector]
+        public float deltaInputY;
         private bool lookInverted;
         private bool lockLook;
 

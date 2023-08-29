@@ -214,7 +214,7 @@ namespace HFPS.Systems
             }
         }
 
-        void PlaySound(AudioClip audio)
+        public void PlaySound(AudioClip audio)
         {
             if (audio != null)
             {
@@ -342,7 +342,7 @@ namespace HFPS.Systems
             return default;
         }
 
-        void PushObjectiveText(string text, float time, bool upper = false)
+        public void PushObjectiveText(string text, float time, bool upper = false)
         {
             GameObject obj = Instantiate(PushObjectivePrefab, PushObjectivesUI.transform);
             obj.GetComponent<Notification>().SetMessage(text, time, upper: upper);

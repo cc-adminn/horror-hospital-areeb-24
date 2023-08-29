@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
@@ -128,6 +128,13 @@ namespace HFPS.Editors
                 EditorUtils.TrIconText("Click the <b>Find Saveables</b> button, to find\n all scene saveables.", MessageType.Warning, EditorStyles.miniLabel, true);
             }
         }
+
+        
+        public void FindSaveables_Start(){
+        
+            FindSaveables();
+            
+        }//FindSaveables_Start
 
         private void FindSaveables()
         {

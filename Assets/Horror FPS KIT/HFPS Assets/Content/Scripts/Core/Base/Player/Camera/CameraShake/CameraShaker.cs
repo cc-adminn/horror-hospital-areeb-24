@@ -41,7 +41,11 @@ namespace HFPS.Player
         /// </summary>
         public Vector3 ResetRotationOffset = new Vector3(0, 0, 0);
 
+
         Vector3 posAddShake, rotAddShake;
+        
+        private bool disableArmsLock;
+
 
         List<CameraShakeInstance> cameraShakeInstances = new List<CameraShakeInstance>();
 
@@ -100,7 +104,12 @@ namespace HFPS.Player
             {
                 if (IsShaking())
                 {
-                    PlayerController.Instance.shakeCamera = true;
+                    if(!disableArmsLock){
+
+                        PlayerController.Instance.shakeCamera = true;
+                    
+                    }//!disableArmsLock
+                    
                     CamAnimations.Stop();
                     CamAnimations.enabled = false;
                 }
@@ -110,6 +119,7 @@ namespace HFPS.Player
                     transform.localEulerAngles = ResetRotationOffset;
                     PlayerController.Instance.shakeCamera = false;
                     CamAnimations.enabled = true;
+                    DisableArmsLock_State(false);
                 }
             }
         }
@@ -243,6 +253,14 @@ namespace HFPS.Player
         /// </summary>
         public List<CameraShakeInstance> ShakeInstances
         { get { return new List<CameraShakeInstance>(cameraShakeInstances); } }
+
+
+        public void DisableArmsLock_State(bool state)
+        {
+
+            disableArmsLock = state;
+
+        }//DisableArmsLock_State
 
         void OnDestroy()
         {

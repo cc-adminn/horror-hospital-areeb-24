@@ -34,5 +34,49 @@ namespace HFPS.Systems
 				isPlayed = true;
 			}
 		}
+
+		public void Trigger_Manual()
+		{
+
+			if (!isPlayed)
+			{
+				AnimationObject.GetComponent<Animation>().Play();
+
+				if (AnimationSound)
+				{
+					if (!is2D)
+					{
+						AudioSource.PlayClipAtPoint(AnimationSound, AnimationObject.transform.position, Volume);
+					}
+					else
+					{
+						Utilities.PlayOneShot2D(transform.position, AnimationSound, Volume);
+					}
+				}
+
+				isPlayed = true;
+			}
+
+		}//Trigger_Manual
+
+		public void TriggerMulti_Manual()
+		{
+
+			AnimationObject.GetComponent<Animation>().Play();
+
+			if (AnimationSound)
+			{
+				if (!is2D)
+				{
+					AudioSource.PlayClipAtPoint(AnimationSound, AnimationObject.transform.position, Volume);
+				}
+				else
+				{
+					Utilities.PlayOneShot2D(transform.position, AnimationSound, Volume);
+				}
+			}
+
+		}//TriggerMulti_Manual
+
 	}
 }

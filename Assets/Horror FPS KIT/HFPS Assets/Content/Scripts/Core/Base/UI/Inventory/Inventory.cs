@@ -211,6 +211,14 @@ namespace HFPS.Systems
         private string CannotReload;
         #endregion
 
+        public bool customLock;
+        
+        public void CustomLock_State(bool state){
+        
+            customLock = state;
+            
+        }//CustomLock_State
+
         void OnEnable()
         {
             if (!InputHandler.HasReference) return;
@@ -418,7 +426,17 @@ namespace HFPS.Systems
             if (itemSwitcher) selectedSwitcherID = itemSwitcher.currentItem;
             if (gameManager)
             {
-                preventUse = gameManager.isInventoryShown || gameManager.isPaused;
+                if(customLock){
+                
+                    preventUse = true;
+                
+                //customLock
+                } else {
+                
+                    preventUse = gameManager.isInventoryShown || gameManager.isPaused;
+                
+                }//customLock
+                
                 isNavDisabled = !gameManager.isInventoryShown || gameManager.isPaused;
             }
 
@@ -1310,6 +1328,81 @@ namespace HFPS.Systems
         }
 
         /// <summary>
+        /// Bind new or Exchange Inventory Shortcut
+        /// </summary>
+        public void ShortcutBindCustom(int itemID, int slotID, string control)
+        {
+            Item item = GetItem(itemID);
+
+            if (Shortcuts.Count > 0)
+            {
+                if (Shortcuts.All(s => s.slot != slotID && !s.shortcut.Equals(control)))
+                {
+                    // shortcut does not exist
+                    Shortcuts.Add(new ShortcutModel(item, slotID, control));
+                    ItemDataOfSlot(slotID).shortcut = control;
+                }
+                else
+                {
+                    // shortcut already exist
+                    for (int i = 0; i < Shortcuts.Count; i++)
+                    {
+                        if (Shortcuts.Any(s => s.slot == slotID))
+                        {
+                            if (Shortcuts[i].slot == slotID)
+                            {
+
+                                // change shortcut key
+                                if (Shortcuts.Any(s => s.shortcut.Equals(control)))
+                                {
+                                    // find equal shortcut with key and exchange it
+                                    foreach (var equal in Shortcuts)
+                                    {
+                                        if (equal.shortcut.Equals(control))
+                                        {
+                                            equal.shortcut = Shortcuts[i].shortcut;
+                                            ItemDataOfSlot(equal.slot).shortcut = Shortcuts[i].shortcut;
+                                        }
+                                    }
+                                }
+
+                                // change actual shortcut key
+                                Shortcuts[i].shortcut = control;
+                                ItemDataOfSlot(Shortcuts[i].slot).shortcut = Shortcuts[i].shortcut;
+                                break;
+                            }
+                        }
+                        else if (Shortcuts[i].shortcut.Equals(control))
+                        {
+                            // change shortcut item
+                            if (IsAnyItemInSlot(Shortcuts[i].slot))
+                            {
+
+                                ItemDataOfSlot(Shortcuts[i].slot).shortcut = string.Empty;
+
+                            }//any item in slot
+
+                            ItemDataOfSlot(slotID).shortcut = control;
+                            Shortcuts[i].slot = slotID;
+                            Shortcuts[i].item = item;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Shortcuts.Add(new ShortcutModel(item, slotID, control));
+                ItemDataOfSlot(slotID).shortcut = control;
+            }
+
+            isShortcutBind = false;
+            fader.FadeOutSignal();
+            ResetInventory();
+
+        }//ShortcutBindCustom
+
+        /// <summary>
         /// Update Shortcut slot with binded Control
         /// </summary>
         public void UpdateShortcut(string control, int newSlotID)
@@ -1519,6 +1612,92 @@ namespace HFPS.Systems
 
                             // add an inventory item to the item cache
                             ItemsCache.Add(new InventoryItem(item, customData));
+                            break;
+                        }
+                    }
+
+                    // if auto-shortcut is enabled, link the shortcut to the item and return the shortcut action name
+                    if (autoShortcut)
+                    {
+                        return AutoBindShortcut(slotID, itemID);
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// Function to add a new item to an specific inventory slot.
+        /// </summary>
+        /// <returns>Auto Shortcut Input</returns>
+        public string AddItemToSlotCustom(int slotID, int itemID, int amount = 1, InventoryItemData invItemData = null, bool autoShortcut = false)
+        {
+            // get item from inventory database and set item amount
+            Item item = GetItem(itemID);
+            amount = amount <= 0 ? 1 : amount;
+
+            // check if there is a space in the inventory
+            if (CheckInventorySpace())
+            {
+                // get item data if the item is already in the slot
+                InventoryItemData itemData = ItemDataOfItem(item.ID, slotID);
+
+                if (item.Toggles.isStackable && IsItemInSlot(slotID, itemID))
+                {
+                    // increase item amount
+                    if (itemData != null) itemData.itemAmount += amount;
+                }
+                else
+                {
+                    // iterate each slot
+                    for (int i = 0; i < Slots.Count; i++)
+                    {
+                        // check if the slot index is equal to slotID
+                        if (i == slotID)
+                        {
+                            // create a new item object and set the item data
+                            GameObject uiItem = Instantiate(prefabs.InventoryItem, Slots[i].transform);
+                            itemData = uiItem.GetComponent<InventoryItemData>();
+                            itemData.item = item;
+                            itemData.itemAmount = amount;
+                            itemData.slotID = i;
+                            itemData.shortcut = invItemData.shortcut;
+                            itemData.InitializeData();
+
+                            // set item custom data
+
+                            if (invItemData.data != null)
+                            {
+
+                                itemData.data = invItemData.data;
+
+                                //data != null
+                            }
+                            else
+                            {
+
+                                Debug.Log("Item Data = null");
+
+                            }//data != null
+
+                            // add the item and item data to the slot component
+                            InventorySlot slotData = Slots[i].GetComponent<InventorySlot>();
+                            slotData.slotItem = item;
+                            slotData.itemData = itemData;
+
+                            // change slot background
+                            Image slotImage = Slots[i].GetComponent<Image>();
+                            slotImage.sprite = slotSprites.SlotWithItem;
+                            slotImage.enabled = true;
+
+                            // change the item object sprite to item sprite
+                            uiItem.GetComponent<Image>().sprite = item.ItemSprite;
+                            uiItem.GetComponent<RectTransform>().position = Vector2.zero;
+                            uiItem.name = item.Title;
+
+                            // add an inventory item to the item cache
+                            ItemsCache.Add(new InventoryItem(item, invItemData.data));
                             break;
                         }
                     }
