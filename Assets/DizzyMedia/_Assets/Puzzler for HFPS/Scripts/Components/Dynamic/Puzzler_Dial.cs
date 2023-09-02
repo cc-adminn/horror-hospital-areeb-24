@@ -245,7 +245,7 @@ namespace DizzyMedia.HFPS_Puzzler {
 
                 if(InputHandler.InputIsInitialized) {
 
-                    useKeyPressed = InputHandler.ReadButton(useInput);
+                    useKeyPressed = InputConverter.ReadButton(useInput);
 
                 }//InputIsInitialized
 

@@ -245,7 +245,7 @@ namespace DizzyMedia.Shared {
 
                     if(InputHandler.InputIsInitialized) {
 
-                        auto.pauseKeyPressed = InputHandler.ReadButton(pauseInput);
+                        auto.pauseKeyPressed = InputConverter.ReadButton(pauseInput);
 
                     }//InputIsInitialized
 
@@ -293,7 +293,7 @@ namespace DizzyMedia.Shared {
 
                                     if(InputHandler.InputIsInitialized) {
 
-                                        actions[i].actionPressed = InputHandler.ReadButton(actions[i].actionInput);
+                                        actions[i].actionPressed = InputConverter.ReadButton(actions[i].actionInput);
 
                                     }//InputIsInitialized
 
