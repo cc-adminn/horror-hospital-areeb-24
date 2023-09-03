@@ -227,6 +227,11 @@ public class InputRigHandler : MonoBehaviour
 
         mobileControls.zoom.SetActive(enabled);
 
+        if (controller == null)
+        {
+            controller = PlayerController.Instance;
+        }
+
         mobileControls.jump.SetActive(controller.controllerFeatures.enableJump && enabled);
         mobileControls.prone.SetActive(controller.controllerFeatures.enableProne && enabled);
         mobileControls.run.SetActive(controller.controllerFeatures.enableRun && enabled);
