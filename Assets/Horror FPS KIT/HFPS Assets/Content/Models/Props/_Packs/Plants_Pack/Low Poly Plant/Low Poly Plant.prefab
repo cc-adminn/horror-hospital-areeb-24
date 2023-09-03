@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4758269101747346676}
   - component: {fileID: 8518654198692765547}
   - component: {fileID: 2400554672172202659}
-  - component: {fileID: 5044115826918047922}
   m_Layer: 0
   m_Name: Box037
   m_TagString: Untagged
@@ -84,28 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5044115826918047922
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421681599972680820}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 2719141494e987a4c9debd52358c13f6, type: 3}
 --- !u!1 &525981815488554116
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +94,7 @@ GameObject:
   - component: {fileID: 7107358019123462464}
   - component: {fileID: 2811092282815948649}
   - component: {fileID: 7279519338823920484}
+  - component: {fileID: 7505812995630937313}
   m_Layer: 0
   m_Name: Box038
   m_TagString: Untagged
@@ -190,6 +168,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7505812995630937313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525981815488554116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.41908765, y: 0.41908774, z: 1.4913176}
+  m_Center: {x: -7.422699e-15, y: -0.00000021343195, z: 0.745659}
 --- !u!1 &914413042085566705
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +215,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.045631267, y: 0.7056329, z: 0.7056329, w: 0.045631267}
   m_LocalPosition: {x: 0.751, y: 1.717, z: 2.3033319}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65528, y: 0.65528, z: 0.65528}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4758269101747346676}
