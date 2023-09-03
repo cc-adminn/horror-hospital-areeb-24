@@ -32,9 +32,6 @@ MonoBehaviour:
   - GUID: 986b423873bae5c4cbd7c39b03a39936
     Object: {fileID: 2031259906048697751, guid: 986b423873bae5c4cbd7c39b03a39936,
       type: 3}
-  - GUID: 5d675c0351f90bc42bc7a51c418ff668
-    Object: {fileID: 8805240435232089101, guid: 5d675c0351f90bc42bc7a51c418ff668,
-      type: 3}
   - GUID: 1139d8eedc98ecf4391e359b50ccdca3
     Object: {fileID: 1024846367479426655, guid: 1139d8eedc98ecf4391e359b50ccdca3,
       type: 3}
