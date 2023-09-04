@@ -19,28 +19,48 @@ MonoBehaviour:
     completeCount: 4
     objectiveID: 0
     localeKey: 
+    hintText: Buddhas are placed everywhere in the room, Use Lantern to find them
+      and place them under the picture, on the console.
   - shortName: Puzzle Alter 2
     eventID: 
     objectiveText: Supply the alter with blood
     completeCount: 1
     objectiveID: 1
     localeKey: 
+    hintText: 
   - shortName: Puzzle Light
     eventID: 
     objectiveText: Give the correct alter light.
     completeCount: 1
     objectiveID: 2
     localeKey: 
+    hintText: 
   - shortName: Puzzle Switches
     eventID: 
     objectiveText: Turn on the electricity
     completeCount: 1
     objectiveID: 3
     localeKey: 
+    hintText: 
   - shortName: Puzzle Paintings
     eventID: 
     objectiveText: Hang the family portraits
     completeCount: 0
     objectiveID: 4
     localeKey: 
+    hintText: 
+  - shortName: Jukebox
+    eventID: 
+    objectiveText: Play jukebox with Coins {0}/{1}
+    completeCount: 4
+    objectiveID: 5
+    localeKey: 
+    hintText: '1st Coin is placed under the box.
+
+      2nd Coin is placed in drawer
+
+      3rd
+      Coin is placed in the washing machine.
+
+      4th coin is placed on book shelf'
   enableLocalization: 0

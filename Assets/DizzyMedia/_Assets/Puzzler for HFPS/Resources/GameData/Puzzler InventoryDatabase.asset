@@ -1090,8 +1090,9 @@ MonoBehaviour:
     useActionType: 0
     itemSprite: {fileID: 21300000, guid: 22b0a6ec3b86577438772bf8fa8ec71e, type: 3}
     DropObject:
-      GUID: 
-      Object: {fileID: 0}
+      GUID: 0359e6b46d9ff433c811f98a0eabbdce
+      Object: {fileID: 7753605044484191422, guid: 0359e6b46d9ff433c811f98a0eabbdce,
+        type: 3}
     PackDropObject:
       GUID: 
       Object: {fileID: 0}
@@ -1102,7 +1103,7 @@ MonoBehaviour:
       isDroppable: 0
       isRemovable: 0
       restoreStamina: 0
-      canExamine: 0
+      canExamine: 1
       canBindShortcut: 0
       combineAddItem: 0
       combineKeepItem: 0
@@ -1117,7 +1118,7 @@ MonoBehaviour:
       combineSound: {fileID: 0}
       combineVolume: 1
     itemSettings:
-      maxStackAmount: 0
+      maxStackAmount: 4
       useSwitcherID: -1
       healAmount: 0
       staminaAmount: 0

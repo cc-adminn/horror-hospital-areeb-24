@@ -57,3 +57,6 @@ MonoBehaviour:
     Object: {fileID: 1603289076461798, guid: 9dba05ac0cfb0634eb1331823de3a6cb, type: 3}
   - GUID: 534ef8dee0da6c6479121520d34fbb7d
     Object: {fileID: 1205774663, guid: 534ef8dee0da6c6479121520d34fbb7d, type: 3}
+  - GUID: 0359e6b46d9ff433c811f98a0eabbdce
+    Object: {fileID: 7753605044484191422, guid: 0359e6b46d9ff433c811f98a0eabbdce,
+      type: 3}
