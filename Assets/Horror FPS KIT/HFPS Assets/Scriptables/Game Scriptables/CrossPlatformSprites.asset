@@ -56,8 +56,8 @@ MonoBehaviour:
   Mouse:
     MouseLeft: {fileID: 21300000, guid: 0841af9329c02b84b9a1a979b95db1e8, type: 3}
     MouseMiddle: {fileID: 0}
-    MouseRight: {fileID: 21300000, guid: c51cbf97629d33448a52a2bc9da612fb, type: 3}
-    Mouse: {fileID: 21300000, guid: 27556667be5dedf448c81be249b9514b, type: 3}
+    MouseRight: {fileID: 21300000, guid: 0841af9329c02b84b9a1a979b95db1e8, type: 3}
+    Mouse: {fileID: 21300000, guid: 0841af9329c02b84b9a1a979b95db1e8, type: 3}
   Keyboard:
     None: {fileID: 0}
     Key0: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
     B: {fileID: 0}
     C: {fileID: 0}
     D: {fileID: 0}
-    E: {fileID: 21300000, guid: 1d3cb6aa3d219b9498d53e526c5efa7f, type: 3}
+    E: {fileID: 21300000, guid: 69ee1d084e12d413ab58414ff1eba01a, type: 3}
     F: {fileID: 0}
     G: {fileID: 0}
     H: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
     N: {fileID: 0}
     O: {fileID: 0}
     P: {fileID: 0}
-    Q: {fileID: 21300000, guid: d2b5e851145340c489c123459834dec5, type: 3}
+    Q: {fileID: 21300000, guid: 0142e34fefc774e22811f68da655ec29, type: 3}
     R: {fileID: 0}
     S: {fileID: 0}
     T: {fileID: 0}

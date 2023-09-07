@@ -20,7 +20,7 @@ public class InputRigHandler : MonoBehaviour
     }
 
     [SerializeField]
-    private Sprite ZoomSprite, ThrowSprite, TouchSprite, JumpSprite;
+    private Sprite ZoomSprite, ThrowSprite, TouchSprite, JumpSprite, PutAwaySprite;
 
     [Serializable]
     public struct GamePanels
@@ -208,7 +208,7 @@ public class InputRigHandler : MonoBehaviour
 
     internal void ToggleRotation(bool enableObjectRotation, bool objectHeld)
     {
-        mobileControls.rotate.SetActive(enableObjectRotation && objectHeld && IsPlayerControlsEnabled);
+        mobileControls.rotate.SetActive(enableObjectRotation && objectHeld);
         mobileControls.zoom.SetActive(!objectHeld && IsPlayerControlsEnabled);
     }
 
@@ -240,7 +240,8 @@ public class InputRigHandler : MonoBehaviour
 
     internal Sprite GetSprite(string BindingPath, string ControlName)
     {
-        
+
+        Debug.Log(BindingPath + ControlName);
         if (BindingPath == "<Keyboard>/1" || BindingPath == "<Keyboard>/2" || BindingPath == "<Keyboard>/3" || BindingPath == "<Keyboard>/4")
         {
             return ControlName switch
@@ -268,6 +269,10 @@ public class InputRigHandler : MonoBehaviour
         else if (BindingPath + ControlName == "<Keyboard>/spaceExit Ladder")
         {
             return JumpSprite;
+        }
+        else if (BindingPath + ControlName == "<Keyboard>/qPut Away" || BindingPath + ControlName == "<Keyboard>/qGrab")
+        {
+            return PutAwaySprite;
         }
         else
         {
