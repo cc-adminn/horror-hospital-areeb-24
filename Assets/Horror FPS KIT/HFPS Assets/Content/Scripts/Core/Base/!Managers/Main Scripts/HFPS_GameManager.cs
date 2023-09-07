@@ -1257,6 +1257,21 @@ namespace HFPS.Systems
         }
 
         /// <summary>
+        /// Show Level Complete Screen Panel
+        /// </summary>
+        public void ShowLevelCompletePanel()
+        {
+            LockPlayerControls(false, false, false, true);
+            scriptManager.C<ItemSwitcher>().DisableItems();
+            scriptManager.C<ItemSwitcher>().enabled = false;
+
+            GetComponent<MenuController>().ShowPanel("LevelComplete");
+
+            gamePanels.PauseGamePanel.SetActive(false);
+            gamePanels.MainGamePanel.SetActive(false);
+        }
+
+        /// <summary>
         /// Change current scene using default unity method
         /// </summary>
         public void ChangeScene(string SceneName)
@@ -1288,6 +1303,18 @@ namespace HFPS.Systems
                     StartCoroutine(LoadScene(scene, 2));
                 }
             }
+        }
+
+        /// <summary>
+        /// Load last saved scene
+        /// </summary>
+        public void Restart()
+        {
+            Prefs.Game_LoadState(0);
+            Prefs.Game_SaveName(string.Empty);
+            Prefs.Game_LevelName(SceneManager.GetActiveScene().name);
+
+            SceneManager.LoadScene(sceneLoaderName);
         }
 
         /// <summary>
